@@ -1,0 +1,314 @@
+.container {
+	margin: 0 auto;
+	width: 940px;
+}
+.head {
+	background:url("../img/bgground.jpg") no-repeat;
+	height: 620px;
+}
+.log {
+	padding: 42px 0 0 0;
+	width: 140px;
+	height: 30px;
+}
+.log a{
+	background: url("../img/logo.png") no-repeat;
+	display: block;
+	text-indent: -99999px;
+}
+.nav{
+	width: 435px;
+	float: right;
+}
+.nav ul li {
+	float: left;
+	margin-left: 30px;
+	line-height: 30px;
+}
+.nav ul li a {
+	font-size: 18px;
+}
+.poster {
+	margin-top: 185px;
+}
+.poster h2 {
+   font-size: 32px;
+   color: #fff;
+}
+.poster p {
+	margin-top: 20px;
+	font-size: 66px;
+	color: #fff;
+}
+.poster a {
+	display: block;
+	margin: 80px auto 0 auto;
+	width: 235px;
+	height: 70px;
+	line-height: 70px;
+	font-size: 20px;
+	border: 2px solid #fff;
+	-webkit-border-radius: 5px;
+	   -moz-border-radius: 5px;
+	        border-radius: 5px;
+
+}
+.poster a:hover{
+   background-color: #fff;
+   text-decoration: none;
+}
+.content {
+	margin-top: 100px;
+}
+.content section {
+	text-align: left;
+	margin-top: 100px;
+}
+.section-1 {
+	height: 240px;
+}
+.section-2 {
+	height: 240px;
+}
+.section-3 {
+	height: 420px;
+}
+.section-4 {
+	height: 760px;
+}
+
+.web-left {
+	float: left;
+	width: 640px;
+	padding: 30px 18px;
+}
+.web-left h2 {
+	font-size: 50px;
+}
+.web-left p {
+	font-size: 16px;
+	margin-top: 30px;
+}
+.web-right {
+	float: right;
+	background: url("../img/web-right.jpg") no-repeat;
+	margin-right: 5px;
+	width: 250px;
+    height: 250px;
+}
+.identity-left {
+	float: left;
+	background: url("../img/identity-left.png") no-repeat;
+	margin-left: 5px;
+	width: 280px;
+    height: 250px;
+}
+.identity-right {
+	float: right;
+	width: 640px;
+	padding: 20px 25px 0 25px;
+}
+.identity-right h2 {
+	font-size: 50px;
+}
+.identity-right p {
+	font-size: 16px;
+	margin-top: 30px;
+}
+.detail-work {
+}
+.detail-work h3 {
+	font-size: 17px;
+}
+.detail-work p {
+	font-size: 13px;
+	margin-top: 10px;
+}
+.detail-work li {
+	float: left;
+	width: 380px;
+	margin-left: 60px;
+	margin-top: 50px;
+}
+.detail-work .identity-img {
+	background: url("../img/identity.jpg");
+	width: 70px;
+	height: 70px;
+	float: left;
+}
+.detail-work .web-img {
+	background: url("../img/web.jpg");
+	width: 80px;
+	height: 70px;
+	float: left;
+}
+.detail-work .mobile-img {
+	background: url("../img/mobile.jpg");
+	width: 70px;
+	height: 70px;
+	float: left;
+}
+.detail-work .ui-img {
+	background: url("../img/ui.jpg");
+	width: 70px;
+	height: 70px;
+	float: left;
+}
+.detail-work .photography-img {
+	background: url("../img/photography.jpg");
+	width: 80px;
+	height: 70px;
+	float: left;
+}
+.detail-work .animations-img {
+	background: url("../img/animations.jpg");
+	width: 80px;
+	height: 70px;
+	float: left;
+}
+.detail-work .introdction-right {
+   width: 290px;
+   margin-left: 10px;
+   float: right;
+}
+.section-4 h2 {
+	text-align: center;
+	font-size: 25px;
+	font-weight: normal;
+}
+.section-4 p {
+	font-size: 17px;
+}
+.section-4 .clients {
+	text-align: center;
+	margin-top: 5px;
+}
+.section-4 .auth {
+	margin-top: 50px
+}
+.section-4 .photo-show {
+	float: left;
+	width: 180px;
+	height: 180px;
+	background: url("../img/shay-howe.jpg") no-repeat;
+	border-radius: 50%;
+	margin-left: 160px;
+	background-size: cover;
+}
+.section-4 .photo-show-2 {
+	float: right;
+	width: 180px;
+	height: 180px;
+	background:url("../img/darby-frey.jpg") no-repeat;
+	border-radius: 50%;
+	margin-right: 140px;
+	background-size: cover;
+}
+.section-4 .info-right {
+    float: right;
+	width: 350px;
+	height: 220px;
+	padding: 45px 16px;
+	margin-right: 140px;
+}
+.section-4 .info-left {
+	float: left;
+	width: 350px;
+	height: 220px;
+	padding: 45px 16px;
+	margin-left: 140px;
+}
+.section-4 a {
+	color: green;
+}
+.section-4 .link-site {
+	margin-top: 50px;
+}
+.link-site li {
+	float: left;
+	margin-left: 50px;
+}
+.link-site li a {
+	text-indent: -9000px;
+	display: block;
+	width: 160px;
+	height: 50px;
+}
+.link-site .envato {
+	background: url("../img/link_site.png") -60px -20px no-repeat;
+}
+.link-site .wordpress {
+	background: url("../img/link_site.png") -48px -100px no-repeat;
+    width: 192px;
+}
+.link-site .eatutas {
+	background: url("../img/link_site.png") -60px -182px no-repeat;
+}
+.link-site .microlancer {
+	background: url("../img/link_site.png") -60px -272px no-repeat;
+    width: 170px;
+}
+/*.info-right cite {
+	margin-left: 60px;
+}*/
+
+/* footer*/
+.footer {
+	background-color: #111;
+	color: #fff;
+}
+.footer h2 {
+    font-size: 35px;
+    padding-top: 50px;
+}
+.footer .footer-info {
+	font-size: 13px;
+	margin-top: 5px;
+	color: #555;
+}
+.footer .tearm-info {
+	margin-top: 50px;
+	height: 355px;
+}
+.footer .tearm-info > li {
+	float: left;
+	margin-left: 50px;
+}
+.footer .tearm-info ul {
+   height: 350px;
+   width: 240px;
+}
+.footer .tearm-info ul li{
+   margin-top: 5px;
+}
+.footer .tearm-photo {
+	width: 180px;
+	height: 180px;
+	border-radius: 50%;
+	border: 6px solid #fff;
+}
+.footer .share-site a {
+	text-indent: -9000px;
+    display: inline-block;
+    width: 50px;
+	height: 46px;
+}
+.footer .share-site .google {
+	background: url("../img/share.jpg") -21px -9px no-repeat;
+}
+.footer .share-site .facebook {
+	background: url("../img/share.jpg") -71px -9px no-repeat;
+}
+.footer .share-site .qq {
+	background: url("../img/share.jpg") -121px -9px no-repeat;
+}
+.footer .footer-1 {
+	font-size: 13px;
+	margin-top: 50px;
+	color: #555;
+}
+.footer .footer-2 {
+	font-size: 12px;
+	margin-bottom: 50px;
+	color: #555;
+}
