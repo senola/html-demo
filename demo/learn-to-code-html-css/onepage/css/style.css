@@ -1,0 +1,228 @@
+
+body {
+  background: #F2F2F2;
+  font: 10px verdana;
+  margin:0 auto;
+  width: 1100px;
+}
+a {
+	text-decoration: none;
+}
+p,span{
+	line-height: 20px;
+}
+.header,.featured,.content,.footer{
+	overflow: hidden;
+}
+.container{
+	margin: 0 auto;
+}
+.clear{
+	clear: both;
+}
+.header{
+	background-color: #171717;
+	border-bottom: 2px solid #252525;
+	height: 74px;
+}
+.header .logo{
+	float: left;
+	text-indent: -9999px;
+}
+.header ul{
+	float: right;
+	height: 74px;
+	padding: 17px 17px 25px 0;
+	
+}
+.header ul li{
+	float: left;
+	color: #d1d1d1;
+	font: bold 10px verdana;
+	padding: 15px 15px;
+}
+.header ul li a:hover {
+    color: #FFF;
+}
+.header .menu .on{
+	background: #252525;
+	border-radius: 2px;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        -o-border-radius: 2px;
+}
+.featured {
+	background:  url('../img/featured.jpg') no-repeat center top;
+    height: 373px;;
+}
+.featured .welcome{
+	float: left;
+	width: 440px;
+	padding: 41px 0 10px 41px;
+}
+.featured .welcome h2{
+	font: bold 72px verdana ;
+	color: #2c430d;
+	line-height: 53px;
+	padding: 0 0 20px;
+}   
+.featured .welcome p {
+    color: #FFF;
+    font: 10px Verdana;
+    line-height: 20px;
+    margin: 15px 0;
+    text-shadow: 0px 1px 0px #3F6211;
+        -webkit-text-shadow: 0px 1px 0px #3F6211;
+        -moz-text-shadow: 0px 1px 0px #3F6211;
+        -o-text-shadow: 0px 1px 0px #3F6211;
+}
+.featured .slider{
+	float: right;
+	position: relative;
+	width: 521px;
+	padding-top: 41px;
+	padding-right: 41px; 
+}
+.status {
+	background: #F1EEEE;
+	border-bottom: 1px solid #DCDEDE;
+	padding: 20px 0;
+}
+.status .words{
+	color: #CCC9C9;
+    font: bold 20px Verdana;
+    line-height: 50px;
+    padding: 0 66px 0 66px ;
+}
+.status button{
+	background-color: #E9E5E5;
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FFF), to(#E9E5E5));
+    background: -moz-linear-gradient(top, #FFF 0%, #E9E5E5 100%);
+    filter:  progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#FFFFFF', endColorstr='#E9E5E5'); /* IE6 & IE7 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#FFFFFF', endColorstr='#E9E5E5')"; /* IE8 */
+    border: 1px solid #D9D9D9;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        -o-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    color: #333;
+    font: bold 20px Verdana;
+    height: 50px;
+    line-height: 30px;
+    width: 175px;
+}
+.status button:hover {
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#E9E5E5), to(#FFF));
+    background: -moz-linear-gradient(top, #E9E5E5 0%, #FFF 100%);
+}
+.content{
+	 width: 970px; 
+	 margin: auto; 
+}
+.content .about_us, .content .other_say{
+	float:left;
+	padding:  20px 0 30px;
+	width: 50%;
+}
+.content .about_us h3, .content .other_say h3 {
+    color: #474747;
+    font: bold italic 20px Verdana;
+    line-height: 40px;
+}
+ 
+.content .other_say p cite {
+    font: bold italic 10px Verdana;
+    padding: 0 0 0 60px;
+}
+ 
+.content .others_say p cite a {
+    color: #000;
+}
+.content ul li{
+	float: left;
+	margin: 0 20px 0 0;
+	width: 222px;
+}
+.content ul li img {
+    background: #F1EEEE;
+    border: 1px solid #DCDEDE;
+    padding: 5px;
+}
+ 
+.content ul li h4 {
+    color: #474747;
+    font: bold 14px Verdana;
+    line-height: 30px;
+}
+ 
+.content ul li:last-child {
+    margin: 0;
+}
+.footer{
+	background: url('../img/footer.jpg') no-repeat center top;
+	height: 250px;
+	margin-top: 80px;
+}
+.footer .footer-widgets{
+	padding: 40px 0 0;
+}
+.footer .info{
+	float: left;
+	margin: 0 0 0 42px;
+	width: 235px;
+}
+.footer ul li h5{
+	color: #CCCDD2;
+    font: bold 14px Verdana;
+    padding: 0 0 10px;
+}
+.footer ul li p {
+    color: #7E7E7E;
+    font: bold 11px Verdana;
+    line-height: 20px;
+}
+ 
+.info li {
+    color: #7E7E7E;
+    font: bold 11px Verdana;
+    line-height: 20px;
+}
+ 
+.footer ul li ul li a {
+    color: #7E7E7E;
+}
+ 
+.footer ul li ul li a:hover {
+    color: #9E9E9E;
+}
+ 
+.footer ul li:last-child {
+    margin: 0;
+}
+ 
+.footer .copyright {
+    font-size: 11px;
+    width: 100%;
+    padding-left: 36px;
+    color: #424242;
+    line-height: 30px;
+    padding-top: 10px;
+}
+ 
+.footer .copyright a {
+    color: #63961A;
+    float: right;
+    line-height: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+

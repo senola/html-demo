@@ -1,0 +1,166 @@
+*,
+*:before,
+*:after {
+   -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+           box-sizing: border-box;
+}
+body {
+	font-size: 1em;
+	line-height: 1.5em;
+	color: #414142;
+	font-family: Arial;
+}
+.content {
+  margin: 0 auto;
+  max-width: 600px;
+  margin: 1.5em auto;
+  min-width: 600px;
+}
+h1 {
+	font-weight: normal;
+}
+p code,li code {
+  background-color: #ECECEC;
+}
+h2 {
+	font-family: 'Bree Serif', serif;
+	font-weight: normal;
+	margin: 1.5em auto;
+}
+.elem {
+	position: relative;
+	margin: 0 8px;
+	padding: 10px ;
+	border:solid #6AC5AC 3px;
+}
+.label,.end-label{
+   position: absolute;
+   background-color: #6AC5AC;
+   color: #414142;
+   line-height: 1em;
+}
+.label {
+	top: 0;
+	left: 0;
+	padding: 0 3px 3px 0;
+}
+.end-label {
+	right: 0;
+	bottom: 0;
+	padding: 3px 0 0 3px;
+}
+.code-show p{
+	font-size: 50px;
+	font-weight: bold;
+	font-family: 楷体;
+	text-align: center;
+	line-height: 90px;
+}
+.code-show {
+	width: 600px;
+	height: 200px;
+	padding: 3px;
+	border: solid #6AC5AC 5px;
+	border-radius: 8px;
+	box-shadow: 8px 10px 11px #666;
+	background-color: #6AC5AC;
+	/* IE10 Consumer Preview */ 
+	background: -ms-linear-gradient(bottom left, #FFFFFF 0%, #6AC5AC 100%);
+
+	/* Mozilla Firefox */ 
+	background: -moz-linear-gradient(bottom left, #FFFFFF 0%, #6AC5AC 100%);
+
+	/* Opera */ 
+	background: -o-linear-gradient(bottom left, #FFFFFF 0%, #6AC5AC 100%);
+
+	/* Webkit (Safari/Chrome 10) */ 
+	background: -webkit-gradient(linear, left bottom, right top, color-stop(0, #FFFFFF), color-stop(1, #6AC5AC));
+
+	/* Webkit (Chrome 11+) */ 
+	background: -webkit-linear-gradient(bottom left, #FFFFFF 0%, #6AC5AC 100%);
+
+	/* W3C Markup, IE10 Release Preview */ 
+	background: linear-gradient(to top right, #FFFFFF 0%, #6AC5AC 100%);
+ 
+}
+.fixed-show {
+	position: fixed;
+	text-align: center;
+	line-height: 80px;
+	font-size: 14px;
+	font-family: 楷体;
+	font-weight: bold;
+	height: 80px;
+	width: 200px;
+	bottom: 5px;
+    right: 0;
+    border: solid #ECD 3px;
+    box-shadow: -4px -4px 15px #414142;
+    background-color: #ECD;
+	background: -ms-linear-gradient(bottom left, #FFFFFF 0%, #ECD 100%);
+	background: -moz-linear-gradient(bottom left, #FFFFFF 0%, #ECD 100%);
+	background: -o-linear-gradient(bottom left, #FFFFFF 0%, #ECD 100%);
+	background: -webkit-gradient(linear, left bottom, right top, color-stop(0, #FFFFFF), color-stop(1, #ECD));
+	background: -webkit-linear-gradient(bottom left, #FFFFFF 0%, #ECD 100%);
+	background: linear-gradient(to top right, #FFFFFF 0%, #ECD 100%);
+}
+.parent {
+	width: 600px;
+	height: 400px;
+	border: solid #414142 2px;
+	background-color: #6AC5AC;
+	display: table-cell;
+	vertical-align: middle;
+}
+.child {
+	width: 50px;
+	height: 50px;
+	background-color: red;
+	margin: 50px auto;
+}
+.parent2 {
+	position: relative;
+	width: 600px;
+	height: 400px;
+	border: solid #414142 2px;
+	background-color: #6AC5AC;
+}
+.child2 {
+	position:absolute;
+	width: 50px;
+	height: 50px;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-color: red;
+	margin:auto;
+}
+.parent3 {
+	display: -webkit-flex;
+	display: flex;
+	width: 600px;
+	height: 400px;
+	border: solid #414142 2px;
+	background-color: #6AC5AC;
+}
+.child3 {
+	width: 50px;
+	height: 50px;
+	background-color: red;
+	margin:auto;
+}
+.parent4 {
+	width: 600px;
+	height: 400px;
+	border: solid #414142 2px;
+	background-color: #6AC5AC;
+}
+.child4 {
+	position: center;
+	width: 50px;
+	height: 50px;
+	background-color: red;
+	margin:auto;
+}
