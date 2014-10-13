@@ -1,7 +1,6 @@
 jQuery(document).ready(function($){
 	var $timeline_block = $('.cd-timeline-block');
 
-	//hide timeline blocks which are outside the viewport
 	$timeline_block.each(function(){
 		if($(this).offset().top > $(window).scrollTop()+$(window).height()*0.75) {
 			$(this).find('.cd-timeline-img, .cd-timeline-content').addClass('is-hidden');
@@ -47,9 +46,17 @@ jQuery(document).ready(function($){
           return time;
        }
     }
-    setInterval(function(){
-       var d = new Date();
-    	var nowTime = getFullTime(d.getFullYear()) + "年" + (getFullTime(d.getMonth() + 1)) + "月" + getFullTime(d.getDate()) + "日 " + getFullTime(d.getHours()) + ":" + getFullTime(d.getMinutes()) + ":" + getFullTime(d.getSeconds());
-    	$("#nowTimedisplay").html(nowTime);
-    },1000);
+    //不建议使用setInterval函数
+    // setInterval(function(){
+    //    var d = new Date();
+    // 	var nowTime = getFullTime(d.getFullYear()) + "年" + (getFullTime(d.getMonth() + 1)) + "月" + getFullTime(d.getDate()) + "日 " + getFullTime(d.getHours()) + ":" + getFullTime(d.getMinutes()) + ":" + getFullTime(d.getSeconds());
+    // 	$("#nowTimedisplay").html(nowTime);
+    // },1000);
+    function timeChange() {
+    	var d = new Date();
+        var nowTime = getFullTime(d.getFullYear()) + "年" + (getFullTime(d.getMonth() + 1)) + "月" + getFullTime(d.getDate()) + "日 " + getFullTime(d.getHours()) + ":" + getFullTime(d.getMinutes()) + ":" + getFullTime(d.getSeconds());
+        $("#nowTimedisplay").html(nowTime);
+    	setTimeout(timeChange,1000);
+    }
+    timeChange();
 });
