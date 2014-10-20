@@ -1,0 +1,85 @@
+body {
+
+}
+.header {
+	margin-top: 30px;
+}
+.header > h1{
+	font-size: 50px;
+	line-height: 1;
+	color: slategray;
+}
+.header > p {
+	font-size: 25px;
+}
+.animation-demo {
+	padding: 60px 80px;
+	counter-reset: demo;
+}
+
+a {
+	text-decoration: none;
+	color: slategray;
+}
+a:hover {
+	text-decoration: none;
+}
+a:focus {
+	outline: thin dotted;
+}
+a[data-property] {
+	position: relative;
+	float: left;
+	width: 150px;
+	height: 150px;
+	margin: 0 15px 30px;
+	background: slategray;
+    color: white;
+    font-size: 60px;
+    line-height: 150px;
+    text-align: center;
+    counter-increment: demo;
+    outline-color: transparent;
+}
+a[data-property]:before {
+	content: counter(demo);
+}
+a[data-property]:after {
+	content: attr(data-property);
+	position: absolute;
+	right: 0;
+	left: 0;
+	bottom: -1.2em;
+	z-index: 2;
+	color: slategray;
+	font-size: 14px;
+	line-height: 1;
+	text-indent: 0;
+	text-shadow: none;
+	letter-spacing: 0;
+
+}
+#background-color:hover {
+	-webkit-animation: background-color 2s infinite alternate;
+	background-color: slategray;
+}
+#background-position {
+  background-image: linear-gradient(135deg, transparent 25%, black 25%, black 50%, transparent 50%, transparent 75%, black 75%, black); 
+  background-size:50px 50px;
+}
+#background-position:hover {
+	-webkit-animation: background-position 2s infinite alternate;
+	cursor: pointer;
+}
+@-webkit-keyframes background-color{
+	/*from{background-color:slategray}
+	to{background-color:green}*/
+	from{opacity:1;}
+	to{opacity:0;}
+	/*from{transform:rotate(0deg)}
+	to{transform:rotate(3600deg)}*/ 
+}
+@-webkit-keyframes background-position {
+	from {background-position:0 0;}
+	to {background-position:100% 100%;}
+}
