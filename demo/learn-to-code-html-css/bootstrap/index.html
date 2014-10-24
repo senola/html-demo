@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--对移动设备的支持-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap pure</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+     .row div{
+        background-color: rgba(86,61,124,.2);
+        border: 1px solid rgba(86,61,124,.15);
+     }
+    </style>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <h2>一、从堆叠到水平排列 container</h2>
+    <hr>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-1">.col-md-1</div>
+        <div class="col-md-1">.col-md-1</div>
+        <div class="col-md-1">.col-md-1</div>
+        <div class="col-md-1">.col-md-1</div>
+        <div class="col-md-1">.col-md-1</div>
+        <div class="col-md-1">.col-md-1</div>
+        <div class="col-md-1">.col-md-1</div>
+        <div class="col-md-1">.col-md-1</div>
+        <div class="col-md-1">.col-md-1</div>
+        <div class="col-md-1">.col-md-1</div>
+        <div class="col-md-1">.col-md-1</div>
+        <div class="col-md-1">.col-md-1</div>
+      </div>
+      <div class="row">
+        <div class="col-md-8">.col-md-8</div>
+        <div class="col-md-4">.col-md-4</div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">.col-md-4</div>
+        <div class="col-md-4">.col-md-4</div>
+        <div class="col-md-4">.col-md-4</div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">.col-md-6</div>
+        <div class="col-md-6">.col-md-6</div>
+      </div>
+    </div>
+    <hr>
+
+    <h2>二、从堆叠到水平排列 container-fluid</h2>
+    <hr>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-1">.col-md-1</div>
+        <div class="col-md-1">.col-md-1</div>
+        <div class="col-md-1">.col-md-1</div>
+        <div class="col-md-1">.col-md-1</div>
+        <div class="col-md-1">.col-md-1</div>
+        <div class="col-md-1">.col-md-1</div>
+        <div class="col-md-1">.col-md-1</div>
+        <div class="col-md-1">.col-md-1</div>
+        <div class="col-md-1">.col-md-1</div>
+        <div class="col-md-1">.col-md-1</div>
+        <div class="col-md-1">.col-md-1</div>
+        <div class="col-md-1">.col-md-1</div>
+      </div>
+      <div class="row">
+        <div class="col-md-8">.col-md-8</div>
+        <div class="col-md-4">.col-md-4</div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">.col-md-4</div>
+        <div class="col-md-4">.col-md-4</div>
+        <div class="col-md-4">.col-md-4</div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">.col-md-6</div>
+        <div class="col-md-6">.col-md-6</div>
+      </div>
+    </div>
+    <hr>
+
+    <h2>三、移动设备和桌面屏幕</h2>
+    <hr>
+    <p>是否不希望在小屏幕设备上所有列都堆叠在一起？那就使用针对超小屏幕和中等屏幕设备所定义的类吧，即 .col-xs-* 和 .col-md-*。请看下面的实例，研究一下这些是如何工作的。</p>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-md-8">.col-xs-12 .col-md-8</div>
+        <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+      </div>
+    </div>
+    <hr>
+
+    <h2>四、排版</h2>
+    <hr>
+    <h1>h1. Bootstrap heading <small>Secondary text</small></h1>
+    <h2>h2. Bootstrap heading <small>Secondary text</small></h2>
+    <h3>h3. Bootstrap heading <small>Secondary text</small></h3>
+    <h4>h4. Bootstrap heading <small>Secondary text</small></h4>
+    <h5>h5. Bootstrap heading <small>Secondary text</small></h5>
+    <h6>h6. Bootstrap heading <small>Secondary text</small></h6>
+    <del>This line of text is meant to be treated as deleted text.</del>
+    <!--插入文本-->
+    <ins>This line of text is meant to be treated as an addition to the document.</ins>
+    
+    <h2>五、对齐</h2>
+    <p class="text-left">Left aligned text.</p>
+    <p class="text-center">Center aligned text.</p>
+    <p class="text-right">Right aligned text.</p>
+    <p class="text-justify">Justified text.</p>
+    <p class="text-nowrap">No wrap text.</p>
+    
+    <h2>六、表格</h2>
+    <!--响应式表格-->
+    <div class="table-responsive">
+      <table class="table table-bordered table-hover">
+        <caption>响应式表格.</caption>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>First Name</th>
+            <th>First Name</th>
+            <th>First Name</th>
+            <th>First Name</th>
+            <th>First Name</th>
+          </tr>
+          <tbody>
+            <tr class="active">
+              <td>1</td>
+              <td>senola</td>
+              <td>senola</td>
+              <td>senola</td>
+              <td>senola</td>
+              <td>senola</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>senola</td>
+              <td>senola</td>
+              <td>senola</td>
+              <td>senola</td>
+              <td>senola</td>
+            </tr>
+            <tr class="success">
+              <td>3</td>
+              <td>senola</td>
+              <td>senola</td>
+              <td>senola</td>
+              <td>senola</td>
+              <td>senola</td>
+            </tr>
+            <tr class="warning">
+              <td>4</td>
+              <td>senola</td>
+              <td>senola</td>
+              <td>senola</td>
+              <td>senola</td>
+              <td>senola</td>
+            </tr>
+            <tr class="info">
+              <td>5</td>
+              <td>senola</td>
+              <td>senola</td>
+              <td>senola</td>
+              <td>senola</td>
+              <td>senola</td>
+            </tr>
+            <tr class="danger">
+              <td>5</td>
+              <td>senola</td>
+              <td>senola</td>
+              <td>senola</td>
+              <td>senola</td>
+              <td>senola</td>
+            </tr>
+          </tbody>
+        </thead>
+      </table>
+    </div>
+    
+    <h2>七、表单</h2>
+    <p>单独的表单控件会被自动赋予一些全局样式。所有设置了 .form-control 类的 &lt;input&gt;、&lt;textarea&gt; 和 &lt;select&gt; 元素都将被默认设置宽度属性为 width: 100%;。 将 label 元素和前面提到的控件包裹在 .form-group 中可以获得最好的排列。</p>
+    <div class="clearfix">
+        <form style="width:300px;margin-left:50px;border:1px solid #ccc;padd;padding: 15px;border-radius: 10px;float:left;">
+      <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputFile">File input</label>
+        <input type="file" id="exampleInputFile">
+        <p class="help-block">Example block-level help text here.</p>
+      </div>
+      <div class="checkbox">
+        <label>
+          <input type="checkbox"> Check me out 
+        </label>
+      </div>
+
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" value="">Option one is this and that&mdash;be sure to include why it's great
+        </label>
+      </div>
+
+      <div class="radio">
+        <label >
+          <input type="radio" name="optionsRadios" id="optionsRadios1" checked>Option one is this and that&mdash;be sure to include why it's great
+        </label>
+      </div>
+      <div class="radio disabled">
+        <label >
+          <input type="radio" name="optionsRadios" id="optionsRadios2" disabled>Option two can be something else and selecting it will deselect option one
+        </label>
+      </div>
+      <div class="radio">
+        <label >
+          <input type="radio" name="optionsRadios" id="optionsRadios3">Option two can be something else and selecting it will deselect option one
+        </label>
+      </div>
+
+      <label class="checkbox-inline">
+        <input type="checkbox" id="inlineCheckbox1" value="option1"> 1
+      </label>
+      <label class="checkbox-inline">
+        <input type="checkbox" id="inlineCheckbox2" value="option2"> 2
+      </label>
+      <label class="checkbox-inline">
+        <input type="checkbox" id="inlineCheckbox3" value="option3"> 3
+      </label><br>
+
+      <label class="radio-inline">
+        <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 1
+      </label>
+      <label class="radio-inline">
+        <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 2
+      </label>
+      <label class="radio-inline">
+        <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 3
+      </label><br>
+      <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+
+    <form class="form-horizontal" role="form" style="width: 480px; margin-left: 50px;border:1px solid #ccc;padd;padding: 15px;border-radius: 10px;float:left;">
+      <div class="form-group">
+        <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+        <div class="col-sm-10">
+          <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+        <div class="col-sm-10">
+          <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+          <div class="checkbox">
+            <label>
+              <input type="checkbox"> Remember me
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <textarea class="form-control" rows="3"></textarea>
+      </div>
+      <select class="form-control">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+      </select>
+      <select multiple class="form-control">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+      </select>
+      
+      <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+          <button type="submit" class="btn btn-default">Sign in</button>
+        </div>
+      </div>
+    </form>
+    </div>
+    
+
+    <h2>八、按钮</h2>
+    <div style="">
+      <button type="button" class="btn btn-default">Default</button>
+      <button type="button" class="btn btn-primary">Primary</button>
+      <button type="button" class="btn btn-success">Success</button>
+      <button type="button" class="btn btn-info">Info</button>
+      <button type="button" class="btn btn-Warning">Warning</button>
+      <button type="button" class="btn btn-link">Link</button>
+    </div>
+
+    <h2>九、图片形状</h2>
+    <P>请时刻牢记：Internet Explorer 8 不支持 CSS3 中的圆角属性。</P>
+    <img src="https://raw.githubusercontent.com/senola/pictures/master/background/background4.jpg" alt="..." class="img-rounded" style="width: 140px; height: 140px;">
+    <img src="https://raw.githubusercontent.com/senola/pictures/master/background/background4.jpg" alt="..." class="img-circle" style="width: 140px; height: 140px;">
+    <img src="https://raw.githubusercontent.com/senola/pictures/master/background/background4.jpg" alt="..." class="img-thumbnail" style="width: 140px; height: 140px;">
+
+    <h2>十、字体</h2>
+    <button type="button" class="btn btn-default btn-lg">
+      <span class="glyphicon glyphicon-envelope"></span> Email
+    </button>
+    <button type="button" class="btn btn-primary">
+      <span class="glyphicon glyphicon-heart"></span> Heart
+    </button>
+    <button type="button" class="btn btn-default">
+      <span class="glyphicon glyphicon-tree-conifer"></span> Conifer
+    </button>
+    <hr>
+
+    <h2>十一、下拉菜单</h2>
+    <p>将下拉菜单触发器和下拉菜单都包裹在 .dropdown 里，或者另一个声明了 position: relative; 的元素。然后加入组成菜单的 HTML 代码。</p>
+    <div class="clearfix">
+      <!--dropdown menu-->
+      <div class="dropdown" style="margin-left: 50px;width:173px;float:left;">
+        <button class="btn btn-default dropdown-toggle" tyle="button" id="dropdownMenu1" data-toggle="dropdown">
+          dropdown 1  <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu" aria-lableledby="dropdownMenu1">
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+          <li role="presentation" class="divider"></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+        </ul>
+      </div>
+      
+      <div class="dropdown" style="margin-left: 50px;width:173px;float:left;">
+        <button class="btn btn-default dropdown-toggle" tyle="button" id="dropdownMenu1" data-toggle="dropdown">
+          dropdown 2  <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu2">
+          <li role="presentation" class="dropdown-header">Dropdown header</li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action1</a></li>
+          <li role="presentation" class="divider"></li>
+          <li role="presentation" class="dropdown-header">Dropdown header</li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action2</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action3</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action4</a></li>
+        </ul>
+      </div>
+      
+      <div class="btn-group" style="float: left;">
+        <button type="button" class="btn btn-default">1</button>
+        <button type="button" class="btn btn-default">2</button>
+        <div class="btn-group">
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+            Dropdown <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Dropdown link</a></li>
+            <li><a href="#">Dropdown link</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="btn-group-vertical" style="float:left;margin-left:70px;">
+        <button type="button" class="btn btn-default">1</button>
+        <button type="button" class="btn btn-default">2</button>
+        <div class="btn-group">
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+            Dropdown <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Dropdown link</a></li>
+            <li><a href="#">Dropdown link</a></li>
+          </ul>
+        </div>
+        <button type="button" class="btn btn-default">2</button>
+        <button type="button" class="btn btn-default">2</button>
+      </div>
+
+      <div class="btn-group" style="float:left;margin-left:70px;">
+         <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+           Action <span class="caret"></span>
+         </button>
+         <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+         </ul>
+      </div>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-danger">dropdown1</button>
+        <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
+          <span class="caret"></span>
+          <span class="sr-only">Toggle Dropdown</span>
+        </button>
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Separated link</a></li>
+        </ul>
+      </div>
+
+      <div class="btn-group dropup">
+        <button type="button" class="btn btn-danger">dropdown2</button>
+        <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
+          <span class="caret"></span>
+          <span class="sr-only">Toggle Dropdown</span>
+        </button>
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Separated link</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+    
+    <h2>十二、导航栏</h2>
+    <p>Bootstrap 中的导航组件都依赖同一个 .nav 类，状态类也是共用的。改变修饰类可以改变样式。</p>
+    <!--标签页-->
+    <div style="border:1px solid #ccc;padding: 20px;">
+      <ul class="nav nav-tabs">
+        <li class="active"><a href="#">Home</a></li>
+        <li ><a href="#">Profile</a></li>
+        <li ><a href="#">Messages</a></li>
+      </ul>
+    </div>
+    <!--胶囊式标签页-->
+    <div style="border:1px solid #ccc;padding: 20px; margin-top: -1px">
+      <ul class="nav nav-pills">
+        <li  class="active"><a href="#">Home</a></li>
+        <li ><a href="#">Profile</a></li>
+        <li ><a href="#">Messages</a></li>
+      </ul> 
+    </div>
+    <!--胶囊式标签页-->
+    <div style="border:1px solid #ccc;padding: 20px; margin-top: -1px">
+      <ul class="nav nav-pills nav-stacked">
+        <li  class="active"><a href="#">Home</a></li>
+        <li ><a href="#">Profile</a></li>
+        <li ><a href="#">Messages</a></li>
+      </ul> 
+    </div>
+
+    <div style="border:1px solid #ccc;padding: 20px; margin-top: -1px">
+      <ul class="nav nav-tabs nav-stacked nav-justified">
+        <li  class="active"><a href="#">Home</a></li>
+        <li ><a href="#">Profile</a></li>
+        <li ><a href="#">Messages</a></li>
+      </ul> 
+    </div>
+
+    <!--navbar -->
+    <nav class="navbar navbar-default">
+       <div class="container-fluid">
+         <div class="navbar-header">
+           <button type="button" class="navbar-toggle collapsed">
+             <span class="sr-only">Toggle navigation</span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+           </button>
+           <a class="navbar-brand"href="#">
+             <img src="http://senola.github.io/favicon.png" alt="Brand">
+           </a>
+         </div>
+
+         <div class="collapse navbar-collapse" >
+           <ul class="nav navbar-nav">
+             <li class="active"><a href="#">Link</a></li>
+             <li><a href="#">Link</a></li>
+             <li class="dropdown">
+               <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+                 Dropdown <span class="caret"></span>
+               </a>
+               <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">One more separated link</a></li>
+               </ul>
+             </li>
+           </ul>
+           <form class="navbar-form navbar-left" role="search">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search">
+              </div>
+              <button type="submit" class="btn btn-default">Submit</button>
+           </form>
+           <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Link</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+         </div>
+       </div>
+    </nav>
+    <hr><hr><hr>
+
+
+
+
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
