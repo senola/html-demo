@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta rel="icon" href="http://senola.github.io/favicon.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--对移动设备的支持-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>亿觅前端开发面试题</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap/bootstrap.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!--导航条-->
+    <nav class="navbar navbar-default" id="navbar-suggest">
+      <div class="container">
+        <!--navbar header-->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">Well
+            <!-- <img src="http://www.emielife.com/img/logo.png"> -->
+          </a>
+        </div>
+        <!--navbar collapse-->
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#">Activity</a></li>
+            <li><a href="#">Exploer</a></li>
+            <li><a href="#">My Lists</a></li>
+            <li><a href="#">Invite Firends</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><i class="glyphicon glyphicon-envelope"></i></a></li>
+            <li><a href="#"><i class="glyphicon glyphicon-user"></i></a></li>
+            <li><a href="#"><button type="button" class="btn btn-primary btn-xs">+ New</button></a></li>
+            <li>
+              <form class="navbar-form" role="search">  
+                <div class="input-group">
+                  <div class="input-group-btn">
+                     <button class="btn btn-default" type="submit">
+                      <i class="glyphicon glyphicon-search"></i>
+                     </button>
+                  </div>    
+                  <input type="text" class="form-control" placeholder="Search"> 
+                </div>
+              </form>
+            </li>
+          </ul>
+
+        </div> <!--/.nav-collapse-->
+      </div>
+    </nav>
+    <!--内容-->
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 show-main ">
+          <!--info-->
+          <div class="show-img panel-1">
+            <img src="img/darby-frey.jpg" class="img-thumbnail head-pic">
+            <h2>Classic Winter Activities</h2>
+            <p>12 todos</p>
+          </div>
+          <!--suggest-->
+          <form class="suggest-form panel-1">
+            <div class="form-group">
+              <div class="sugeest-todo">
+                <label for="sugeestToDo" class="sr-only">Suggest a todo</label>
+                <input type="text" class="form-control input-lg" id="sugeestToDo" placeholder="Suggest a todo..">
+              </div>
+              <!--suggest list-->
+              <div class="list-group suggest-list">
+                <div class="list-group-item list-item-line">
+                  <label>
+                    <input type="checkbox" value="">
+                    <span class="suggest-content"> Make mulled wine.. </span>
+                  </label>
+                </div>
+
+                <div class="list-group-item list-item-line">
+                  <label>
+                    <input type="checkbox" value="">
+                    <span class="suggest-content"> Take photos right when it snows </span>
+                  </label>
+                </div>
+
+                <div class="list-group-item list-item-line">
+                  <label>
+                    <input type="checkbox" value="">
+                    <span class="suggest-content"> Make a wintery playlist on Spotify/Rdio </span>
+                  </label>
+                </div>
+
+                <div class="list-group-item list-item-line">
+                  <label>
+                    <input type="checkbox" value="">
+                    <span class="suggest-content"> Watch A Christmas Story </span>
+                  </label>
+                </div>
+
+                <div class="list-group-item list-item-line">
+                  <label>
+                    <input type="checkbox" value="">
+                    <span class="suggest-content"> Ice skating </span>
+                  </label>
+                </div>
+
+                <div class="list-group-item list-item-line">
+                  <label>
+                    <input type="checkbox" value="">
+                    <span class="suggest-content"> Make an igloo </span>
+                  </label>
+                </div>
+
+                <div class="list-group-item list-item-line">
+                  <label>
+                    <input type="checkbox" value="">
+                    <span class="suggest-content"> Snowball fight width friends </span>
+                  </label>
+                </div>
+
+                <div class="list-group-item list-item-line">
+                  <label>
+                    <input type="checkbox" value="">
+                    <span class="suggest-content"> Homemade hot cocoa</span>
+                  </label>
+                  <button type="button" class="btn btn-default btn-praise">
+                    <i class="glyphicon glyphicon-heart"></i> 1
+                  </button>
+                </div>
+
+                <div class="list-group-item list-item-line">
+                  <label>
+                    <input type="checkbox" value="">
+                    <span class="suggest-content"> Make a snowman </span>
+                  </label>
+                </div>
+
+                <div class="list-group-item list-item-line">
+                  <label>
+                    <input type="checkbox" value="" checked>
+                    <span class="suggest-content checked"> Decorate tree </span>
+                  </label>
+                </div>
+
+                <div class="list-group-item list-item-line">
+                  <label>
+                    <input type="checkbox" value="" checked>
+                    <span class="suggest-content checked"> Hang decorations </span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </form>
+          <!--comments-->
+            <div class="user-likes-or-comments">
+              <h6>
+                <i class="glyphicon glyphicon-heart"></i> 
+                <span class="commend"> 5 likes</span>
+              </h6>
+              <div class="suggest-lovers">
+                <img src="img/erica-decker.jpg" class="head-pic img-thumbnail-list">
+                <img src="img/jen-myers.jpg" class="head-pic img-thumbnail-list">
+                <img src="img/jen-myers.jpg" class="head-pic img-thumbnail-list">
+                <img src="img/victoria-pater.jpg" class="head-pic img-thumbnail-list">
+                <img src="img/jen-myers.jpg" class="head-pic img-thumbnail-list">
+              </div>
+
+              <h6 style=" border-top: 1px solid #F7ECEC; padding-top: 15px; ">
+                <i class="glyphicon glyphicon-comment"></i>
+                <span class="commend"> 3 Comments</span>
+              </h6>
+              <div class="suggest-comments">
+                <div class="row suggest-comments-block">
+                  <div class="col-md-2 userinfo-3">
+                    <img src="img/jen-myers.jpg" class="head-pic img-thumbnail-list">
+                  </div>
+                  <div class="col-md-10 userinfo-4">
+                    <p style=" color: rgb(88, 88, 153); font-weight: bold; ">Adelle</p>
+                    <p style=" margin-top: -10px; ">Haha.. I love this suggest..</p>
+                    <p style=" margin-top: -5px; color: rgb(226, 206, 206); font-weight: bold; ">6 Days age.</p>
+                  </div>
+                </div>
+
+                <div class="row suggest-comments-block">
+                  <div class="col-md-2 userinfo-3">
+                    <img src="img/victoria-pater.jpg" class="head-pic img-thumbnail-list">
+                  </div>
+                  <div class="col-md-10 userinfo-4">
+                    <p style=" color: rgb(88, 88, 153); font-weight: bold; ">Adelle</p>
+                    <p style=" margin-top: -10px; ">Haha.. I love this suggest..</p>
+                    <p style=" margin-top: -5px; color: rgb(226, 206, 206); font-weight: bold; ">6 Days age.</p>
+                  </div>
+                </div>
+
+                <div class="row suggest-comments-block">
+                  <div class="col-md-2 userinfo-3">
+                    <img src="img/erica-decker.jpg" class="head-pic img-thumbnail-list">
+                  </div>
+                  <div class="col-md-10 userinfo-4">
+                    <p style=" color: rgb(88, 88, 153); font-weight: bold; ">Adelle</p>
+                    <p style=" margin-top: -10px; ">Haha.. I love this suggest..</p>
+                    <p style=" margin-top: -5px; color: rgb(226, 206, 206); font-weight: bold; ">6 Days age.</p>
+                  </div>
+                </div>
+
+                <div class="row suggest-comments-block" style="padding:0;">
+                   <label for="sugeestToDo" class="sr-only">Suggest a todo</label>
+                   <input type="text" class="form-control input-lg" id="sugeestToDo" placeholder="Write a Comment..">
+                </div>
+              </div>
+            </div>
+        </div> <!--/.show-main-->
+
+        <div class="col-sm-3 right-aside">
+          <!--userInfo-->
+          <div class="panel panel-default panel-2 clearfix">
+              <div class="userInfo-1 clearfix">
+                <div class="suggest-list-for">
+                  <small>list by</small>
+                  <p>Kelvin Richard</p>
+                  <button type="button" class="btn btn-primary">
+                    <i class="glyphicon glyphicon-user"></i> Follow
+                  </button>
+                </div>
+                <img src="img/darby-frey.jpg" class="img-thumbnail user-pic">
+              </div>
+              <div class="userInfo-like-comments clearfix">
+                  <div class="user-likes">
+                    <button type="button" class="btn btn-default user-btn">
+                      <i class="glyphicon glyphicon-heart"></i>
+                    </button>
+                    <div class="user-likes-right">
+                      <small>5</small>
+                      <p>Likes</p>
+                    </div>
+                  </div>
+                  <div class="user-comments">
+                    <button type="button" class="btn btn-default user-btn">
+                      <i class="glyphicon glyphicon-comment"></i>
+                    </button>
+                    <div class="user-likes-right">
+                      <small>5</small>
+                      <p>Likes</p>
+                    </div>
+                  </div>
+              </div>
+              <div class="social-share">
+                <p class="share-list-font">Share this list</p>
+                <button type="button" class="btn btn-default share-btn">
+                  <i class="glyphicon glyphicon-leaf"></i> Tweet
+                </button>
+                <button type="button" class="btn btn-default share-btn">
+                  <i class="glyphicon glyphicon-send"></i> Share
+                </button>
+              </div>
+          </div>
+
+          <div class="panel panel-default panel-1">
+            <div class="panel-heading">Embed This List</div>
+            <div class="panel-body" style="padding: 9px 12px;">
+              <input type="text" class="form-control" value="<div id='WellEmbeddedList_50bd5c8ae4'>">
+                <label style=" font-weight: normal; margin-top:5px;">
+                  <input type="checkbox" value=""> Make this an ordered list 
+                </label>
+            </div>
+          </div>
+
+          <div class="panel panel-default panel-1">
+            <div class="panel-heading">More lists by Keivin
+               <a href="#" style="float:right">View all</a>
+            </div>
+            <div class="list-group">
+              <div class="list-group-item">
+                <img src="img/fj1.jpg" class="img-thumbnail-list" width="40px" height="30px" class="">
+                <a href="#" class="list-intro">Movies to Check Out</a>
+              </div>
+              <div class="list-group-item">
+                <img src="img/fj2.jpg" class="img-thumbnail-list" width="40px" height="30px">
+                <a href="#" class="list-intro">Beers to Try</a>
+              </div>
+            </div>
+          </div>
+        </div> <!--/.right-aside-->
+      </div> <!--/.row-->
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
