@@ -1,6 +1,6 @@
 body {
 	font-family: "微软雅黑";
-	background-color: #B5ACAC;
+	background-color: #fff;
 }
 p {
 	text-indent:20px;
@@ -24,7 +24,7 @@ img {
 	width: 100%;
 }
 .content {
-    border:1px solid #E2E2E2;
+    border:1px solid #B5ACAC;
     padding: 10px;
     margin: 10px;
 }
