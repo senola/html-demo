@@ -3,11 +3,9 @@ body {
 	background-color: #fff;
 }
 p {
-	text-indent:20px;
+	text-indent:40px;
 	font-size: 20px;
 	text-align: left;
-	margin-top: 20px;
-	margin-bottom: 10px;
 	padding: 5px;
 }
 h1 {
@@ -19,12 +17,17 @@ img {
 	max-width: 100%;
 	margin-top: 10px;
 	padding: 5px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+header {
+	margin-bottom: 40px;
 }
 .container {
 	width: 100%;
 }
 .content {
-    border:1px solid #B5ACAC;
-    padding: 10px;
+    border:1px solid #F5E2E2;
+    padding: 20px;
     margin: 10px;
 }
