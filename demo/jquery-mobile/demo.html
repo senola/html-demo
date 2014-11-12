@@ -109,10 +109,11 @@
            <header data-role="header">
            	 <h1>Bar 工具栏</h1>
            </header>
-           <article data-role="content">
+           <article data-role="content" data-inline="true">
                <a href="#back-bar" data-role="button" data-rel="dialog" data-transition="pop">含有后退按钮的header工具栏</a>
                <a href="#bar-navbar" data-role="button" data-rel="dialog" data-transition="pop" data-theme="b">导航条工具栏--navbar</a>
                <a href="#collapsible-show" data-role="button" data-rel="dialog" data-transition="pop" data-theme="c">折叠块功能</a>
+               <a href="#selection-demo" data-role="button" data-transition="pop" data-theme="c">select</a>
            </article>
 		</section>
 
@@ -131,66 +132,80 @@
 		</section>
 
 		<section data-role="page" id="backPage-bar">
-           <header data-role="header">
-           	 <a data-rel="back">后退</a>
-           	 <h1>后退视图标题</h1>
-           </header>
-           <article data-role="content" style="text-align:center;">
-             <img src="images/background8.jpg" width="350px" height="500px">
-           </article>
-           <footer data-role="footer">
-              <h1>footer bar</h1>
-           </footer>
+         <header data-role="header">
+         	 <a data-rel="back">后退</a>
+         	 <h1>后退视图标题</h1>
+         </header>
+         <article data-role="content" style="text-align:center;">
+           <img src="images/background8.jpg" width="350px" height="500px">
+         </article>
+         <footer data-role="footer">
+            <h1>footer bar</h1>
+         </footer>
 		</section>
 
 		<!--导航条工具栏-->
-        <section data-role="page" id="bar-navbar">
-           <header data-role="header">
-              <h1>navbar导航工具栏</h1>
-           </header>
-           <article data-role="content" style="text-align:center;">
-             <img src="images/background8.jpg" width="350px" height="500px">
-           </article>
-           <footer data-role="footer">
-           	  <nav data-role="navbar">
-                 <ul>
-                    <li><a href="#" class="ui-btn-active" data-icon="home" data-iconpos="top">home</a></li>
-                    <li><a href="#" data-icon="search" data-iconpos="top">search</a></li>
-                    <li><a href="#" data-icon="info" data-iconpos="top">info</a></li>
-                 </ul>
-           	  </nav>
-           </footer>
+    <section data-role="page" id="bar-navbar">
+         <header data-role="header">
+            <h1>navbar导航工具栏</h1>
+         </header>
+         <article data-role="content" style="text-align:center;">
+           <img src="images/background8.jpg" width="350px" height="500px">
+         </article>
+         <footer data-role="footer">
+         	  <nav data-role="navbar">
+               <ul>
+                  <li><a href="#" class="ui-btn-active" data-icon="home" data-iconpos="top">home</a></li>
+                  <li><a href="#" data-icon="search" data-iconpos="top">search</a></li>
+                  <li><a href="#" data-icon="info" data-iconpos="top">info</a></li>
+               </ul>
+         	  </nav>
+         </footer>
 		</section>
         
-        <!--折叠块-->
-        <section data-role="page" id="collapsible-show">
-           <header data-role="header">
-           	 <h1>折叠块功能</h1>
-           </header>
-           <article data-role="content">
-           	 <div data-role="collapsible">
-               <h3>点我O(∩_∩)O~</h3>
-               <p>这是一个折叠区域的内容，默认情况下区域是隐藏状态的。当点击标题区域时候内容区域会被开启。</p>
-               <p>这是一个折叠区域的内容，默认情况下区域是隐藏状态的。当点击标题区域时候内容区域会被开启。</p>
-               <p>这是一个折叠区域的内容，默认情况下区域是隐藏状态的。当点击标题区域时候内容区域会被开启。</p>
-               <p>这是一个折叠区域的内容，默认情况下区域是隐藏状态的。当点击标题区域时候内容区域会被开启。</p>
-           	 </div>
-           	 <div data-role="collapsible">
-               <h3>点我O(∩_∩)O~</h3>
-               <p>这是一个折叠区域的内容，默认情况下区域是隐藏状态的。当点击标题区域时候内容区域会被开启。</p>
-               <p>这是一个折叠区域的内容，默认情况下区域是隐藏状态的。当点击标题区域时候内容区域会被开启。</p>
-               <p>这是一个折叠区域的内容，默认情况下区域是隐藏状态的。当点击标题区域时候内容区域会被开启。</p>
-               <p>这是一个折叠区域的内容，默认情况下区域是隐藏状态的。当点击标题区域时候内容区域会被开启。</p>
-           	 </div>
-           	 <div data-role="collapsible">
-               <h3>点我O(∩_∩)O~</h3>
-               <p>这是一个折叠区域的内容，默认情况下区域是隐藏状态的。当点击标题区域时候内容区域会被开启。</p>
-               <p>这是一个折叠区域的内容，默认情况下区域是隐藏状态的。当点击标题区域时候内容区域会被开启。</p>
-               <p>这是一个折叠区域的内容，默认情况下区域是隐藏状态的。当点击标题区域时候内容区域会被开启。</p>
-               <p>这是一个折叠区域的内容，默认情况下区域是隐藏状态的。当点击标题区域时候内容区域会被开启。</p>
-           	 </div>
-           </article>
+    <!--折叠块-->
+    <section data-role="page" id="collapsible-show">
+       <header data-role="header">
+       	 <h1>折叠块功能</h1>
+       </header>
+       <div data-role="collapsible-set">
+         <article data-role="content">
+           <div data-role="collapsible">
+             <h3>点我O(∩_∩)O~</h3>
+             <p>这是一个折叠区域的内容，默认情况下区域是隐藏状态的。当点击标题区域时候内容区域会被开启。</p>
+             <p>这是一个折叠区域的内容，默认情况下区域是隐藏状态的。当点击标题区域时候内容区域会被开启。</p>
+             <p>这是一个折叠区域的内容，默认情况下区域是隐藏状态的。当点击标题区域时候内容区域会被开启。</p>
+             <p>这是一个折叠区域的内容，默认情况下区域是隐藏状态的。当点击标题区域时候内容区域会被开启。</p>
+           </div>
+           <div data-role="collapsible">
+             <h3>点我O(∩_∩)O~</h3>
+             <p>这是一个折叠区域的内容，默认情况下区域是隐藏状态的。当点击标题区域时候内容区域会被开启。</p>
+             <p>这是一个折叠区域的内容，默认情况下区域是隐藏状态的。当点击标题区域时候内容区域会被开启。</p>
+             <p>这是一个折叠区域的内容，默认情况下区域是隐藏状态的。当点击标题区域时候内容区域会被开启。</p>
+             <p>这是一个折叠区域的内容，默认情况下区域是隐藏状态的。当点击标题区域时候内容区域会被开启。</p>
+           </div>
+           <div data-role="collapsible">
+             <h3>点我O(∩_∩)O~</h3>
+             <p>这是一个折叠区域的内容，默认情况下区域是隐藏状态的。当点击标题区域时候内容区域会被开启。</p>
+             <p>这是一个折叠区域的内容，默认情况下区域是隐藏状态的。当点击标题区域时候内容区域会被开启。</p>
+             <p>这是一个折叠区域的内容，默认情况下区域是隐藏状态的。当点击标题区域时候内容区域会被开启。</p>
+             <p>这是一个折叠区域的内容，默认情况下区域是隐藏状态的。当点击标题区域时候内容区域会被开启。</p>
+           </div>
+         </article>
+       </div>
 		</section>
+    
+    <!--下拉框-->
+    <section data-role="page" id="selection-demo">
+       <div data-role="controlgroup">
+          <label for="select" class="select">请选择你的兴趣</label>
+          <select name="select" id="select">
+            <option value="music">music</option>
+            <option value="book">book</option>
+            <option value="travel">travel</option>
+          </select>
+       </div>
+    </section>
 
 	</body>
 </html>
