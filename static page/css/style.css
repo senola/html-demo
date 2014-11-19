@@ -264,13 +264,24 @@ input[type="search"]::-webkit-search-decoration{
         margin-top: 1.5em;
     }
 }
-.banner {
+.swipe {
+    overflow: hidden;
+    visibility: hidden;
     position: relative;
 }
-.banner img {
-    width: 100%;
+.swipe-wrap {
+    overflow: hidden;
+    position: relative;
 }
-.banner p{
+.swipe-wrap > a {
+    display: block;
+    float: left;
+    position: relative;
+}
+.swipe-wrap > a img{
+    width: 100%
+}
+.swipe-wrap > a p{
     position: absolute;
     width: 100%;
     bottom: 0;
@@ -281,6 +292,37 @@ input[type="search"]::-webkit-search-decoration{
     text-align: left;
     padding-left: 1em;
     background-color: rgba(0,0,0,0.3);
+}
+header {
+    position: relative;
+}
+#position {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+#position li {
+    position: relative;
+    float: left;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-left: 10px;
+    list-style: none;
+}
+.cur b{
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+  margin:auto;
+    width: 5px;
+    height: 5px;
+    background-color: #353330;
+    border-radius: 50%
 }
 .content ul li {
     position: relative;
@@ -330,3 +372,21 @@ input[type="search"]::-webkit-search-decoration{
   width: 2.38em;;
 }
 /**/
+.operate-layout {
+    position: absolute;
+    background-color: transparent;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    z-index: 9999;
+}
+.operate-tips {
+    position: absolute;
+    width: 50%;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.operate-tips img {
+    width: 2.6em;
+}
