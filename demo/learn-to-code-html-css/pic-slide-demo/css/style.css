@@ -1,0 +1,48 @@
+.swipe {
+	overflow: hidden;
+	visibility: hidden;
+	position: relative;
+}
+.swipe-wrap {
+	overflow: hidden;
+	position: relative;
+}
+.swipe-wrap > div {
+	float: left;
+	width: 100%;
+	position: relative;
+}
+.img-responsive {
+	width: 100%
+}
+header {
+	position: relative;
+}
+#position {
+	position: absolute;
+	bottom: 0;
+	right: 10px;
+}
+#position li {
+  position: relative;
+	float: left;
+	width: 10px;
+	height: 10px;
+	background-color: #fff;
+	border-radius: 50%;
+	margin-left: 10px;
+	list-style: none;
+}
+.cur b{
+	display: block;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+  margin:auto;
+	width: 5px;
+	height: 5px;
+	background-color: #353330;
+	border-radius: 50%
+}
