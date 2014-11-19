@@ -318,9 +318,9 @@ header {
     right: 0;
     bottom: 0;
     top: 0;
-  margin:auto;
-    width: 5px;
-    height: 5px;
+    margin:auto;
+    width: 8px;
+    height: 8px;
     background-color: #353330;
     border-radius: 50%
 }
@@ -373,6 +373,7 @@ header {
 }
 /**/
 .operate-layout {
+    display: none;
     position: absolute;
     background-color: transparent;
     width: 100%;

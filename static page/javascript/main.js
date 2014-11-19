@@ -29,10 +29,10 @@ var bank_card = {
                }
 
 }
-bank_card.tips_layout.childNodes[1].style.top = bank_card._h + "px";
-bank_card.tips_layout.style.display = "none";
+//bank_card.tips_layout.childNodes[1].style.top = bank_card._h + "px";
+//bank_card.tips_layout.style.display = "none";
 function guangfa(e) {
-   bank_card.tips_layout.style.display = "block";    
+   //bank_card.tips_layout.style.display = "block";    
    if(bank_card._isPC()) {
      window.location.href = "https://ebanks.cgbchina.com.cn/channelsLink/creditCardApply.do?passageCode=002545";
    } else {
@@ -40,7 +40,7 @@ function guangfa(e) {
    }  
 }
 function guangda() {
-   bank_card.tips_layout.style.display = "block"; 
+   //bank_card.tips_layout.style.display = "block"; 
    if(bank_card._isPC()) {
      window.location.href = "http://xyk.cebbank.com/home/ps/cardapplylist.htm?pro_code=FHTG040000PC10";
    } else {
@@ -48,6 +48,6 @@ function guangda() {
    }  
 }
 function bankcomm() {
-   bank_card.tips_layout.style.display = "block"; 
+   //bank_card.tips_layout.style.display = "block"; 
    window.location.href = "http://stat.feidee.com/ad.do?m=click&code=applybcm002&version=1";    
 }
