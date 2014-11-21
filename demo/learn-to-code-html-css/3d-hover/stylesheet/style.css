@@ -1,0 +1,83 @@
+body {
+  background: #f06;
+  background: linear-gradient(45deg, #f06, yellow);
+  min-height: 100%; 
+  text-align: center; 
+  margin-top: 3em;
+}
+
+/*.bizarlink {
+  color: #000; 
+  text-decoration: none; 
+  background: white;
+  font-size: .9em; 
+  font-family: Arial;
+  display: inline-block; 
+  overflow: hidden; 
+  vertical-align: top; 
+  -webkit-perspective: 600px; 
+  -webkit-perspective-origin: 50% 50%;
+}
+.bizarlink span {
+  display: block; 
+  position: relative; 
+  padding: 1.5em 3em;
+  -webkit-transition: all 400ms ease-in-out;
+  -webkit-transform-origin: 50% 0%;
+  -webkit-transform-style: preserve-3d;
+}
+.bizarlink:hover {color: #fff; }
+.bizarlink:hover span {
+  background: #fff;
+   color: white;
+  transform: translate3d( 0px, 0px, -30px ) rotateX( 90deg );
+}
+.bizarlink span:after {
+    content: attr(data-content);
+    display: inline-block;position: absolute; left: 0; top: 0; right:0; bottom: 0;
+    padding: 1.5em 3em;
+    color: #fff; background: #000; 
+    transform-origin: 50% 0%;
+    transform: translate3d( 0px, 105%, 0px ) rotateX( -90deg );
+ }*/
+
+
+.hover-effect {
+  text-decoration: none;
+  overflow: hidden;
+  display: inline-block;
+  -webkit-perspective: 800px;    /*创建3D场景*/
+  -webkit-perspective-origin: 50% 50%;
+}
+.hover-effect span {
+  display: block;
+  padding: 2em 4em;
+  color: #000;
+  background-color: white;
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 2em;
+  text-align: center;
+  -webkit-transform-style: preserve-3d;  
+  -webkit-transform-origin: 50% 0%;
+  -webkit-transition: all 400ms ease ;
+}
+.hover-effect:hover span{
+  background: #fff;
+  color: #fff;
+  -webkit-transform:  rotateX( 90deg );
+}
+
+.hover-effect span:after {
+    content: attr(data-content);
+    display: inline-block;
+    position: absolute; 
+    left: 0; 
+    top: 0; 
+    right:0; 
+    bottom: 0;
+    padding: 2em;
+    color: #fff; background: #000; 
+    transform-origin: 50% 0%;
+    transform: translate3d( 0px, 100%, 0px ) rotateX( -90deg );
+}
