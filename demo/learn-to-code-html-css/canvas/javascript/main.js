@@ -1,3 +1,4 @@
+// 画线
 (function(){
    var can_coordinates = document.getElementById("can_coordinates");
    var context = can_coordinates.getContext("2d");
@@ -49,6 +50,7 @@
 
 })();
 
+// 渐变
 (function draw_gradients(){
    var c2 = document.getElementById("can_gradients");
    var d_gradients = c2.getContext("2d");
@@ -59,4 +61,36 @@
 
    d_gradients.fillStyle = my_g;
    d_gradients.fillRect(0, 0, 300, 225);
+
+   var c3 = document.getElementById("can_gradients2");
+   var d_gradients2 = c3.getContext("2d");
+   
+   var my_g2 = d_gradients.createLinearGradient(0, 0, 0, 225); // create a gradient object
+   my_g2.addColorStop(0, "green");
+   my_g2.addColorStop(1, "white");
+
+   d_gradients2.fillStyle = my_g2;
+   d_gradients2.fillRect(0, 0, 300, 225);
+})();
+
+// draw image
+(function() {
+	var c3 = document.getElementById("can_cat");
+	var d_images = c3.getContext("2d");
+  
+  var cat = new Image();
+  cat.src = "image/cat.png";
+
+
+  var c4 = document.getElementById("can_cat2");
+	var d_images2 = c4.getContext("2d");
+  
+  var c5 = document.getElementById("can_cat3");
+	var d_images3 = c5.getContext("2d");
+  
+  cat.onload = function() {
+    d_images.drawImage(cat, 0, 0 );
+    d_images2.drawImage(cat, 20, 15 ,100, 80);
+    d_images3.drawImage(cat, 0, 0, 175, 113, 40, 30, 70, 50)
+  }
 })();
