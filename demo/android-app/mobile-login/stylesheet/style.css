@@ -84,7 +84,6 @@ section h2 {
 footer {
 	position: absolute;
 	width: 100%;
-	bottom: 1em;
 }
 a.forget-pass {
 	float: left;
