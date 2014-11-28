@@ -61,7 +61,7 @@ section h2 {
 	margin-left: 10px;
 	border-radius: 50%;
 }
-.login-ways li i {
+.login-ways li a {
   height: 50px;
   line-height: 50px;
   font-size: 1.8em;
@@ -80,11 +80,11 @@ footer {
 	width: 100%;
 	bottom: 1em;
 }
-p.forget-pass {
+a.forget-pass {
 	float: left;
 	margin-left: 20px;
 }
-p.regist-count {
+a.regist-count {
 	float: right;
 	margin-right: 20px;
 }
