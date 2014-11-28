@@ -41,34 +41,34 @@
 		<!--[if lt IE 9]>
 		<script src="javascript/html5shiv.js" type="text/javascript"></script>
 		<![endif]-->
-
-		<!-- JavaScript -->
-		<script src="javascript/main.js"></script>
+		<script type="text/javascript" src="javascript/md5.js"></script>
 	</head>
 	<body>
 		<div class="container">
       <section>
-         <h1>COLORISTIC</h1>
-         <h2>Mobile UI Kit</h2>
+         <h1>一片自留地</h1>
+         <h2>潭风</h2>
       </section>
       <section class="form-input">
-      	<form class="form">
-           <input type="text" placeholder="Username" name="Username" class="username-input" required>
-           <input type="Password" placeholder="Password" class="password-input" required>
-           <button type="submit" name="submit" class="btn-login">Login</button>
-         
-           <h3>OR LOGIN IN WITH</h3>
+      	<form class="form" onsubmit="return logon()" method="get" action="http://senola.github.io">
+           <input type="text" placeholder="用户名" id="username" class="username-input" required>
+           <input type="Password" placeholder="密码" id="password" class="password-input" required>
+           <button type="submit" name="submit" class="btn-login">登入</button>
+           <p id="show-info">你输入的用户名或密码错误！</p>
+           <h3>其他社区</h3>
            <ul class="login-ways clearfix">
-             <li class="color-1"><a href="javascript:;"><i class="fa fa-twitter"></i></a></li>
-             <li class="color-2"><a href="javascript:;"><i class="fa fa-facebook"></i></a></li>
-             <li class="color-3"><a href="javascript:;"><i class="fa fa-google-plus"></i></a></li>
+             <li class="color-1"><a href="javascript:;"><i class="fa fa-github"></i></a></li>
+             <li class="color-2"><a href="javascript:;"><i class="fa fa-qq"></i></a></li>
+             <li class="color-3"><a href="javascript:;"><i class="fa fa-codepen"></i></a></li>
            </ul>
       	</form>
       </section>
 		</div>
 		<footer>
-      <a href="javascript:;" class="forget-pass">I forget password</a>
-      <a href="javascript:;" class="regist-count">Create new account</a>
+      <a href="javascript:;" class="forget-pass">忘记密码</a>
+      <a href="javascript:;" class="regist-count">创建账户</a>
     </footer>
 	</body>
+	<!-- JavaScript -->
+		<script src="javascript/main.js"></script>
 </html>

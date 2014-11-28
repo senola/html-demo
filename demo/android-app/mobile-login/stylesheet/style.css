@@ -9,6 +9,7 @@ section h1 {
 section h2 {
 	font-size: 1.5em;
 	color: #c3c4cb;
+	margin-top: 0.5em;
 }
 .form-input {
   margin-top: 2em;
@@ -48,11 +49,16 @@ section h2 {
   background-color: #b1bc39;
 }
 .form h3 {
-	margin-top: 3em;
+	margin-top: 1em;
 }
 .login-ways {
   display: inline-block;
   margin-top: 1em;
+}
+#show-info {
+	margin-top: 1em;
+	color: red;
+	visibility: hidden;
 }
 .login-ways li {
 	float: left;
