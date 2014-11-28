@@ -20,6 +20,8 @@ body{
 	text-align:center;
 	color:#fff;
     font:12px/1.5 Helvetica,arial;
+    background: url(https://raw.githubusercontent.com/senola/pictures/master/background/background28.jpg);
+    background-position: -114px -25px;
 }
 h1,h2,h3,h4,h5,h6,p,figure,form{
     margin:0;
