@@ -1,0 +1,3 @@
+# view AndroidManifest.xml #generated:6
+-keep class senola.github.com.CordovaApp { <init>(...); }
+
