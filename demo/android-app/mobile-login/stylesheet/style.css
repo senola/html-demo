@@ -1,0 +1,107 @@
+.container {
+	width: 100%;
+	height: 100%;
+	padding: 5em 1em;
+}
+section h1 {
+	font-size: 3em;
+}
+section h2 {
+	font-size: 1.5em;
+	color: #c3c4cb;
+}
+.form-input {
+  margin-top: 2em;
+}
+.form {
+	width: 100%;
+}
+.form input {
+	display: block;
+	width: 90%;
+	padding: 1em;
+	margin: 0 auto;
+	color: #eee;
+	border: 1px solid rgb(155, 156, 168);
+	background-color: #363951;
+}
+.username-input{
+  border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
+.password-input {
+	margin-top: -2px !important;
+	border-bottom-right-radius: 4px;
+	border-bottom-left-radius: 4px;
+}
+.btn-login {
+	display: block;
+  width: 90%;
+  padding: 1em;
+	margin-top: 2em;
+  margin-right: auto;
+  margin-left: auto;
+  border: 1px solid #b1bc39;
+  border-radius: 4px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #b1bc39;
+}
+.form h3 {
+	margin-top: 3em;
+}
+.login-ways {
+  display: inline-block;
+  margin-top: 1em;
+}
+.login-ways li {
+	float: left;
+	width: 50px;
+	height: 50px;
+	margin-left: 10px;
+	border-radius: 50%;
+}
+.login-ways li i {
+  height: 50px;
+  line-height: 50px;
+  font-size: 1.8em;
+}
+.color-1 {
+	background-color: #55acee;
+}
+.color-2 {
+	background-color: #3b5998;
+}
+.color-3 {
+	background-color: #dd4b39;
+}
+footer {
+	position: absolute;
+	width: 100%;
+	bottom: 1em;
+	font-size: 1.3em;
+}
+p.forget-pass {
+	float: left;
+	margin-left: 5px;
+}
+p.regist-count {
+	float: right;
+	margin-right: 20px;
+}
+
+@media screen and (max-height: 600px ) {
+  .container {
+		width: 100%;
+		height: 100%;
+		padding: 5em 1em;
+	}
+}
+
+@media screen and (min-height:600px){
+  .container {
+		width: 100%;
+		height: 100%;
+		padding: 10em 1em;
+	}
+}
