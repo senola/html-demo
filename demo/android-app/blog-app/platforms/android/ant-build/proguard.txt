@@ -1,3 +1,3 @@
 # view AndroidManifest.xml #generated:6
--keep class senola.github.com.CordovaApp { <init>(...); }
+-keep class app.senola.blog.CordovaApp { <init>(...); }
 

@@ -1,4 +1,4 @@
-f:\github\html-demo\demo\android-app\blog-app\platforms\android\ant-build\CordovaApp-debug-unaligned.apk : \
-f:\github\html-demo\demo\android-app\blog-app\platforms\android\ant-build\CordovaApp.ap_ \
-f:\github\html-demo\demo\android-app\blog-app\platforms\android\ant-build\classes.dex \
-F:\github\html-demo\demo\android-app\blog-app\platforms\android\CordovaLib\ant-build\classes.jar \
+c:\Users\admin\Desktop\app\platforms\android\ant-build\CordovaApp-debug-unaligned.apk : \
+c:\Users\admin\Desktop\app\platforms\android\ant-build\CordovaApp.ap_ \
+c:\Users\admin\Desktop\app\platforms\android\ant-build\classes.dex \
+C:\Users\admin\Desktop\app\platforms\android\CordovaLib\ant-build\classes.jar \
