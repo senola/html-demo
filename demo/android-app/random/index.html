@@ -52,10 +52,14 @@
           <input type="text" id="input_words" class="input-words"  placeholder="请输入要随机的内容">
           <a href="javascript:add();" class="btn-add">添加</a>
        </section>
-       <p class="random-word-show"></p>
+       <div class="change-window">
+       	 <div id="words_warp" >
+         </div>
+       </div>
      </div>
-     <a href="javascript:reset();" class="random-reset" id="reset">重置</a>
-     <a href="javascript:begin();" class="game-begin" id="begin">开始</a>
+     <a href="javascript:resetGame();" class="random-reset" id="reset">重置</a>
+     <a href="javascript:gameBegin();" class="game-begin" id="begin">开始</a>
+     <a href="javascript:stopGame();" class="stop-btn" id="stop">停止</a>
 	</body>
 	<script src="javascript/main.js"></script>
 </html>
