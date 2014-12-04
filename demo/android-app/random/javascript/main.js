@@ -83,10 +83,11 @@ function stopGame() {
   obj.style.top = (window.innerHeight / 2 - obj.offsetHeight * 4) + "px";
 }
 
-function resetGame() {
-  randomData = []; //重置
-  index = 0; //重置
+function resetGame() { //重置
+  randomData = []; 
+  index = 0; 
   words_warp.innerHTML = "";
+  repeatCompare = {};
 }
 
 // 如果该项出现了多次则重新选择
