@@ -1,3 +1,39 @@
+body {
+  -webkit-transition: background 3s ease-in-out;
+          transition: background 3s ease-in-out;		
+}
+.bg-1 {
+  background: url("../images/01.png") no-repeat;
+  background-size: cover;
+}
+.bg-2 {
+  background: url("../images/02.png") no-repeat;
+  background-size: cover;
+}
+.bg-3 {
+  background: url("../images/03.png") no-repeat;
+  background-size: cover;
+}
+.bg-4 {
+  background: url("../images/04.png") no-repeat;
+  background-size: cover;
+}
+.bg-5 {
+  background: url("../images/05.png") no-repeat;
+  background-size: cover;
+}
+.bg-6 {
+  background: url("../images/06.png") no-repeat;
+  background-size: cover;
+}
+.bg-7 {
+  background: url("../images/07.png") no-repeat;
+  background-size: cover;
+}
+.bg-8 {
+  background: url("../images/08.png") no-repeat;
+  background-size: cover;
+}
 .container {
 	position: relative;
 	width: 100%;
@@ -19,6 +55,8 @@
 	padding: 1em;
 	background-color: #42C694;
 	border-radius: 4px;
+	color: #9C7497;
+  font-weight: bold;
 }
 #words_warp {
 	position: relative;
@@ -40,11 +78,15 @@
 	position: absolute;
 	left: 10px;
 	bottom: 5px;
+	font-weight: bold;
+  color: #2F4040;
 }
 .game-begin {
 	position: absolute;
 	right: 10px;
 	bottom: 5px;
+	font-weight: bold;
+  color: #2F4040;
 }
 .stop-btn {
 	position: absolute;
@@ -162,25 +204,24 @@
 	text-shadow: 2px 2px 9px rgba(15, 100, 10, .8);
 }
 .hidden-change {
-	-webkit-animation: hiddenchange 3s ease 2s 1 ;
+	-webkit-animation: hiddenchange 3s ease 1 ;
 	-webkit-animation-fill-mode: forwards;
 }
 .seleced {
 	color: red;
 	font-weight: bold;
 	font-size: 3em;
-	text-shadow: 2px 2px 9px rgba(15, 100, 10, .8);
-	-webkit-animation: opacityScaleChange 4s ease-in-out infinite;
+	-webkit-animation: opacityScaleChange 5s ease infinite;
 }
 @-webkit-keyframes opacitychange {
 	0%{opacity:1;}
-	100%{opacity:0;}
+	100%{opacity:0.3;}
 
 }
 @-webkit-keyframes opacityScaleChange {
-	0%{opacity:1;-webkit-transform:scale(1);}
-	50%{opacity:0;-webkit-transform:scale(1.2);}
-	100%{opacity:1;-webkit-transform:scale(1.6);}
+	0%{opacity:1;-webkit-transform:scale(0.5);text-shadow: 2px 2px 9px rgba(10, 50, 60, .5);}
+	50%{opacity:0.5;-webkit-transform:scale(1.2);}
+	100%{opacity:1;-webkit-transform:scale(1.6);text-shadow: 4px 4px 4px rgba(10, 50, 60, 1);}
 
 }
 @-webkit-keyframes leftToRight {
@@ -229,4 +270,8 @@
 @-webkit-keyframes showchange {
 	from{opacity: 1;}
 	to{opacity: 0;}
+}
+@-webkit-keyframes backgroundchange {
+	from{-webkit-transform: scale(1)}
+	to{-webkit-transform: scale(1.5)}
 }

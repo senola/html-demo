@@ -6,6 +6,7 @@ var begin = document.getElementById("begin");
 var words_warp = document.getElementById("words_warp");
 var input_words = document.getElementById("input_words");
 var stop = document.getElementById("stop");
+var body = document.getElementById("body");
 function init() { // 初始化
 	var _h = window.innerHeight;
 	var _w = window.innerWidth;
@@ -16,19 +17,21 @@ init();
 
 function add() {
 		var words = input_words.value;
+		input_words.value = "";
 		if(words.trim() == "") {
-				input_words.value = "";
 				alert("亲，请输入内容！");
 				return;
 		}
+		if(words == "love@you") {
+			backgroundChange();
+			return;
+		}
 		if(index >= 10) {
-			input_words.value = "";
 			alert("亲，可以开始游戏了！");
 			return;
 		}
     for(var i = 0,len = randomData.length; i < len; i ++) {
     	if(words.trim() == randomData[i]) {
-    		input_words.value = "";
     		alert("请，这个你已经输入过了~");
     		return; 
     	}
@@ -123,4 +126,11 @@ function getRandomNum(under, over){
 		    return parseInt(Math.random()*(over-under+1) + under);
 		default: return 1;
 	}
+}
+//背景切换；
+function backgroundChange() {
+	var num = getRandomNum(1, 8);
+  body.className = "bg-" + num;
+  console.log("-------------->" + num);
+  setTimeout(backgroundChange,5000);
 }
