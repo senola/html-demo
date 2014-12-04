@@ -12,6 +12,10 @@ function init() { // 初始化
 	var _w = window.innerWidth;
   reset.style.top = (_h - 20) + "px";
   begin.style.top = (_h - 20) + "px";
+  for(var i = 1; i < 9 ; i ++) { // 图片预加载
+  	var img = new Image();
+  	img.src = "images/0" + i + ".png";
+  }
 }
 init();
 
