@@ -1,5 +1,6 @@
 var randomData = []; //随机数据数组
 var index = 0; //输入的字符串个数
+var repeatCompare = {};
 var reset = document.getElementById("reset");
 var begin = document.getElementById("begin");
 var words_warp = document.getElementById("words_warp");
@@ -46,13 +47,12 @@ function gameBegin(){
 	  	alert("亲，输入内容太少了吧~~~");
 	  	return;
 	  }
-	 words_warp.className = "rotate-animation";
 	 reset.style.display = "none";
    begin.style.display = "none";
    setTimeout(function(){
     stop.style.display = "inline-block";
     stop.style.left = (window.innerWidth / 2 - stop.offsetWidth / 2) + "px";
-   },2000);
+   },1000);
    for(var i = 0; i < index; i ++) {
    	  (function(j){
          setTimeout(function(){
@@ -61,6 +61,7 @@ function gameBegin(){
 	   	  },1000);
    	  })(i)
   }
+  words_warp.className = "rotate-animation";
 }
 
 function stopGame() {
@@ -68,7 +69,8 @@ function stopGame() {
 	reset.style.display = "inline-block";
   begin.style.display = "inline-block";
   stop.style.display = "none";
-  var randomNum = getRandomNum(0, index - 1);
+  var randomNum = getNoRepeatRandomNum(0, index - 1);
+
   for(var i = 0; i < index; i ++) {
     if(i != randomNum) {
 	    	var obj = document.getElementById("random_words_" + i);
@@ -85,6 +87,31 @@ function resetGame() {
   randomData = []; //重置
   index = 0; //重置
   words_warp.innerHTML = "";
+}
+
+// 如果该项出现了多次则重新选择
+var flag = 0;
+function getNoRepeatRandomNum(start, end) {
+	  if(flag == 1000) {
+	  	repeatCompare = {}; // 重置
+	  }
+	  var randomNum = getRandomNum(start,end);
+	  if( !repeatCompare[randomNum] ){
+	     repeatCompare[randomNum] = {};
+	     repeatCompare[randomNum].countNum = 1;
+	     flag = 0;
+	     return randomNum;
+	  }
+	  if(repeatCompare[randomNum] || repeatCompare[randomNum].countNum == 1) {
+	  	repeatCompare[randomNum].countNum = 2;
+	  	flag = 0;
+	  	return randomNum;
+	  }
+	  if(repeatCompare[randomNum] || repeatCompare[randomNum].countNum >= 2){
+	  	flag ++ ;
+	  	console.log("随机次数---------------------------->：" + flag);
+	  	return getNoRepeatRandomNum(start,end);
+	  }
 }
 // 随机数
 function getRandomNum(under, over){

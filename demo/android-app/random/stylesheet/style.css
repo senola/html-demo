@@ -69,8 +69,6 @@
 	color: #738B2C;
 	font-size: 2em;
 	text-shadow: 2px 2px 17px rgba(9, 9, 10, 1);
-	-webkit-transform-origin: 0 50%;
-	-webkit-transform: translate3d(0,100px,0) rotate(180deg);
 	-webkit-animation: opacitychange 4s ease-in-out infinite;
 }
 .words-1 {
@@ -165,7 +163,6 @@
 }
 .hidden-change {
 	-webkit-animation: hiddenchange 3s ease 2s 1 ;
-	-webkit-animation-fill-mode: forwards;
 }
 .seleced {
 	color: red;
