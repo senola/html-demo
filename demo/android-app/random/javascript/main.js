@@ -132,5 +132,5 @@ function backgroundChange() {
 	var num = getRandomNum(1, 8);
   body.className = "bg-" + num;
   console.log("-------------->" + num);
-  setTimeout(backgroundChange,5000);
+  setTimeout(backgroundChange,10000);
 }
