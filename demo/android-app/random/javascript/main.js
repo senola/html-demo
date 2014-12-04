@@ -132,9 +132,12 @@ function getRandomNum(under, over){
 	}
 }
 //背景切换；
+var bg_index = 0;
 function backgroundChange() {
-	var num = getRandomNum(1, 8);
-  body.className = "bg-" + num;
-  console.log("-------------->" + num);
+  bg_index ++;
+  body.className = "bg-" +  bg_index;
+  if(bg_index == 9) {
+  	bg_index = 0;
+  }
   setTimeout(backgroundChange,10000);
 }
