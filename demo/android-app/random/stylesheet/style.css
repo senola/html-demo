@@ -163,6 +163,7 @@
 }
 .hidden-change {
 	-webkit-animation: hiddenchange 3s ease 2s 1 ;
+	-webkit-animation-fill-mode: forwards;
 }
 .seleced {
 	color: red;
