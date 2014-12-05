@@ -134,10 +134,10 @@ function getRandomNum(under, over){
 //背景切换；
 var bg_index = 0;
 function backgroundChange() {
-  bg_index ++;
   if(bg_index == 9) {
   	bg_index = 0;
   }
+  bg_index ++;
   body.className = "bg-" +  bg_index;
   setTimeout(backgroundChange,10000);
 }
