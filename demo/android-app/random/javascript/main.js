@@ -137,7 +137,7 @@ function backgroundChange() {
   if(bg_index == 9) {
   	bg_index = 0;
   }
-  bg_index ++;
   body.className = "bg-" +  bg_index;
+  bg_index ++;
   setTimeout(backgroundChange,10000);
 }
