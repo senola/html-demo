@@ -24,9 +24,6 @@ border-width属性有了三个特殊值可供选择，分别是：thin，medium�
 
 ![border-image](https://raw.githubusercontent.com/senola/pictures/master/css/border/border-width.jpg)
 
-
-http://code.tutsplus.com/tutorials/css-refreshers-borders--net-24655#disqus_thread
-
 看起来似乎将border属性分开来写不仅多余而且麻烦，但在某些特定的场合下还是很有用的，比如hover下改变边框的颜色，如果用简写的话还需要重复编写：   
 
 ```css
@@ -228,5 +225,152 @@ border-radius 是CSS3提供的，并且是第一个被社区广泛使用的属�
         background: black;
    }
 ```
+最流行的演示例子是在项目中如何使用css创建箭头。理解它的核心思想，你会发现其实也就是那么回事。首先得为每一边设置背景颜色然后同时设置容器的`width`和`height`的值为0。
 
+假设有一个`div`并且带有一个叫`arrow`的`class`:  
 
+```css
+   .arrow {
+      width: 0;
+      height: 0;
+      border-top: 100px solid red;
+      border-right: 100px solid green;
+      border-bottom: 100px solid blue;
+      border-left: 100px solid yellow;
+   }
+```
+同时你也可以这样简写：  
+
+```css
+   .arrow {
+      width: 0;
+      height: 0;
+      border: 100px solid;  
+      border-top-color: red;
+      border-right-color: green;
+      border-bottom-color: blue;
+      border-left-color: yellow;
+   }
+```
+还一种更为炫酷的写法，相信你会喜欢：  
+
+```css
+   width: 0; height: 0;
+   border: 100px solid;
+   border-color: red green blue yellow;
+```
+![all-side-colors.jpg](https://raw.githubusercontent.com/senola/pictures/master/css/border/all-side-colors.jpg)
+
+是不是很有趣呢？赶紧试试吧！我们只需要设置容器的宽度和高度为0，在设置各个边的颜色，宽度就能达到效果。那么当我们把其中的三条边的颜色设置为透明又会是什么效果呢？  
+
+```css
+   .arrow {
+      width: 0; height: 0;
+      border: 100px solid;
+      border-bottom-color: blue;
+   }
+```
+![single-border.jpg](https://raw.githubusercontent.com/senola/pictures/master/css/border/single-border.jpg)
+
+哈...这是一个充满神奇的世界。不过，我们的探索可不是仅仅止步于此！如果用一个div来表示一个箭头，太语意话了。在实际运用中我们常常会使用伪元素创建类似气泡的样式。  
+
+##### <span style="font-style:italic;color:red;">(1). create a speech bubble</span>
+
+我们可以用纯css创建一个类似气泡的对话。 
+
+```css
+   <div class="speech-bubble">Hello world</div>
+```
+
+增加css样式： 
+
+```css
+   .speech-bubble{
+      position: relative;
+      width: 200px;
+      height: 150px;
+      line-height: 150px; /* 垂直居中 */
+      color: white;
+      text-align: center;
+      background-color: #292929;
+      margin: 0 auto;
+      border-radius: 10px;
+   }
+   .speech-bubble:after { /*伪元素充当箭头*/
+      position: absolute;
+      content: '';
+      width: 0;
+      height: 0;
+      border: 10px solid;
+      border-top-color: #292929;
+      top: 100%;
+      left: 45%;
+   }
+```
+![final.jpg](https://raw.githubusercontent.com/senola/pictures/master/css/border/final.jpg)
+
+##### <span style="font-style:italic;color:red;">(2). 垂直居中</span>
+
+如上，如果文字很多的话，设置line-height是效果不好的，可以将容器的display设置为table,在设置容器中的文字为vertical-align: middle   
+
+```html
+   <div class="speech-bubble speech-bubble-top">
+       <p>Text goes here.</p>
+   </div>
+```
+
+css为：  
+```css
+   .speech-bubble {
+    /* other styles */
+     display: table;
+   }
+    
+   .speech-bubble p {
+     display: table-cell;
+     vertical-align: middle;
+   }
+```
+css是一个很神奇的东西，只要我们换个角度去思考就会有不一样的效果：  
+<div class="biohazard"></div>
+
+#### <span style="font-style:italic;">总结</span>   
+Though it’s true that the simple border: 1px solid black syntax goes a long way, if we’re clever, we can create a variety of helpful effects, icons, and shapes. Who would have thought that borders could be so powerful? The key is to remember that the styling for common shapes or speech bubbles should only be created once, and then abstracted away to utility classes for future usage.
+
+<style type="text/css">
+  .biohazard{
+      width: 0;
+      height: 0;
+      margin: 0 auto;
+      border: 100px solid;
+      border-radius: 50%;
+      border-top-color: black;
+      border-bottom-color: black;
+      border-left-color: yellow;
+      border-right-color: yellow; 
+      -webkit-animation: colorchange 1s infinite;
+      transition: all 3s;
+   }
+   @-webkit-keyframes colorchange {
+      0%{ 
+         border-top-color: black;
+         border-bottom-color: black;
+         border-left-color: yellow;
+         border-right-color: yellow; 
+      }
+      50%{ 
+        border-top-color: yellow;
+         border-bottom-color: yellow;
+         border-left-color: black;
+         border-right-color: black; 
+      }
+      100%{ 
+         border-top-color: black;
+         border-bottom-color: black;
+         border-left-color: yellow;
+         border-right-color: yellow; 
+      }
+
+   }
+</style>
+http://code.tutsplus.com/tutorials/css-refreshers-borders--net-24655#disqus_thread
