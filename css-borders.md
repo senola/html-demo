@@ -1,10 +1,10 @@
 ## css之border初探
 
-关于css的border属性相信大家已经熟悉的不能再熟悉了。那么是不是这就意味border没有什么可以探究了呢？ <span class="font-1">no..let learn something that we never konew about!</span>    
+关于css的border属性相信大家已经熟悉的不能再熟悉了。那么是不是这就意味border没有什么可以探究了呢？ <span style="font-style:italic;font-weight:bold;color:green;">no..let learn something that we never konew about!</span>    
 
 我们知道CSS3可以很简单地创建圆角，而CSS2要实现圆角效果就复杂多了。在这些新技术未出现之前，我们可以通过使用绝对定位背景图片来显示圆或箭头，这就意味着需要另外的图片处理工具（如photoshop）配合使用。其实，如今显示圆或者圆角已不再需要其他背景图片了。<!--more-->
 
-#### <span class="font-italic">1.The Basic</span>   
+#### <span style="font-style:italic;">1.The Basic</span>   
 
 可以经常看到border的一下用法：  
 
@@ -49,7 +49,7 @@ http://code.tutsplus.com/tutorials/css-refreshers-borders--net-24655#disqus_thre
    }
 ```
 
-#### <span class="font-italic">2.border-radius</span>    
+#### <span style="font-style:italic;">2.border-radius</span>    
 
 border-radius 是CSS3提供的，并且是第一个被社区广泛使用的属性。IE8以上，所有现在浏览器都支持显示圆角。因为有了它，妈妈怎么也不担心我不会photoshop了~    
 
@@ -89,11 +89,11 @@ border-radius 是CSS3提供的，并且是第一个被社区广泛使用的属�
 
 额，是不是上面内容过于简单常见呢？我觉得也是，早就会了嘛。。接下来我们玩点新鲜的~   
 
-#### <span class="font-italic">3. Multiple Borders</span>
+#### <span style="font-style:italic;">3. Multiple Borders</span>
 
 当我们想把多重边框应用到一个元素上的时，有很多技术我们可以参考：
 
-##### <span class="font-italic color-red">(1). border-style </span>
+##### <span style="font-style:italic;color:red;">(1). border-style </span>
 
 我们知道`solid`,`dashed`和`dotted`是`border-style`最常用的属性值。除了这些，我们还可以使用不常见的`groove`和`ridge`.   
 
@@ -113,7 +113,7 @@ border-radius 是CSS3提供的，并且是第一个被社区广泛使用的属�
 
 虽然这相当的有用，但是`ridge`或`groove`事实上都不是真正的多边框。  
 
-##### <span class="font-italic color-red">(2). outline </span>
+##### <span style="font-style:italic;color:red;">(2). outline </span>
 
 目前，创建两个边框最流行的技术是使用`outline`属性。  
 
@@ -127,7 +127,7 @@ border-radius 是CSS3提供的，并且是第一个被社区广泛使用的属�
 
 这种方法运行效果棒，但是有一个限制就是只能创建两个边框。如果你需要创建一个有分层、带渐变效果时，得使用另外的方法。 
 
-##### <span class="font-italic color-red">(3). pseudo element (伪元素) </span>
+##### <span style="font-style:italic;color:red;">(3). pseudo element (伪元素) </span>
 
 当`outline`技术无法满足需要的时候，一种替代的方法是利用`:before`和`:after`伪元素，并且使用任何必要的额外边界生成的内容。  
 
@@ -156,11 +156,12 @@ border-radius 是CSS3提供的，并且是第一个被社区广泛使用的属�
 	  border: 10px solid blue;
 	}
 ```
-<div class="box-borders"></div>
+
+![pseudo-borders.jpg](https://raw.githubusercontent.com/senola/pictures/master/css/border/pseudo-borders.jpg)
 
 虽然这种方法不是最优雅的，但却也能达到预期效果。但也一点不理想就是颜色的顺序和边界颜色容易混淆。
 
-##### <span class="font-italic color-red">(4). box-shadow </span>
+##### <span style="font-style:italic;color:red;">(4). box-shadow </span>
 
 最酷的且能创建无数边框的方法是利用`box-shadow`的`spread`参数。  
 
@@ -173,12 +174,12 @@ border-radius 是CSS3提供的，并且是第一个被社区广泛使用的属�
    }
 ```
 
-<div class="box-shadow-borders"></div>
+<div style="width: 400px; height: 400px;margin: 0 auto;margin-top: 25px;margin-bottom: 25px;background: #e3e3e3;border: 5px solid red;box-shadow: 0 0 0 5px green,0 0 0 10px yellow,0 0 0 15px orange;"></div>
 
 通过设置`box-shadow`的`x`,`y`,`blur`为0，我们可以使用`spread`值来创建边框，由于`box-shadow`可以对方，通过使用“，”就可以无限创建边框，是不是很有意思呢...(注意，老的浏览器并不识别该属性，不过作为现代人，就应该使用现代浏览器！！！)
 
 
-#### <span class="font-italic">4. modifying angles</span>
+#### <span style="font-style:italic;">4. modifying angles</span>
 
 另外，我们可用使用“/”给`border-radius`赋值，定义唯一的水平和垂直半径：   
 
@@ -206,9 +207,9 @@ border-radius 是CSS3提供的，并且是第一个被社区广泛使用的属�
 	   border-bottom-right-radius: 15em 1em;
    }
 ```
-<div class="box-angles"></div>
+<div style="width: 200px; height: 200px; margin: 0 auto;background: #666; outline: lightgrey 1px solid;border-top-left-radius: 15em 1em;border-bottom-right-radius: 15em 1em;"></div>
 
-#### <span class="font-italic">5. css shapes</span>  
+#### <span style="font-style:italic;">5. css shapes</span>  
 
 也许最赞的是将0宽度和0高度的边框运用于元素，很疑惑？哈...让我们看看示例：   
 
@@ -227,69 +228,5 @@ border-radius 是CSS3提供的，并且是第一个被社区广泛使用的属�
         background: black;
    }
 ```
-
-<style>
-	.font-italic {
-		font-style:italic;
-	}
-	.font-1 {
-		font-style:italic;
-		font-weight:bold;
-		color:green;
-	}
-	p img {
-		height: auto;
-		outline: lightgrey 1px solid;
-		margin: 1px;
-	}
-	.color-red {
-		color: red;
-	}
-    .box-borders {
-	  position: relative;
-	  width: 400px; 
-	  height: 400px;
-	  margin: 0 auto;
-	  background: #e3e3e3;
-	  border: 10px solid green;  
-	}
-	 
-	/* Create two boxes with the same width of the container */
-	.box-borders:after, .box-borders:before {
-	  content: '';
-	  position: absolute;
-	  top: 0; left: 0; bottom: 0; right: 0;
-	}
-	 
-	.box-borders:after {
-	  border: 5px solid red;
-	  outline: 5px solid yellow;
-	}
-	 
-	.box-borders:before {
-	  border: 10px solid blue;
-	}
-	.box-shadow-borders {
-	  width: 400px; 
-	  height: 400px;
-	  margin: 0 auto;
-	  margin-top: 25px;
-	  margin-bottom: 25px;
-	  background: #e3e3e3;
-	  border: 5px solid red;
-	  box-shadow: 0 0 0 5px green,
-		          0 0 0 10px yellow,
-		          0 0 0 15px orange;
-	}
-	.box-angles {
-	   width: 200px; 
-	   height: 200px;
-	   margin: 0 auto;
-	   background: #666;
-	   outline: lightgrey 1px solid;
-	   border-top-left-radius: 15em 1em;
-	   border-bottom-right-radius: 15em 1em;
-	}
-</style>
 
 
