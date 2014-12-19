@@ -1,6 +1,6 @@
 ## css之border初探
 
-关于css的border属性相信大家已经熟悉的不能再熟悉了。那么是不是这就意味border没有什么可以探究了呢？ <span style="font-style:italic;font-weight:bold;color:green;">no..let learn something that we never konew about!</span>    
+关于css的border属性相信大家已经熟悉的不能再熟悉了。那么是不是这就意味border没有什么可以探究了呢？ <span style="font-style:italic;font-weight:bold;color:green;">now,let learn something that we never konew about!</span>    
 
 我们知道CSS3可以很简单地创建圆角，而CSS2要实现圆角效果就复杂多了。在这些新技术未出现之前，我们可以通过使用绝对定位背景图片来显示圆或箭头，这就意味着需要另外的图片处理工具（如photoshop）配合使用。其实，如今显示圆或者圆角已不再需要其他背景图片了。<!--more-->
 
@@ -331,17 +331,32 @@ css为：
      vertical-align: middle;
    }
 ```
-css是一个很神奇的东西，只要我们换个角度去思考就会有不一样的效果：  
-<div class="biohazard"></div>
-
-#### <span style="font-style:italic;">总结</span>   
+css是一个很神奇的东西，只要我们换个角度去思考就会有不一样的效果。附上两个例子：
+<div class="trans clearfix">
+    <div class="hex-row">
+        <div class="hex"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+        <div class="hex"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+        <div class="hex"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+    </div>
+    <div class="hex-row even">
+        <div class="hex"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+        <div class="hex"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+    </div>
+    <div class="hex-row">
+        <div class="hex"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+        <div class="hex"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+        <div class="hex"><div class="top"></div><div class="middle"></div><div class="bottom"></div></div>
+    </div>
+</div>
+<div class="biohazard"></div> 
+#### <span style="font-style:italic;clear:both;">总结</span>   
 Though it’s true that the simple border: 1px solid black syntax goes a long way, if we’re clever, we can create a variety of helpful effects, icons, and shapes. Who would have thought that borders could be so powerful? The key is to remember that the styling for common shapes or speech bubbles should only be created once, and then abstracted away to utility classes for future usage.
 
 <style type="text/css">
   .biohazard{
       width: 0;
       height: 0;
-      margin: 0 auto;
+      margin: 100px auto;
       border: 100px solid;
       border-radius: 50%;
       border-top-color: black;
@@ -350,6 +365,54 @@ Though it’s true that the simple border: 1px solid black syntax goes a long wa
       border-right-color: yellow; 
       -webkit-animation: colorchange 1s infinite;
       transition: all 3s;
+   }
+   .trans {
+      width: 400px;
+      margin: 0 auto;
+      -webkit-transform: perspective(600px) rotateX(60deg);
+      -moz-transform: perspective(600px) rotateX(60deg);
+      -ms-transform: perspective(600px) rotateX(60deg);
+      -o-transform: perspective(600px) rotateX(60deg);
+      transform: perspective(600px) rotateX(60deg);
+   }
+   .hex {
+       float: left;
+       margin-left: 3px;
+       margin-bottom: -26px;
+   }
+   .hex .top {
+       width: 0;
+       border-bottom: 30px solid #6C6;
+       border-left: 52px solid transparent;
+       border-right: 52px solid transparent;
+   }
+   .hex .middle {
+       width: 104px;
+       height: 60px;
+       background: #6C6;
+   }
+   .hex .bottom {
+       width: 0;
+       border-top: 30px solid #6C6;
+       border-left: 52px solid transparent;
+       border-right: 52px solid transparent;
+   }
+   .hex-row {
+       clear: left;
+   }
+   .hex-row.even {
+       margin-left: 53px;
+   }
+   .clearfix:before, .clearfix:after {
+       content:"";
+       display:table;
+   }
+   .clearfix:after{
+       clear:both;
+       overflow:hidden;
+   }
+   .clearfix{
+       zoom:1;
    }
    @-webkit-keyframes colorchange {
       0%{ 
