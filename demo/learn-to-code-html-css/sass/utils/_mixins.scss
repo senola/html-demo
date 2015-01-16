@@ -1,0 +1,29 @@
+/**
+ * 单边界半径
+ *
+ * @author senola
+ *
+ * @access public
+ * 
+ * @param {radius} $radius           - 半径值
+ *
+ * @example scss - Usage
+ * 
+ * @example css - CSS output
+ * 
+ */
+@mixin border-top-radius($radius) {
+	border-top-right-radius: $radius;
+	border-top-left-radius: $radius;
+}
+@mixin border-right-radius($radius) {
+	border-right-
+}
+
+http://www.feidee.com/api/sync_change.do?opt=viewpage&ikey=037493dc937aaf952b667df490867a231058c97167132ce1fcbc1643544d010b&sid=b100ecc08e3ea89d2eab114f804f0fee844fb480090585079dd102f690c4a4f22494db23ef885f5efbdc63e527ae1bc61b691d4f725db75d9dff2a51a74c5f02769325a401af858397ee4f177a062134 
+
+http://192.168.6.173/show-money//api/sync_change.
+
+select * 
+    from t_sync_change
+    where bookid = 17513921839  order by  synctime desc  
