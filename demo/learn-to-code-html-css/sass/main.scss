@@ -1,13 +1,15 @@
-@import 'vendors/bootstrap'; ///
+@charset "UTF-8";
+
+@import 'vendors/bootstrap'; 
 @import 'vendors/jquery_ui';
 
 @import 'utils/functions';
 @import 'utils/helpers';
-@import 'utils/mixins';
+@import 'utils/mixins';   // 混合指令集
 @import 'utils/variables';
 
 @import 'base/base';
-@import 'base/reset';
+@import 'base/normalize';
 @import 'base/typography';
 
 @import 'layout/footer';
@@ -26,4 +28,7 @@
 @import 'pages/home';
 
 @import 'themes/admin';
-@import 'themes/home';
+@import 'themes/theme';
+
+// test
+@import 'test/test'
