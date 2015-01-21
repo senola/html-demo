@@ -1,0 +1,1771 @@
+<!doctype html>
+
+
+
+
+<html lang="en">
+<head>
+  
+  <meta charset="utf-8" />
+
+<title>SassDoc</title>
+<link rel="stylesheet" href="./assets/css/main.css" />
+<meta name="viewport" content="width=device-width">
+<meta content="IE=edge, chrome=1" http-equiv="X-UA-Compatible">
+
+<!-- Thanks to Sass-lang.com for the icons -->
+
+<link href="http://sass-lang.com/favicon.ico" rel="shortcut icon">
+
+
+</head>
+<body>
+
+  
+  <aside class="sidebar" role="nav">
+    
+  <div class="sidebar__header">
+  <h1 class="sidebar__title">
+    
+      SassDoc
+    
+  </h1>
+</div>
+
+<div class="sidebar__body">
+  
+  
+    <button type="button" class="btn-toggle  js-btn-toggle" data-alt="Open all">Close all</button>
+
+    
+    
+      <p class="sidebar__item  sidebar__item--heading" data-slug="utils"><a href="#utils">utils</a></p>
+
+      
+      
+        <div>
+
+        
+        
+          <p class="sidebar__item  sidebar__item--sub-heading" data-slug="utils-mixin"><a href="#utils-mixin">mixins</a></p>
+
+          
+          
+            <ul class="list-unstyled">
+            <li class="sidebar__item  sassdoc__item" data-name="border-top-radius" data-type="mixin">
+              <a href="#mixin-border-top-radius">border-top-radius
+              
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="border-right-radius" data-type="mixin">
+              <a href="#mixin-border-right-radius">border-right-radius
+              
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="border-bottom-radius" data-type="mixin">
+              <a href="#mixin-border-bottom-radius">border-bottom-radius
+              
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="border-left-radius" data-type="mixin">
+              <a href="#mixin-border-left-radius">border-left-radius
+              
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="clearfix" data-type="mixin">
+              <a href="#mixin-clearfix">clearfix
+              
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="opacity" data-type="mixin">
+              <a href="#mixin-opacity">opacity
+              
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="size" data-type="mixin">
+              <a href="#mixin-size">size
+              
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="text-overflow" data-type="mixin">
+              <a href="#mixin-text-overflow">text-overflow
+              
+              
+              </a>
+            </li>
+            </ul>
+          
+        
+        </div>
+      
+
+    
+  
+</div>
+
+
+  </aside>
+
+  
+  <article class="main" role="main">
+
+    
+    <header class="header" role="banner">
+  <div class="container">
+  
+
+    <div class="sassdoc__searchbar  searchbar">
+       <label for="js-search-input" class="visually-hidden">Search</label>
+       <div class="searchbar__form" id="js-search">
+         <input name="search" type="search" class="searchbar__field" autocomplete="off" autofocus id="js-search-input" placeholder="Search" />
+         <ul class="searchbar__suggestions" id="js-search-suggestions"></ul>
+       </div>
+     </div>
+  </div>
+</header>
+
+
+    
+
+  
+  
+
+    
+    
+      <section class="main__section">
+        <h1 class="main__heading" id="utils">
+          <div class="container">
+            utils
+          </div>
+        </h1>
+
+        
+        
+
+          
+          
+            <section class="main__sub-section" id="utils-mixin">
+              <h2 class="main__heading--secondary">
+                <div class="container">
+                  mixins
+                </div>
+              </h2>
+
+              
+              
+                <section class="main__item  container  item" id="mixin-border-top-radius">
+
+<h3 class="item__heading">
+  
+
+  <a class="item__name" href="#mixin-border-top-radius">border-top-radius</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+<div class="item__code-wrapper">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@mixin border-top-radius($radius) { 
+  border-top-right-radius: $radius;
+  border-top-left-radius: $radius;
+ }"
+    data-collapsed="@mixin border-top-radius($radius) { ... }"><code>@mixin border-top-radius($radius) { ... }</code></pre>
+
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+  <div class="item__description"><p>设置元素顶部边界半径值。</p>
+</div>
+
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <table class="item__parameters">
+    <thead>
+      <tr>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Name</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Description</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Type</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$radius</code></th>
+          <td data-label="desc"><p>边界半径值</p>
+</td>
+          <td data-label="type">
+          
+            Length
+          
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+    
+    
+
+  
+    
+    
+  <h3 class="item__sub-heading">Example</h3>
+
+  
+  <div class="item__example  example">
+    
+    <div class="example__description"><p>用法：</p>
+</div>
+    
+    <pre class="example__code  language-scss"><code>.btn-border-top {
+   @include border-top-radius(5em);
+}
+</code></pre>
+  </div>
+  
+  <div class="item__example  example">
+    
+    <div class="example__description"><p>输出：</p>
+</div>
+    
+    <pre class="example__code  language-css"><code>.btn-border-top {
+   border-top-right-radius: 5em;
+   border-top-left-radius: 5em;
+}</code></pre>
+  </div>
+  
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>senola</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+
+              
+                <section class="main__item  container  item" id="mixin-border-right-radius">
+
+<h3 class="item__heading">
+  
+
+  <a class="item__name" href="#mixin-border-right-radius">border-right-radius</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+<div class="item__code-wrapper">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@mixin border-right-radius($radius) { 
+  border-bottom-right-radius: $radius;
+  border-top-right-radius: $radius;
+ }"
+    data-collapsed="@mixin border-right-radius($radius) { ... }"><code>@mixin border-right-radius($radius) { ... }</code></pre>
+
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+  <div class="item__description"><p>设置元素右侧边界半径值。</p>
+</div>
+
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <table class="item__parameters">
+    <thead>
+      <tr>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Name</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Description</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Type</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$radius</code></th>
+          <td data-label="desc"><p>边界半径值</p>
+</td>
+          <td data-label="type">
+          
+            Length
+          
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+    
+    
+
+  
+    
+    
+  <h3 class="item__sub-heading">Example</h3>
+
+  
+  <div class="item__example  example">
+    
+    <div class="example__description"><p>用法：</p>
+</div>
+    
+    <pre class="example__code  language-scss"><code>.btn-border-right {
+   @include border-right-radius(5em);
+}
+</code></pre>
+  </div>
+  
+  <div class="item__example  example">
+    
+    <div class="example__description"><p>输出：</p>
+</div>
+    
+    <pre class="example__code  language-css"><code>.btn-border-right {
+   border-bottom-right-radius: 5em;
+   border-top-right-radius: 5em;
+}</code></pre>
+  </div>
+  
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>senola</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+
+              
+                <section class="main__item  container  item" id="mixin-border-bottom-radius">
+
+<h3 class="item__heading">
+  
+
+  <a class="item__name" href="#mixin-border-bottom-radius">border-bottom-radius</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+<div class="item__code-wrapper">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@mixin border-bottom-radius($radius) { 
+	border-bottom-right-radius: $radius;
+	border-bottom-left-radius: $radius;
+ }"
+    data-collapsed="@mixin border-bottom-radius($radius) { ... }"><code>@mixin border-bottom-radius($radius) { ... }</code></pre>
+
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+  <div class="item__description"><p>设置元素底部边界半径值。</p>
+</div>
+
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <table class="item__parameters">
+    <thead>
+      <tr>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Name</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Description</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Type</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$radius</code></th>
+          <td data-label="desc"><p>边界半径值</p>
+</td>
+          <td data-label="type">
+          
+            Length
+          
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+    
+    
+
+  
+    
+    
+  <h3 class="item__sub-heading">Example</h3>
+
+  
+  <div class="item__example  example">
+    
+    <div class="example__description"><p>用法：</p>
+</div>
+    
+    <pre class="example__code  language-scss"><code>.btn-border-bottom {
+   @include border-bottom-radius(5em);
+}
+</code></pre>
+  </div>
+  
+  <div class="item__example  example">
+    
+    <div class="example__description"><p>输出：</p>
+</div>
+    
+    <pre class="example__code  language-css"><code>.btn-border-bottom {
+   border-bottom-right-radius: 5em;
+   border-bottom-left-radius: 5em;
+}</code></pre>
+  </div>
+  
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>senola</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+
+              
+                <section class="main__item  container  item" id="mixin-border-left-radius">
+
+<h3 class="item__heading">
+  
+
+  <a class="item__name" href="#mixin-border-left-radius">border-left-radius</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+<div class="item__code-wrapper">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@mixin border-left-radius($radius) { 
+  border-bottom-left-radius: $radius;
+  border-top-left-radius: $radius;
+ }"
+    data-collapsed="@mixin border-left-radius($radius) { ... }"><code>@mixin border-left-radius($radius) { ... }</code></pre>
+
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+  <div class="item__description"><p>设置元素左侧边界半径值。</p>
+</div>
+
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <table class="item__parameters">
+    <thead>
+      <tr>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Name</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Description</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Type</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$radius</code></th>
+          <td data-label="desc"><p>边界半径值</p>
+</td>
+          <td data-label="type">
+          
+            Length
+          
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+    
+    
+
+  
+    
+    
+  <h3 class="item__sub-heading">Example</h3>
+
+  
+  <div class="item__example  example">
+    
+    <div class="example__description"><p>用法：</p>
+</div>
+    
+    <pre class="example__code  language-scss"><code>.btn-border-left {
+   @include border-left-radius(5em);
+}
+</code></pre>
+  </div>
+  
+  <div class="item__example  example">
+    
+    <div class="example__description"><p>输出：</p>
+</div>
+    
+    <pre class="example__code  language-css"><code>.btn-border-left {
+   border-bottom-left-radius: 5em;
+   border-top-left-radius: 5em;
+}</code></pre>
+  </div>
+  
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>senola</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+
+              
+                <section class="main__item  container  item" id="mixin-clearfix">
+
+<h3 class="item__heading">
+  
+
+  <a class="item__name" href="#mixin-clearfix">clearfix</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="item__code-wrapper">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@mixin clearfix() { 
+ 	&amp;:before,
+ 	&amp;:after {
+ 		content: &#39;&#39;; // 1
+ 		display: table; // 2
+ 	}
+ 	&amp;:after {
+ 		clear: both;
+ 		overflow: hidden;
+ 	}
+ 	&amp; {
+ 		zoom:1; // 3
+ 	}
+  }"
+    data-collapsed="@mixin clearfix() { ... }"><code>@mixin clearfix() { ... }</code></pre>
+
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+  <div class="item__description"><ol>
+<li>The space content is one way to avoid an Opera bug when the contenteditable attribute is included anywhere else in the document.<br>Otherwise it causes space to appear at the top and bottom of elements     </li>
+<li>The use of <code>table</code> rather than <code>block</code> is only necessary if using <code>:before</code> to contain the top-margins of child elements. that are clearfixed.     </li>
+<li>For IE 6/7 only. Include this rule to trigger hasLayout and contain floats.  </li>
+</ol>
+</div>
+
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <p>None.</p>
+
+
+
+  
+    
+    
+
+  
+    
+    
+  <h3 class="item__sub-heading">Example</h3>
+
+  
+  <div class="item__example  example">
+    
+    <div class="example__description"><p>用法：</p>
+</div>
+    
+    <pre class="example__code  language-scss"><code>.clearfix {
+  @include clearfix();
+}
+  </code></pre>
+  </div>
+  
+  <div class="item__example  example">
+    
+    <div class="example__description"><p>输出：</p>
+</div>
+    
+    <pre class="example__code  language-css"><code>.clearfix:before, .clearfix:after {
+   content: &#39;&#39;;
+   display: table;
+}
+.clearfix:after {
+   clear: both;
+   overflow: hidden;
+}
+.clearfix {
+   zoom: 1;
+}</code></pre>
+  </div>
+  
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>senola</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+
+              
+                <section class="main__item  container  item" id="mixin-opacity">
+
+<h3 class="item__heading">
+  
+
+  <a class="item__name" href="#mixin-opacity">opacity</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+<div class="item__code-wrapper">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@mixin opacity($opacity) { 
+	opacity: $opacity;
+	// IE8 filter
+	$opacity-ie: ($opacity * 100);
+	filter: alpha(opacity=$opacity-ie);
+ }"
+    data-collapsed="@mixin opacity($opacity) { ... }"><code>@mixin opacity($opacity) { ... }</code></pre>
+
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+  <div class="item__description"><p>不透明度</p>
+</div>
+
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <table class="item__parameters">
+    <thead>
+      <tr>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Name</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Description</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Type</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$opacity</code></th>
+          <td data-label="desc"><p>0 ~ 1</p>
+</td>
+          <td data-label="type">
+          
+            Number
+          
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+    
+    
+
+  
+    
+    
+  <h3 class="item__sub-heading">Example</h3>
+
+  
+  <div class="item__example  example">
+    
+    <div class="example__description"><p>用法：</p>
+</div>
+    
+    <pre class="example__code  language-scss"><code>.btn-opacity {
+   @include opacity(0.4);
+}
+</code></pre>
+  </div>
+  
+  <div class="item__example  example">
+    
+    <div class="example__description"><p>输出：</p>
+</div>
+    
+    <pre class="example__code  language-css"><code>.btn-opacity {
+   opacity: 0.4;
+   filter: alpha(opacity=40);
+}
+</code></pre>
+  </div>
+  
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+  
+    
+      
+      <h3 class="item__sub-heading">Requires</h3>
+      <ul class="list-unstyled">
+    
+
+    
+      <li><span class="item__cross-type">[mixin]</span>
+        <a href="#mixin-opacity"><code>opacity</code></a>
+        
+      </li>
+    
+  
+
+
+
+
+</ul>
+
+
+  
+    
+    
+
+
+
+  
+
+    
+      
+      <h3 class="item__sub-heading">Used by</h3>
+      <ul class="list-unstyled">
+    
+
+    <li><span class="item__cross-type">[mixin]</span> <a href="#mixin-opacity"><code>opacity</code></a></li>
+  
+
+
+
+
+</ul>
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>senola</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+
+              
+                <section class="main__item  container  item" id="mixin-size">
+
+<h3 class="item__heading">
+  
+
+  <a class="item__name" href="#mixin-size">size</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+<div class="item__code-wrapper">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@mixin size($width, $height) { 
+	width: $width;
+	height: $height;
+ }"
+    data-collapsed="@mixin size($width, $height) { ... }"><code>@mixin size($width, $height) { ... }</code></pre>
+
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+  <div class="item__description"><p>快速设置元素的高度和宽度。</p>
+</div>
+
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <table class="item__parameters">
+    <thead>
+      <tr>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Name</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Description</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Type</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$width</code></th>
+          <td data-label="desc"><p>宽度</p>
+</td>
+          <td data-label="type">
+          
+            Length
+          
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$height</code></th>
+          <td data-label="desc"><p>高度</p>
+</td>
+          <td data-label="type">
+          
+            Length
+          
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+    
+    
+
+  
+    
+    
+  <h3 class="item__sub-heading">Example</h3>
+
+  
+  <div class="item__example  example">
+    
+    <div class="example__description"><p>用法一：</p>
+</div>
+    
+    <pre class="example__code  language-scss"><code>.btn-size-1 {
+   @include size(5em, 6em);
+}
+</code></pre>
+  </div>
+  
+  <div class="item__example  example">
+    
+    <div class="example__description"><p>输出：</p>
+</div>
+    
+    <pre class="example__code  language-css"><code>.btn-size-1 {
+   width: 5em;
+   height: 6em;
+}
+</code></pre>
+  </div>
+  
+  <div class="item__example  example">
+    
+    <div class="example__description"><p>用法二：</p>
+</div>
+    
+    <pre class="example__code  language-scss"><code>.btn-size-2 {
+   @include size(5em);
+}
+</code></pre>
+  </div>
+  
+  <div class="item__example  example">
+    
+    <div class="example__description"><p>输出：</p>
+</div>
+    
+    <pre class="example__code  language-css"><code>.btn-size-2 {
+   width: 5em;
+   height: 5em;
+}</code></pre>
+  </div>
+  
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>senola</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+
+              
+                <section class="main__item  container  item" id="mixin-text-overflow">
+
+<h3 class="item__heading">
+  
+
+  <a class="item__name" href="#mixin-text-overflow">text-overflow</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="item__code-wrapper">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@mixin text-overflow() { 
+ 	overflow: hidden;   // 隐藏超出部分
+ 	text-overflow: ellipsis;  // 多余的用省略号代替
+ 	white-space: nowrap;  // 控制文字不换行
+  }"
+    data-collapsed="@mixin text-overflow() { ... }"><code>@mixin text-overflow() { ... }</code></pre>
+
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+  <div class="item__description"><p>控制文字显示长度</p>
+</div>
+
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <p>None.</p>
+
+
+
+  
+    
+    
+
+  
+    
+    
+  <h3 class="item__sub-heading">Example</h3>
+
+  
+  <div class="item__example  example">
+    
+    <div class="example__description"><p>用法：</p>
+</div>
+    
+    <pre class="example__code  language-scss"><code>.p-text-overflow {
+   max-width: 100px;
+   @include text-overflow();
+}
+</code></pre>
+  </div>
+  
+  <div class="item__example  example">
+    
+    <div class="example__description"><p>输出：</p>
+</div>
+    
+    <pre class="example__code  language-css"><code>.p-text-overflow {
+   max-width: 100px;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+}
+</code></pre>
+  </div>
+  
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>senola</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+
+              
+            </section>
+          
+        
+
+      </section>
+    
+
+  
+
+
+
+    
+    
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      
+        <div class="footer__project-info  project-info">
+          <!-- Name and URL -->
+          
+            <span class="project-info__name">SassDoc</span>
+          
+
+          <!-- Version -->
+          
+
+          <!-- License -->
+          
+        </div>
+      
+
+      
+        <span class="footer__watermark">Built with <a href="https://github.com/SassDoc/sassdoc">SassDoc</a>.</span>
+      
+    </div>
+  </footer>
+
+
+  </article>
+
+
+  
+  <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script>
+
+
+<script src="./assets/js/main.min.js"></script>
+
+</body>
+</html>

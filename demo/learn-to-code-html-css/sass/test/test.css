@@ -1,3 +1,188 @@
+@charset "UTF-8";
+/**
+ * @access public
+ * @group Utils
+ * @author senola
+ **/
+/**
+ *  设置元素顶部边界半径值。
+ *
+ *  @param {length} $radius - 边界半径值
+ * 
+ *  @example scss - 用法：
+ *  .btn-border-top {
+ *     @include border-top-radius(5em);
+ *  }
+ *
+ *  @example css - 输出：
+ *  .btn-border-top {
+ *     border-top-right-radius: 5em;
+ *     border-top-left-radius: 5em;
+ *  }
+ */
+/**
+ *  设置元素右侧边界半径值。
+ *
+ *  @param {length} $radius - 边界半径值
+ * 
+ *  @example scss - 用法：
+ *  .btn-border-right {
+ *     @include border-right-radius(5em);
+ *  }
+ *
+ *  @example css - 输出：
+ *  .btn-border-right {
+ *     border-bottom-right-radius: 5em;
+ *     border-top-right-radius: 5em;
+ *  }
+ */
+/**
+ *  设置元素底部边界半径值。
+ *
+ *  @param {length} $radius - 边界半径值
+ * 
+ *  @example scss - 用法：
+ *  .btn-border-bottom {
+ *     @include border-bottom-radius(5em);
+ *  }
+ *
+ *  @example css - 输出：
+ *  .btn-border-bottom {
+ *     border-bottom-right-radius: 5em;
+ *     border-bottom-left-radius: 5em;
+ *  }
+ */
+/**
+ *  设置元素左侧边界半径值。
+ *
+ *  @param {length} $radius - 边界半径值
+ * 
+ *  @example scss - 用法：
+ *  .btn-border-left {
+ *     @include border-left-radius(5em);
+ *  }
+ *
+ *  @example css - 输出：
+ *  .btn-border-left {
+ *     border-bottom-left-radius: 5em;
+ *     border-top-left-radius: 5em;
+ *  }
+ */
+/**
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ * 3. For IE 6/7 only. Include this rule to trigger hasLayout and contain floats.  
+ *
+ * @access public
+ * @group Utils
+ * @author senola
+ **/
+/**
+ *   1. The space content is one way to avoid an Opera bug when the contenteditable attribute is included anywhere else in the document.     
+ *      Otherwise it causes space to appear at the top and bottom of elements     
+ *   2. The use of `table` rather than `block` is only necessary if using `:before` to contain the top-margins of child elements. that are clearfixed.     
+ *   3. For IE 6/7 only. Include this rule to trigger hasLayout and contain floats.  
+ *
+ *   @example scss - 用法：
+ *   .clearfix {
+ *	    @include clearfix();
+ *   }
+ *  
+ *   @example css - 输出：
+ *   .clearfix:before, .clearfix:after {
+ *      content: '';
+ *      display: table;
+ *   }
+ *   .clearfix:after {
+ *      clear: both;
+ *      overflow: hidden;
+ *   }
+ *   .clearfix {
+ *      zoom: 1;
+ *   }
+ */
+/**
+ * @access public
+ * @group Utils
+ * @author senola
+ **/
+/**
+*  快速设置元素的高度和宽度。
+*
+*  @param {Length} $width -  宽度
+*  @param {Length} $height - 高度
+*  
+*  @example scss - 用法一：
+*  .btn-size-1 {
+*     @include size(5em, 6em);
+*  }
+*
+*  @example css - 输出：
+*  .btn-size-1 {
+*     width: 5em;
+*     height: 6em;
+*  }
+*
+*  @example scss - 用法二：
+*  .btn-size-2 {
+*     @include size(5em);
+*  }
+*
+*  @example css - 输出：
+*  .btn-size-2 {
+*     width: 5em;
+*     height: 5em;
+*  }
+*/
+/**
+ * @access public
+ * @group Utils
+ * @author senola
+ **/
+/**
+*  不透明度
+*
+*  @param {Number} $opacity -  0 ~ 1
+*  
+*  @example scss - 用法：
+*  .btn-opacity {
+*     @include opacity(0.4);
+*  }
+*
+*  @example css - 输出：
+*  .btn-opacity {
+*     opacity: 0.4;
+*     filter: alpha(opacity=40);
+*  }
+*
+*/
+/**
+ * @access public
+ * @group Utils
+ * @author senola
+ **/
+/**
+ *  控制文字显示长度
+ *
+ *  @example scss - 用法：
+ *  .p-text-overflow {
+ *     max-width: 100px;
+ *     @include text-overflow();
+ *  }
+ *
+ *  @example css - 输出：
+ *  .p-text-overflow {
+ *     max-width: 100px;
+ *     overflow: hidden;
+ *     text-overflow: ellipsis;
+ *     white-space: nowrap;
+ *  }
+ *
+ */
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -396,7 +581,7 @@ th {
   padding: 0;
 }
 
-.btn-warn-1 {
+.btn-border-1 {
   border-top-right-radius: 5em;
   border-top-left-radius: 5em;
 }
@@ -414,6 +599,40 @@ th {
 .btn-warn-4 {
   border-bottom-left-radius: 6em;
   border-top-left-radius: 6em;
+}
+
+.clearfix:before, .clearfix:after {
+  content: '';
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+  overflow: hidden;
+}
+.clearfix {
+  zoom: 1;
+}
+
+.container-size {
+  width: 3em;
+  height: 4em;
+}
+
+.container-size2 {
+  width: 3em;
+  height: 3em;
+}
+
+.div-opacity {
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+}
+
+.p-text-overflow {
+  max-width: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 /*# sourceMappingURL=test.css.map */

@@ -1,0 +1,54 @@
+@charset "utf-8";
+
+/**
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ * 3. For IE 6/7 only. Include this rule to trigger hasLayout and contain floats.  
+ *
+ * @access public
+ * @group Utils
+ * @author senola
+ **/
+
+/**
+ *   1. The space content is one way to avoid an Opera bug when the contenteditable attribute is included anywhere else in the document.     
+ *      Otherwise it causes space to appear at the top and bottom of elements     
+ *   2. The use of `table` rather than `block` is only necessary if using `:before` to contain the top-margins of child elements. that are clearfixed.     
+ *   3. For IE 6/7 only. Include this rule to trigger hasLayout and contain floats.  
+ *
+ *   @example scss - 用法：
+ *   .clearfix {
+ *	    @include clearfix();
+ *   }
+ *  
+ *   @example css - 输出：
+ *   .clearfix:before, .clearfix:after {
+ *      content: '';
+ *      display: table;
+ *   }
+ *   .clearfix:after {
+ *      clear: both;
+ *      overflow: hidden;
+ *   }
+ *   .clearfix {
+ *      zoom: 1;
+ *   }
+ */
+ @mixin clearfix() {
+ 	&:before,
+ 	&:after {
+ 		content: ''; // 1
+ 		display: table; // 2
+ 	}
+ 	&:after {
+ 		clear: both;
+ 		overflow: hidden;
+ 	}
+ 	& {
+ 		zoom:1; // 3
+ 	}
+ }

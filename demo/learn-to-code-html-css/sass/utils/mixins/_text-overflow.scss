@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+/**
+ * @access public
+ * @group Utils
+ * @author senola
+ **/
+
+/**
+ *  控制文字显示长度
+ *
+ *  @example scss - 用法：
+ *  .p-text-overflow {
+ *     max-width: 100px;
+ *     @include text-overflow();
+ *  }
+ *
+ *  @example css - 输出：
+ *  .p-text-overflow {
+ *     max-width: 100px;
+ *     overflow: hidden;
+ *     text-overflow: ellipsis;
+ *     white-space: nowrap;
+ *  }
+ *
+ */
+ @mixin text-overflow() {
+ 	overflow: hidden;   // 隐藏超出部分
+ 	text-overflow: ellipsis;  // 多余的用省略号代替
+ 	white-space: nowrap;  // 控制文字不换行
+ }

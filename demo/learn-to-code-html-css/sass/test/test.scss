@@ -1,4 +1,4 @@
-.btn-warn-1 {
+.btn-border-1 {
 	@include border-top-radius(5em);
 }
 .btn-warn-2 {
@@ -9,4 +9,22 @@
 }
 .btn-warn-4 {
 	@include border-left-radius(6em);
+}
+.clearfix {
+	@include clearfix();
+}
+
+.container-size {
+	@include size(3em, 4em);
+}
+.container-size2 {
+	@include size(3em);
+}
+
+.div-opacity {
+	@include opacity(0.4);
+}
+.p-text-overflow {
+	max-width:  100px;
+	@include text-overflow();
 }

@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+/**
+ * @access public
+ * @group Utils
+ * @author senola
+ **/
+
+ /**
+ *  快速设置元素的高度和宽度。
+ *
+ *  @param {Length} $width -  宽度
+ *  @param {Length} $height - 高度
+ *  
+ *  @example scss - 用法一：
+ *  .btn-size-1 {
+ *     @include size(5em, 6em);
+ *  }
+ *
+ *  @example css - 输出：
+ *  .btn-size-1 {
+ *     width: 5em;
+ *     height: 6em;
+ *  }
+ *
+ *  @example scss - 用法二：
+ *  .btn-size-2 {
+ *     @include size(5em);
+ *  }
+ *
+ *  @example css - 输出：
+ *  .btn-size-2 {
+ *     width: 5em;
+ *     height: 5em;
+ *  }
+ */
+
+@mixin size($width, $height: $width) {
+	width: $width;
+	height: $height;
+}

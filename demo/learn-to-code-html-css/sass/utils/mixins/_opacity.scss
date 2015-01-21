@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+/**
+ * @access public
+ * @group Utils
+ * @author senola
+ **/
+
+ /**
+ *  不透明度
+ *
+ *  @param {Number} $opacity -  0 ~ 1
+ *  
+ *  @example scss - 用法：
+ *  .btn-opacity {
+ *     @include opacity(0.4);
+ *  }
+ *
+ *  @example css - 输出：
+ *  .btn-opacity {
+ *     opacity: 0.4;
+ *     filter: alpha(opacity=40);
+ *  }
+ *
+ */
+@mixin opacity($opacity) {
+	opacity: $opacity;
+	// IE8 filter
+	$opacity-ie: ($opacity * 100);
+	filter: alpha(opacity=$opacity-ie);
+}
