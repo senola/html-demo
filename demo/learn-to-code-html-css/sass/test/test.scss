@@ -28,3 +28,13 @@
 	max-width:  100px;
 	@include text-overflow();
 }
+
+$animation: scaleBig 1s ease-out;
+.animation {
+    @include animation($animation);
+}
+
+$name: animationDemo;
+.animation-name {
+     @include animation-name($name);
+}

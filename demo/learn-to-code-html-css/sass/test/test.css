@@ -1,5 +1,237 @@
 @charset "UTF-8";
 /**
+ *  @access public
+ *  @group Utils
+ *  @author senola
+ **/
+/**
+*  Animations （动画） 
+*
+*  @param {String} $animation -  
+*  
+*  @example scss - 用法：   
+*
+*  $animation: scaleBig 1s ease-out;
+*  .animation {
+*     @include animation($animation);
+*  }
+*
+*  @example css - 输出：
+*  .animation {
+*     -webkit-animation: scaleBig 1s ease-out;
+*     -o-animation: scaleBig 1s ease-out;
+*     animation: scaleBig 1s ease-out;
+*  }
+*
+*/
+/**
+*  animation-name （检索或设置对象所应用的动画名称） 
+*
+*  @param {String} $name -  
+*  
+*  @example scss - 用法：   
+*
+*  $name: animationDemo;
+*  .animation-name {
+*     @include animation($name);
+*  }
+*
+*  @example css - 输出：
+*  .animation-name {
+*     -webkit-animation-name: animationDemo;
+*             animation-name: animationDemo;
+*  }
+*
+*/
+/**
+*  animation-duration （检索或设置对象动画的持续时间 ） 
+*
+*  @param {Number} $duration -  时间
+*  
+*  @example scss - 用法：   
+*
+*  $duration: 1s;
+*  .animation-duration {
+*     @include animation-duration($duration);
+*  }
+*
+*  @example css - 输出：
+*  .animation-duration {
+*     -webkit-animation-name: 1s;
+*             animation-name: 1s;
+*  }
+*
+*/
+/**
+*  animation-timing-function （检索或设置对象动画的过渡类型）
+*
+*  可取值有：    
+*     linear： 线性过渡。等同于贝塞尔曲线(0.0, 0.0, 1.0, 1.0)      
+*     ease： 平滑过渡。等同于贝塞尔曲线(0.25, 0.1, 0.25, 1.0)       
+*     ease-in： 由慢到快。等同于贝塞尔曲线(0.42, 0, 1.0, 1.0)      
+*     ease-out： 由快到慢。等同于贝塞尔曲线(0, 0, 0.58, 1.0)    
+*     ease-in-out： 由慢到快再到慢。等同于贝塞尔曲线(0.42, 0, 0.58, 1.0)    
+*     cubic-bezier([number], [number], [number], [number])： 特定的贝塞尔曲线类型，4个数值需在[0, 1]区间内    
+* 
+*  @param {Number} $timing-function) -  时间值
+*  
+*  @example scss - 用法：   
+*
+*  $timing-function: ease-in-out;
+*  .animation-duration {
+*     @include animation-timing-function($timing-function);
+*  }
+*
+*  @example css - 输出：
+*  .animation-duration {
+*     -webkit-animation-timing-function: ease-in-out;
+*             animation-timing-function: ease-in-out;
+*  }
+*
+*/
+/**
+*  animation-delay（检索或设置对象动画延迟的时间）
+*
+*  @param {Number} $delay -  时间值
+*  
+*  @example scss - 用法：   
+*
+*  $delay: 1s;
+*  .animation-duration {
+*     @include animation-delay($delay);
+*  }
+*
+*  @example css - 输出：
+*  .animation-duration {
+*   -webkit-animation-delay: 1s;
+*           animation-delay: 1s;
+*  }
+*
+*/
+/**
+*  animation-iteration-count（ 检索或设置对象动画的循环次数）
+*
+*  @param {Number} $iteration-count -  循环次数
+*  
+*  @example scss - 用法：   
+*
+*  $iteration-count: 2;
+*  .animation-iteration-count {
+*     @include animation-iteration-count($iteration-count);
+*  }
+*
+*  @example css - 输出：
+*  .animation-iteration-count {
+*   -webkit-animation-iteration-count: 2;
+*           animation-iteration-count: 2;
+*  }
+*
+*/
+/**
+*  animation-direction（检索或设置对象动画在循环中是否反向运动）
+*
+*  取值：   
+*    normal： 正常方向    
+*    alternate： 正常与反向交替     
+*
+*  @param {String} $direction -  
+*  
+*  @example scss - 用法：   
+*
+*  $direction: normal;
+*  .animation-direction {
+*     @include animation-direction($direction);
+*  }
+*
+*  @example css - 输出：
+*  .animation-direction {
+*   -webkit-animation-direction: normal;
+*            animation-direction: normal;
+*  }
+*
+*/
+/**
+*  animation-fill-mode（检索或设置对象动画时间之外的状态 ）
+*
+*  取值：    
+*    none： 默认值。不设置对象动画之外的状态     
+*    forwards： 设置对象状态为动画结束时的状态    
+*    backwards： 设置对象状态为动画开始时的状态    
+*    both： 设置对象状态为动画结束或开始的状态     
+*
+*  @param {String} $fill-mode -  状态
+*  
+*  @example scss - 用法：   
+*
+*  $fill-mode: forwards;
+*  .animation-fill-mode {
+*     @include animation-fill-mode($fill-mode);
+*  }
+*
+*  @example css - 输出：
+*  .animation-fill-mode {
+*    -webkit-animation-fill-mode: forwards;
+*          animation-fill-mode: forwards;
+*  }
+*
+*/
+/**
+*  设置或检索对象阴影
+*
+*  取值：     
+*   none： 无阴影    
+*   [length]①： 第1个长度值用来设置对象的阴影水平偏移值。可以为负值    
+*   [length]②： 第2个长度值用来设置对象的阴影垂直偏移值。可以为负值    
+*   [length]③： 如果提供了第3个长度值则用来设置对象的阴影模糊值。不允许负值   
+*   [length]④： 如果提供了第4个长度值则用来设置对象的阴影外延值。可以为负值   
+*   [color]：   设置对象的阴影的颜色。   
+*   inset：     设置对象的阴影类型为内阴影。该值为空时，则对象的阴影类型为外阴影       
+*
+*  @param {String} $shadow -  状态
+*  
+*
+*
+*/
+/**
+*  animation-fill-mode（检索或设置对象动画时间之外的状态 ）
+*
+*  取值：  
+*    content-box： padding和border不被包含在定义的width和height之内。对象的实际宽度等于设置的width值和border、padding之和，即 ( Element width = width + border + padding ) 
+*  此属性表现为标准模式下的盒模型。  
+* 
+*    border-box： padding和border被包含在定义的width和height之内。对象的实际宽度就等于设置的width值，即使定义有border和padding也不会改变对象的实际宽度，即 ( Element width = width ) 
+*  此属性表现为怪异模式下的盒模型。      
+*
+*  @param {String} $boxmodel - 
+*  
+*  @example scss - 用法：   
+*
+*  $boxmodel: border-box;
+*  .box-sizing {
+*     @include box-sizing($boxmodel);
+*  }
+*
+*  @example css - 输出：
+*  .box-sizing {
+*    -webkit-box-sizing: border-box;
+*       -moz-box-sizing: border-box;
+*            box-sizing: border-box;
+*  }
+*
+*/
+/**
+*  content-columns 
+*  
+*  @param {Number} $column-count   
+*  @param {Number} $column-gap 
+*  @param {Number} $grid-gutter-width 
+*/
+/**
+*  占位符
+*
+*  @param {String} $color：$input-color-placeholder -  $input-color-placeholder(变量控制)
+*/
+/**
  * @access public
  * @group Utils
  * @author senola
@@ -633,6 +865,17 @@ th {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.animation {
+  -webkit-animation: scaleBig 1s ease-out;
+  -o-animation: scaleBig 1s ease-out;
+  animation: scaleBig 1s ease-out;
+}
+
+.animation-name {
+  -webkit-animation-name: animationDemo;
+  animation-name: animationDemo;
 }
 
 /*# sourceMappingURL=test.css.map */
