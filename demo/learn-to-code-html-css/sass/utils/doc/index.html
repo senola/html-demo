@@ -1,0 +1,7231 @@
+<!doctype html>
+
+
+
+
+<html lang="en">
+<head>
+  
+  <meta charset="utf-8" />
+
+<title>SassDoc</title>
+<link rel="stylesheet" href="./assets/css/main.css" />
+<meta name="viewport" content="width=device-width">
+<meta content="IE=edge, chrome=1" http-equiv="X-UA-Compatible">
+
+<!-- Thanks to Sass-lang.com for the icons -->
+
+<link href="http://sass-lang.com/favicon.ico" rel="shortcut icon">
+
+
+</head>
+<body>
+
+  
+  <aside class="sidebar" role="nav">
+    
+  <div class="sidebar__header">
+  <h1 class="sidebar__title">
+    
+      SassDoc
+    
+  </h1>
+</div>
+
+<div class="sidebar__body">
+  
+  
+    <button type="button" class="btn-toggle  js-btn-toggle" data-alt="Open all">Close all</button>
+
+    
+    
+      <p class="sidebar__item  sidebar__item--heading" data-slug="utils"><a href="#utils">utils</a></p>
+
+      
+      
+        <div>
+
+        
+        
+          <p class="sidebar__item  sidebar__item--sub-heading" data-slug="utils-mixin"><a href="#utils-mixin">mixins</a></p>
+
+          
+          
+            <ul class="list-unstyled">
+            <li class="sidebar__item  sassdoc__item" data-name="border-top-radius" data-type="mixin">
+              <a href="#mixin-border-top-radius">border-top-radius
+              
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="border-right-radius" data-type="mixin">
+              <a href="#mixin-border-right-radius">border-right-radius
+              
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="border-bottom-radius" data-type="mixin">
+              <a href="#mixin-border-bottom-radius">border-bottom-radius
+              
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="border-left-radius" data-type="mixin">
+              <a href="#mixin-border-left-radius">border-left-radius
+              
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="button-variant" data-type="mixin">
+              <a href="#mixin-button-variant">button-variant
+              
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="button-size" data-type="mixin">
+              <a href="#mixin-button-size">button-size
+              
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="center-block" data-type="mixin">
+              <a href="#mixin-center-block">center-block
+              
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="clearfix" data-type="mixin">
+              <a href="#mixin-clearfix">clearfix
+              
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="gradient-horizontal" data-type="mixin">
+              <a href="#mixin-gradient-horizontal">gradient-horizontal
+              
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="gradient-vertical" data-type="mixin">
+              <a href="#mixin-gradient-vertical">gradient-vertical
+              
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="gradient-directional" data-type="mixin">
+              <a href="#mixin-gradient-directional">gradient-directional
+              
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="gradient-horizontal-three-colors" data-type="mixin">
+              <a href="#mixin-gradient-horizontal-three-colors">gradient-horizontal-three-colors
+              
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="gradient-vertical-three-colors" data-type="mixin">
+              <a href="#mixin-gradient-vertical-three-colors">gradient-vertical-three-colors
+              
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="gradient-radial" data-type="mixin">
+              <a href="#mixin-gradient-radial">gradient-radial
+              
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="gradient-striped" data-type="mixin">
+              <a href="#mixin-gradient-striped">gradient-striped
+              
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="img-responsive" data-type="mixin">
+              <a href="#mixin-img-responsive">img-responsive
+              
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="opacity" data-type="mixin">
+              <a href="#mixin-opacity">opacity
+              
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="pagination" data-type="mixin">
+              <a href="#mixin-pagination">pagination
+              
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="progress-bar-variant" data-type="mixin">
+              <a href="#mixin-progress-bar-variant">progress-bar-variant
+              
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="size" data-type="mixin">
+              <a href="#mixin-size">size
+              
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="text-overflow" data-type="mixin">
+              <a href="#mixin-text-overflow">text-overflow
+              
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="animation" data-type="mixin">
+              <a href="#mixin-animation">animation
+              
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="animation-name" data-type="mixin">
+              <a href="#mixin-animation-name">animation-name
+              
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="animation-duration" data-type="mixin">
+              <a href="#mixin-animation-duration">animation-duration
+              
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="animation-timing-function" data-type="mixin">
+              <a href="#mixin-animation-timing-function">animation-timing-function
+              
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="animation-delay" data-type="mixin">
+              <a href="#mixin-animation-delay">animation-delay
+              
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="animation-iteration-count" data-type="mixin">
+              <a href="#mixin-animation-iteration-count">animation-iteration-count
+              
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="animation-direction" data-type="mixin">
+              <a href="#mixin-animation-direction">animation-direction
+              
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="animation-fill-mode" data-type="mixin">
+              <a href="#mixin-animation-fill-mode">animation-fill-mode
+              
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="box-shadow" data-type="mixin">
+              <a href="#mixin-box-shadow">box-shadow
+              
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="box-sizing" data-type="mixin">
+              <a href="#mixin-box-sizing">box-sizing
+              
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="content-columns" data-type="mixin">
+              <a href="#mixin-content-columns">content-columns
+              
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="placeholder" data-type="mixin">
+              <a href="#mixin-placeholder">placeholder
+              
+              
+              </a>
+            </li>
+            </ul>
+          
+        
+        </div>
+      
+
+    
+  
+</div>
+
+
+  </aside>
+
+  
+  <article class="main" role="main">
+
+    
+    <header class="header" role="banner">
+  <div class="container">
+  
+
+    <div class="sassdoc__searchbar  searchbar">
+       <label for="js-search-input" class="visually-hidden">Search</label>
+       <div class="searchbar__form" id="js-search">
+         <input name="search" type="search" class="searchbar__field" autocomplete="off" autofocus id="js-search-input" placeholder="Search" />
+         <ul class="searchbar__suggestions" id="js-search-suggestions"></ul>
+       </div>
+     </div>
+  </div>
+</header>
+
+
+    
+
+  
+  
+
+    
+    
+      <section class="main__section">
+        <h1 class="main__heading" id="utils">
+          <div class="container">
+            utils
+          </div>
+        </h1>
+
+        
+        
+
+          
+          
+            <section class="main__sub-section" id="utils-mixin">
+              <h2 class="main__heading--secondary">
+                <div class="container">
+                  mixins
+                </div>
+              </h2>
+
+              
+              
+                <section class="main__item  container  item" id="mixin-border-top-radius">
+
+<h3 class="item__heading">
+  
+
+  <a class="item__name" href="#mixin-border-top-radius">border-top-radius</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+<div class="item__code-wrapper">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@mixin border-top-radius($radius) { 
+  border-top-right-radius: $radius;
+  border-top-left-radius: $radius;
+ }"
+    data-collapsed="@mixin border-top-radius($radius) { ... }"><code>@mixin border-top-radius($radius) { ... }</code></pre>
+
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+  <div class="item__description"><p>设置元素顶部边界半径值。</p>
+</div>
+
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <table class="item__parameters">
+    <thead>
+      <tr>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Name</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Description</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Type</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$radius</code></th>
+          <td data-label="desc"><p>边界半径值</p>
+</td>
+          <td data-label="type">
+          
+            Length
+          
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+    
+    
+
+  
+    
+    
+  <h3 class="item__sub-heading">Example</h3>
+
+  
+  <div class="item__example  example">
+    
+    <div class="example__description"><p>用法：</p>
+</div>
+    
+    <pre class="example__code  language-scss"><code>.btn-border-top {
+   @include border-top-radius(5em);
+}</code></pre>
+  </div>
+  
+  <div class="item__example  example">
+    
+    <div class="example__description"><p>输出：</p>
+</div>
+    
+    <pre class="example__code  language-css"><code>.btn-border-top {
+   border-top-right-radius: 5em;
+   border-top-left-radius: 5em;
+}</code></pre>
+  </div>
+  
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>senola</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+
+              
+                <section class="main__item  container  item" id="mixin-border-right-radius">
+
+<h3 class="item__heading">
+  
+
+  <a class="item__name" href="#mixin-border-right-radius">border-right-radius</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+<div class="item__code-wrapper">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@mixin border-right-radius($radius) { 
+  border-bottom-right-radius: $radius;
+  border-top-right-radius: $radius;
+ }"
+    data-collapsed="@mixin border-right-radius($radius) { ... }"><code>@mixin border-right-radius($radius) { ... }</code></pre>
+
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+  <div class="item__description"><p>设置元素右侧边界半径值。</p>
+</div>
+
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <table class="item__parameters">
+    <thead>
+      <tr>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Name</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Description</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Type</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$radius</code></th>
+          <td data-label="desc"><p>边界半径值</p>
+</td>
+          <td data-label="type">
+          
+            Length
+          
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+    
+    
+
+  
+    
+    
+  <h3 class="item__sub-heading">Example</h3>
+
+  
+  <div class="item__example  example">
+    
+    <div class="example__description"><p>用法：</p>
+</div>
+    
+    <pre class="example__code  language-scss"><code>.btn-border-right {
+   @include border-right-radius(5em);
+}</code></pre>
+  </div>
+  
+  <div class="item__example  example">
+    
+    <div class="example__description"><p>输出：</p>
+</div>
+    
+    <pre class="example__code  language-css"><code>.btn-border-right {
+   border-bottom-right-radius: 5em;
+   border-top-right-radius: 5em;
+}</code></pre>
+  </div>
+  
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+
+
+  
+
+    
+      
+      <h3 class="item__sub-heading">Used by</h3>
+      <ul class="list-unstyled">
+    
+
+    <li><span class="item__cross-type">[mixin]</span> <a href="#mixin-pagination"><code>pagination</code></a></li>
+  
+
+
+
+
+</ul>
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>senola</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+
+              
+                <section class="main__item  container  item" id="mixin-border-bottom-radius">
+
+<h3 class="item__heading">
+  
+
+  <a class="item__name" href="#mixin-border-bottom-radius">border-bottom-radius</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+<div class="item__code-wrapper">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@mixin border-bottom-radius($radius) { 
+	border-bottom-right-radius: $radius;
+	border-bottom-left-radius: $radius;
+ }"
+    data-collapsed="@mixin border-bottom-radius($radius) { ... }"><code>@mixin border-bottom-radius($radius) { ... }</code></pre>
+
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+  <div class="item__description"><p>设置元素底部边界半径值。</p>
+</div>
+
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <table class="item__parameters">
+    <thead>
+      <tr>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Name</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Description</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Type</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$radius</code></th>
+          <td data-label="desc"><p>边界半径值</p>
+</td>
+          <td data-label="type">
+          
+            Length
+          
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+    
+    
+
+  
+    
+    
+  <h3 class="item__sub-heading">Example</h3>
+
+  
+  <div class="item__example  example">
+    
+    <div class="example__description"><p>用法：</p>
+</div>
+    
+    <pre class="example__code  language-scss"><code>.btn-border-bottom {
+   @include border-bottom-radius(5em);
+}</code></pre>
+  </div>
+  
+  <div class="item__example  example">
+    
+    <div class="example__description"><p>输出：</p>
+</div>
+    
+    <pre class="example__code  language-css"><code>.btn-border-bottom {
+   border-bottom-right-radius: 5em;
+   border-bottom-left-radius: 5em;
+}</code></pre>
+  </div>
+  
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>senola</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+
+              
+                <section class="main__item  container  item" id="mixin-border-left-radius">
+
+<h3 class="item__heading">
+  
+
+  <a class="item__name" href="#mixin-border-left-radius">border-left-radius</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+<div class="item__code-wrapper">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@mixin border-left-radius($radius) { 
+  border-bottom-left-radius: $radius;
+  border-top-left-radius: $radius;
+ }"
+    data-collapsed="@mixin border-left-radius($radius) { ... }"><code>@mixin border-left-radius($radius) { ... }</code></pre>
+
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+  <div class="item__description"><p>设置元素左侧边界半径值。</p>
+</div>
+
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <table class="item__parameters">
+    <thead>
+      <tr>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Name</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Description</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Type</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$radius</code></th>
+          <td data-label="desc"><p>边界半径值</p>
+</td>
+          <td data-label="type">
+          
+            Length
+          
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+    
+    
+
+  
+    
+    
+  <h3 class="item__sub-heading">Example</h3>
+
+  
+  <div class="item__example  example">
+    
+    <div class="example__description"><p>用法：</p>
+</div>
+    
+    <pre class="example__code  language-scss"><code>.btn-border-left {
+   @include border-left-radius(5em);
+}</code></pre>
+  </div>
+  
+  <div class="item__example  example">
+    
+    <div class="example__description"><p>输出：</p>
+</div>
+    
+    <pre class="example__code  language-css"><code>.btn-border-left {
+   border-bottom-left-radius: 5em;
+   border-top-left-radius: 5em;
+}</code></pre>
+  </div>
+  
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+
+
+  
+
+    
+      
+      <h3 class="item__sub-heading">Used by</h3>
+      <ul class="list-unstyled">
+    
+
+    <li><span class="item__cross-type">[mixin]</span> <a href="#mixin-pagination"><code>pagination</code></a></li>
+  
+
+
+
+
+</ul>
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>senola</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+
+              
+                <section class="main__item  container  item" id="mixin-button-variant">
+
+<h3 class="item__heading">
+  
+
+  <a class="item__name" href="#mixin-button-variant">button-variant</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+<div class="item__code-wrapper">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@mixin button-variant($color, $background, $border) { 
+  color: $color;
+  background-color: $background;
+  border-color: $border;
+
+  &amp;:hover,
+  &amp;:focus,
+  &amp;.focus,
+  &amp;:active,
+  &amp;.active,
+  .open &gt; &amp;.dropdown-toggle {
+    color: $color;
+    background-color: darken($background, 10%);
+        border-color: darken($border, 12%);
+  }
+  &amp;:active,
+  &amp;.active,
+  .open &gt; &amp;.dropdown-toggle {
+    background-image: none;
+  } 
+  &amp;.disabled,
+  &amp;[disabled],
+  fieldset[disabled] &amp; {
+    &amp;,
+    &amp;:hover,
+    &amp;:focus,
+    &amp;.focus,
+    &amp;:active,
+    &amp;.active {
+      background-color: $background;
+          border-color: $border;
+    }
+  }
+
+  .badge {
+    color: $background;
+    background-color: $color;
+  }
+ }"
+    data-collapsed="@mixin button-variant($color, $background, $border) { ... }"><code>@mixin button-variant($color, $background, $border) { ... }</code></pre>
+
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+  <div class="item__description"><p>Button 样式控制</p>
+</div>
+
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <table class="item__parameters">
+    <thead>
+      <tr>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Name</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Description</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Type</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$color</code></th>
+          <td data-label="desc"><p>按钮内容颜色</p>
+</td>
+          <td data-label="type">
+          
+            String
+          
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$background</code></th>
+          <td data-label="desc"><p>按钮背景颜色</p>
+</td>
+          <td data-label="type">
+          
+            String
+          
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$border</code></th>
+          <td data-label="desc"><p>按钮边框颜色</p>
+</td>
+          <td data-label="type">
+          
+            Number
+          
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+    
+    
+
+  
+    
+    
+  <h3 class="item__sub-heading">Example</h3>
+
+  
+  <div class="item__example  example">
+    
+    <div class="example__description"><p>用法：</p>
+</div>
+    
+    <pre class="example__code  language-scss"><code>.btn {
+   @include button-variant(#eee, #fff, #aaa);
+}
+</code></pre>
+  </div>
+  
+  <div class="item__example  example">
+    
+    <div class="example__description"><p>输出：</p>
+</div>
+    
+    <pre class="example__code  language-css"><code>.btn {
+  color: #eee;
+ background-color: #fff;
+  border-color: #aaa;
+}
+.btn:hover, .btn:focus, .btn.focus, .btn:active, .btn.active, .open &gt; .btn.dropdown-toggle {
+  color: #eee;
+  background-color: #e6e6e6;
+  border-color: #8b8b8b;
+}
+.btn:active, .btn.active, .open &gt; .btn.dropdown-toggle {
+  background-image: none;
+}
+.btn.disabled, .btn.disabled:hover, .btn.disabled:focus, .btn.disabled.focus, .btn.disabled:active, .btn.disabled.active, .btn[disabled], .btn[disabled]:hover, .btn[disabled]:focus, .btn[disabled].focus, .btn[disabled]:active, .btn[disabled].active, fieldset[disabled] .btn, fieldset[disabled] .btn:hover, fieldset[disabled] .btn:focus, fieldset[disabled] .btn.focus, fieldset[disabled] .btn:active, fieldset[disabled] .btn.active {
+  background-color: #fff;
+  border-color: #aaa;
+}
+.btn .badge {
+  color: #fff;
+  background-color: #eee;
+}
+</code></pre>
+  </div>
+  
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>senola</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+
+              
+                <section class="main__item  container  item" id="mixin-button-size">
+
+<h3 class="item__heading">
+  
+
+  <a class="item__name" href="#mixin-button-size">button-size</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+<div class="item__code-wrapper">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@mixin button-size($padding-vertical, $padding-horizontal, $font-size, $line-height, $border-radius) { 
+  padding: $padding-vertical $padding-horizontal;
+  font-size: $font-size;
+  line-height: $line-height;
+  border-radius: $border-radius;
+ }"
+    data-collapsed="@mixin button-size($padding-vertical, $padding-horizontal, $font-size, $line-height, $border-radius) { ... }"><code>@mixin button-size($padding-vertical, $padding-horizontal, $font-size, $line-height, $border-radius) { ... }</code></pre>
+
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+  <div class="item__description"><p>Button 样式控制</p>
+</div>
+
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <table class="item__parameters">
+    <thead>
+      <tr>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Name</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Description</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Type</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$padding-vertical</code></th>
+          <td data-label="desc"><p>内边距垂直高度</p>
+</td>
+          <td data-label="type">
+          
+            String
+          
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$padding-horizontal</code></th>
+          <td data-label="desc"><p>内边距水平高度</p>
+</td>
+          <td data-label="type">
+          
+            String
+          
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$font-size</code></th>
+          <td data-label="desc"><p>字体大小</p>
+</td>
+          <td data-label="type">
+          
+            Number
+          
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$line-height</code></th>
+          <td data-label="desc"><p>行高</p>
+</td>
+          <td data-label="type">
+          
+            Number
+          
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$border-radius</code></th>
+          <td data-label="desc"><p>边角半径</p>
+</td>
+          <td data-label="type">
+          
+            Number
+          
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+    
+    
+
+  
+    
+    
+  <h3 class="item__sub-heading">Example</h3>
+
+  
+  <div class="item__example  example">
+    
+    <div class="example__description"><p>用法：</p>
+</div>
+    
+    <pre class="example__code  language-scss"><code>.btn-size {
+   @include button-size(2em, 2em, 4em, 4em, 2em);
+}
+ </code></pre>
+  </div>
+  
+  <div class="item__example  example">
+    
+    <div class="example__description"><p>输出</p>
+</div>
+    
+    <pre class="example__code  language-css"><code>.btn-size {
+  padding: 2em 2em;
+  font-size: 4em;
+  line-height: 4em;
+  border-radius: 2em;
+}</code></pre>
+  </div>
+  
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>senola</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+
+              
+                <section class="main__item  container  item" id="mixin-center-block">
+
+<h3 class="item__heading">
+  
+
+  <a class="item__name" href="#mixin-center-block">center-block</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="item__code-wrapper">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@mixin center-block() { 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+ }"
+    data-collapsed="@mixin center-block() { ... }"><code>@mixin center-block() { ... }</code></pre>
+
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+  <div class="item__description"><p>居中块级元素</p>
+</div>
+
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <p>None.</p>
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>senola</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+
+              
+                <section class="main__item  container  item" id="mixin-clearfix">
+
+<h3 class="item__heading">
+  
+
+  <a class="item__name" href="#mixin-clearfix">clearfix</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="item__code-wrapper">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@mixin clearfix() { 
+ 	&amp;:before,
+ 	&amp;:after {
+ 		content: &#39;&#39;; // 1
+ 		display: table; // 2
+ 	}
+ 	&amp;:after {
+ 		clear: both;
+ 		overflow: hidden;
+ 	}
+ 	&amp; {
+ 		zoom:1; // 3
+ 	}
+  }"
+    data-collapsed="@mixin clearfix() { ... }"><code>@mixin clearfix() { ... }</code></pre>
+
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+  <div class="item__description"><ol>
+<li>The space content is one way to avoid an Opera bug when the contenteditable attribute is included anywhere else in the document.<br>Otherwise it causes space to appear at the top and bottom of elements     </li>
+<li>The use of <code>table</code> rather than <code>block</code> is only necessary if using <code>:before</code> to contain the top-margins of child elements. that are clearfixed.     </li>
+<li>For IE 6/7 only. Include this rule to trigger hasLayout and contain floats.  </li>
+</ol>
+</div>
+
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <p>None.</p>
+
+
+
+  
+    
+    
+
+  
+    
+    
+  <h3 class="item__sub-heading">Example</h3>
+
+  
+  <div class="item__example  example">
+    
+    <div class="example__description"><p>用法：</p>
+</div>
+    
+    <pre class="example__code  language-scss"><code>.clearfix {
+  @include clearfix();
+}</code></pre>
+  </div>
+  
+  <div class="item__example  example">
+    
+    <div class="example__description"><p>输出：</p>
+</div>
+    
+    <pre class="example__code  language-css"><code>.clearfix:before, .clearfix:after {
+   content: &#39;&#39;;
+   display: table;
+}
+.clearfix:after {
+   clear: both;
+   overflow: hidden;
+}
+.clearfix {
+   zoom: 1;
+}</code></pre>
+  </div>
+  
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>senola</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+
+              
+                <section class="main__item  container  item" id="mixin-gradient-horizontal">
+
+<h3 class="item__heading">
+  
+
+  <a class="item__name" href="#mixin-gradient-horizontal">gradient-horizontal</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+    
+  
+
+
+<div class="item__code-wrapper">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@mixin gradient-horizontal($start-color: #555, $end-color: #333, $start-percent: 0%, $end-percent: 100%) { 
+  background-image: -webkit-linear-gradient(left, $start-color $start-percent, $end-color $end-percent); // Safari 5.1-6, Chrome 10+
+  background-image: -o-linear-gradient(left, $start-color $start-percent, $end-color $end-percent); // Opera 12
+  background-image: linear-gradient(to right, $start-color $start-percent, $end-color $end-percent); // Standard, IE10, Firefox 16+, Opera 12.10+, Safari 7+, Chrome 26+
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=&#39;#{ie-hex-str($start-color)}&#39;, endColorstr=&#39;#{ie-hex-str($end-color)}&#39;, GradientType=1); // IE9 and down
+ }"
+    data-collapsed="@mixin gradient-horizontal($start-color: #555, $end-color: #333, $start-percent: 0%, $end-percent: 100%) { ... }"><code>@mixin gradient-horizontal($start-color: #555, $end-color: #333, $start-percent: 0%, $end-percent: 100%) { ... }</code></pre>
+
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+  <div class="item__description"><p>gradient-horizontal 水平渐变，从左到右
+通过设置开始和结束的不同颜色值，来创建两种颜色梯度。<br>支持 IE9 + </p>
+</div>
+
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <table class="item__parameters">
+    <thead>
+      <tr>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Name</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Description</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Type</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$start-color</code></th>
+          <td data-label="desc"><p>初始颜色值</p>
+</td>
+          <td data-label="type">
+          
+            String
+          
+          </td>
+          <td data-label="default">
+          
+            <code>#555</code>
+          
+          </td>
+        </tr>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$end-color</code></th>
+          <td data-label="desc"><p>结束颜色值</p>
+</td>
+          <td data-label="type">
+          
+            String
+          
+          </td>
+          <td data-label="default">
+          
+            <code>#333</code>
+          
+          </td>
+        </tr>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$start-percent</code></th>
+          <td data-label="desc"><p>初始百分比</p>
+</td>
+          <td data-label="type">
+          
+            String
+          
+          </td>
+          <td data-label="default">
+          
+            <code>0%</code>
+          
+          </td>
+        </tr>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$end-percent</code></th>
+          <td data-label="desc"><p>结束百分比</p>
+</td>
+          <td data-label="type">
+          
+            String
+          
+          </td>
+          <td data-label="default">
+          
+            <code>100%</code>
+          
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>senola</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+
+              
+                <section class="main__item  container  item" id="mixin-gradient-vertical">
+
+<h3 class="item__heading">
+  
+
+  <a class="item__name" href="#mixin-gradient-vertical">gradient-vertical</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+    
+  
+
+
+<div class="item__code-wrapper">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@mixin gradient-vertical($start-color: #555, $end-color: #333, $start-percent: 0%, $end-percent: 100%) { 
+  background-image: -webkit-linear-gradient(top, $start-color $start-percent, $end-color $end-percent);  // Safari 5.1-6, Chrome 10+
+  background-image: -o-linear-gradient(top, $start-color $start-percent, $end-color $end-percent);  // Opera 12
+  background-image: linear-gradient(to bottom, $start-color $start-percent, $end-color $end-percent); // Standard, IE10, Firefox 16+, Opera 12.10+, Safari 7+, Chrome 26+
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=&#39;#{ie-hex-str($start-color)}&#39;, endColorstr=&#39;#{ie-hex-str($end-color)}&#39;, GradientType=0); // IE9 and down
+ }"
+    data-collapsed="@mixin gradient-vertical($start-color: #555, $end-color: #333, $start-percent: 0%, $end-percent: 100%) { ... }"><code>@mixin gradient-vertical($start-color: #555, $end-color: #333, $start-percent: 0%, $end-percent: 100%) { ... }</code></pre>
+
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+  <div class="item__description"><p>gradient-vertical 垂直渐变，从顶部到底部
+通过设置开始和结束的不同颜色值，来创建两种颜色梯度。<br>支持 IE9 + </p>
+</div>
+
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <table class="item__parameters">
+    <thead>
+      <tr>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Name</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Description</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Type</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$start-color</code></th>
+          <td data-label="desc"><p>初始颜色值</p>
+</td>
+          <td data-label="type">
+          
+            String
+          
+          </td>
+          <td data-label="default">
+          
+            <code>#555</code>
+          
+          </td>
+        </tr>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$end-color</code></th>
+          <td data-label="desc"><p>结束颜色值</p>
+</td>
+          <td data-label="type">
+          
+            String
+          
+          </td>
+          <td data-label="default">
+          
+            <code>#333</code>
+          
+          </td>
+        </tr>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$start-percent</code></th>
+          <td data-label="desc"><p>初始百分比</p>
+</td>
+          <td data-label="type">
+          
+            String
+          
+          </td>
+          <td data-label="default">
+          
+            <code>0%</code>
+          
+          </td>
+        </tr>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$end-percent</code></th>
+          <td data-label="desc"><p>结束百分比</p>
+</td>
+          <td data-label="type">
+          
+            String
+          
+          </td>
+          <td data-label="default">
+          
+            <code>100%</code>
+          
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>senola</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+
+              
+                <section class="main__item  container  item" id="mixin-gradient-directional">
+
+<h3 class="item__heading">
+  
+
+  <a class="item__name" href="#mixin-gradient-directional">gradient-directional</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+    
+  
+
+
+<div class="item__code-wrapper">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@mixin gradient-directional($start-color: #555, $end-color: #333, $deg: 45deg) { 
+  background-repeat: repeat-x;
+  background-image: -webkit-linear-gradient($deg, $start-color, $end-color); // Safari 5.1-6, Chrome 10+
+  background-image: -o-linear-gradient($deg, $start-color, $end-color); // Opera 12
+  background-image: linear-gradient($deg, $start-color, $end-color); // Standard, IE10, Firefox 16+, Opera 12.10+, Safari 7+, Chrome 26+
+ }"
+    data-collapsed="@mixin gradient-directional($start-color: #555, $end-color: #333, $deg: 45deg) { ... }"><code>@mixin gradient-directional($start-color: #555, $end-color: #333, $deg: 45deg) { ... }</code></pre>
+
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+  <div class="item__description"><p>gradient-directional </p>
+</div>
+
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <table class="item__parameters">
+    <thead>
+      <tr>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Name</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Description</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Type</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$start-color</code></th>
+          <td data-label="desc"><p>初始颜色值</p>
+</td>
+          <td data-label="type">
+          
+            String
+          
+          </td>
+          <td data-label="default">
+          
+            <code>#555</code>
+          
+          </td>
+        </tr>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$end-color</code></th>
+          <td data-label="desc"><p>结束颜色值</p>
+</td>
+          <td data-label="type">
+          
+            String
+          
+          </td>
+          <td data-label="default">
+          
+            <code>#333</code>
+          
+          </td>
+        </tr>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$deg</code></th>
+          <td data-label="desc"><p>角度</p>
+</td>
+          <td data-label="type">
+          
+            String
+          
+          </td>
+          <td data-label="default">
+          
+            <code>45deg</code>
+          
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>senola</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+
+              
+                <section class="main__item  container  item" id="mixin-gradient-horizontal-three-colors">
+
+<h3 class="item__heading">
+  
+
+  <a class="item__name" href="#mixin-gradient-horizontal-three-colors">gradient-horizontal-three-colors</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+    
+  
+
+
+<div class="item__code-wrapper">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@mixin gradient-horizontal-three-colors($start-color: #00b3ee, $mid-color: #7a43b6, $color-stop: 50%, $end-color: #c3325f) { 
+  background-image: -webkit-linear-gradient(left, $start-color, $mid-color $color-stop, $end-color);
+  background-image: -o-linear-gradient(left, $start-color, $mid-color $color-stop, $end-color);
+  background-image: linear-gradient(to right, $start-color, $mid-color $color-stop, $end-color);
+  background-repeat: no-repeat;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=&#39;#{ie-hex-str($start-color)}&#39;, endColorstr=&#39;#{ie-hex-str($end-color)}&#39;, GradientType=1); // IE9 and down, gets no color-stop at all for proper fallback
+ }"
+    data-collapsed="@mixin gradient-horizontal-three-colors($start-color: #00b3ee, $mid-color: #7a43b6, $color-stop: 50%, $end-color: #c3325f) { ... }"><code>@mixin gradient-horizontal-three-colors($start-color: #00b3ee, $mid-color: #7a43b6, $color-stop: 50%, $end-color: #c3325f) { ... }</code></pre>
+
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+  <div class="item__description"><p>gradient-horizontal-three-colors  水平渐变，从左到右 (三种颜色)</p>
+</div>
+
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <table class="item__parameters">
+    <thead>
+      <tr>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Name</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Description</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Type</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$start-color</code></th>
+          <td data-label="desc"><p>初始颜色值</p>
+</td>
+          <td data-label="type">
+          
+            String
+          
+          </td>
+          <td data-label="default">
+          
+            <code>#00b3ee</code>
+          
+          </td>
+        </tr>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$mid-color</code></th>
+          <td data-label="desc"><p>结束颜色值</p>
+</td>
+          <td data-label="type">
+          
+            String
+          
+          </td>
+          <td data-label="default">
+          
+            <code>#7a43b6</code>
+          
+          </td>
+        </tr>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$color-stop</code></th>
+          <td data-label="desc"><p>结束颜色值</p>
+</td>
+          <td data-label="type">
+          
+            String
+          
+          </td>
+          <td data-label="default">
+          
+            <code>50%</code>
+          
+          </td>
+        </tr>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$end-color</code></th>
+          <td data-label="desc"><p>角度</p>
+</td>
+          <td data-label="type">
+          
+            String
+          
+          </td>
+          <td data-label="default">
+          
+            <code>#c3325f</code>
+          
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>senola</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+
+              
+                <section class="main__item  container  item" id="mixin-gradient-vertical-three-colors">
+
+<h3 class="item__heading">
+  
+
+  <a class="item__name" href="#mixin-gradient-vertical-three-colors">gradient-vertical-three-colors</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+    
+  
+
+
+<div class="item__code-wrapper">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@mixin gradient-vertical-three-colors($start-color: #00b3ee, $mid-color: #7a43b6, $color-stop: 50%, $end-color: #c3325f) { 
+  background-image: -webkit-linear-gradient($start-color, $mid-color $color-stop, $end-color);
+  background-image: -o-linear-gradient($start-color, $mid-color $color-stop, $end-color);
+  background-image: linear-gradient($start-color, $mid-color $color-stop, $end-color);
+  background-repeat: no-repeat;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=&#39;#{ie-hex-str($start-color)}&#39;, endColorstr=&#39;#{ie-hex-str($end-color)}&#39;, GradientType=0); // IE9 and down, gets no color-stop at all for proper fallback
+ }"
+    data-collapsed="@mixin gradient-vertical-three-colors($start-color: #00b3ee, $mid-color: #7a43b6, $color-stop: 50%, $end-color: #c3325f) { ... }"><code>@mixin gradient-vertical-three-colors($start-color: #00b3ee, $mid-color: #7a43b6, $color-stop: 50%, $end-color: #c3325f) { ... }</code></pre>
+
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+  <div class="item__description"><p>gradient-vertical-three-colors  垂直渐变，从左到右 (三种颜色)</p>
+</div>
+
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <table class="item__parameters">
+    <thead>
+      <tr>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Name</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Description</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Type</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$start-color</code></th>
+          <td data-label="desc"><p>初始颜色值</p>
+</td>
+          <td data-label="type">
+          
+            String
+          
+          </td>
+          <td data-label="default">
+          
+            <code>#00b3ee</code>
+          
+          </td>
+        </tr>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$mid-color</code></th>
+          <td data-label="desc"><p>结束颜色值</p>
+</td>
+          <td data-label="type">
+          
+            String
+          
+          </td>
+          <td data-label="default">
+          
+            <code>#7a43b6</code>
+          
+          </td>
+        </tr>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$color-stop</code></th>
+          <td data-label="desc"><p>结束颜色值</p>
+</td>
+          <td data-label="type">
+          
+            String
+          
+          </td>
+          <td data-label="default">
+          
+            <code>50%</code>
+          
+          </td>
+        </tr>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$end-color</code></th>
+          <td data-label="desc"><p>角度</p>
+</td>
+          <td data-label="type">
+          
+            String
+          
+          </td>
+          <td data-label="default">
+          
+            <code>#c3325f</code>
+          
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>senola</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+
+              
+                <section class="main__item  container  item" id="mixin-gradient-radial">
+
+<h3 class="item__heading">
+  
+
+  <a class="item__name" href="#mixin-gradient-radial">gradient-radial</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+<div class="item__code-wrapper">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@mixin gradient-radial($inner-color: #555, $outer-color(#333)) { 
+  background-image: -webkit-radial-gradient(circle, $inner-color, $outer-color);
+  background-image: radial-gradient(circle, $inner-color, $outer-color);
+  background-repeat: no-repeat;
+ }"
+    data-collapsed="@mixin gradient-radial($inner-color: #555, $outer-color(#333)) { ... }"><code>@mixin gradient-radial($inner-color: #555, $outer-color(#333)) { ... }</code></pre>
+
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+  <div class="item__description"><p>gradient-radial  梯度径向</p>
+</div>
+
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <table class="item__parameters">
+    <thead>
+      <tr>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Name</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Description</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Type</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$inner-color</code></th>
+          <td data-label="desc"><p>内部颜色值</p>
+</td>
+          <td data-label="type">
+          
+            String
+          
+          </td>
+          <td data-label="default">
+          
+            <code>#555</code>
+          
+          </td>
+        </tr>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$outer-color(#333)</code></th>
+          <td data-label="desc"><p>外部颜色值</p>
+</td>
+          <td data-label="type">
+          
+            String
+          
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>senola</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+
+              
+                <section class="main__item  container  item" id="mixin-gradient-striped">
+
+<h3 class="item__heading">
+  
+
+  <a class="item__name" href="#mixin-gradient-striped">gradient-striped</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+<div class="item__code-wrapper">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@mixin gradient-striped($color: #555, $angle(45deg)) { 
+  background-image: -webkit-linear-gradient($angle, $color 25%, transparent 25%, transparent 50%, $color 50%, $color 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient($angle, $color 25%, transparent 25%, transparent 50%, $color 50%, $color 75%, transparent 75%, transparent);
+  background-image: linear-gradient($angle, $color 25%, transparent 25%, transparent 50%, $color 50%, $color 75%, transparent 75%, transparent);
+ }"
+    data-collapsed="@mixin gradient-striped($color: #555, $angle(45deg)) { ... }"><code>@mixin gradient-striped($color: #555, $angle(45deg)) { ... }</code></pre>
+
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+  <div class="item__description"><p>gradient-radial  条纹渐变</p>
+</div>
+
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <table class="item__parameters">
+    <thead>
+      <tr>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Name</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Description</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Type</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$color</code></th>
+          <td data-label="desc"><p>颜色</p>
+</td>
+          <td data-label="type">
+          
+            String
+          
+          </td>
+          <td data-label="default">
+          
+            <code>#555</code>
+          
+          </td>
+        </tr>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$angle(45deg)</code></th>
+          <td data-label="desc"><p>角度</p>
+</td>
+          <td data-label="type">
+          
+            String
+          
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>senola</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+
+              
+                <section class="main__item  container  item" id="mixin-img-responsive">
+
+<h3 class="item__heading">
+  
+
+  <a class="item__name" href="#mixin-img-responsive">img-responsive</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    
+  
+
+  
+
+  
+    
+  
+
+
+<div class="item__code-wrapper">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@mixin img-responsive($display: block) { 
+  display: $display;
+  max-width: 100%; // Part 1: Set a maximum relative to the parent
+  height: auto; // Part 2: Scale the height according to the width, otherwise you get stretching
+ }"
+    data-collapsed="@mixin img-responsive($display: block) { ... }"><code>@mixin img-responsive($display: block) { ... }</code></pre>
+
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+  <div class="item__description"><p>img-responsive</p>
+</div>
+
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <table class="item__parameters">
+    <thead>
+      <tr>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Name</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Description</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Type</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$display</code></th>
+          <td data-label="desc">&mdash;<span class="visually-hidden"> none</span></td>
+          <td data-label="type">
+          
+            String
+          
+          </td>
+          <td data-label="default">
+          
+            <code>block</code>
+          
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>senola</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+
+              
+                <section class="main__item  container  item" id="mixin-opacity">
+
+<h3 class="item__heading">
+  
+
+  <a class="item__name" href="#mixin-opacity">opacity</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+<div class="item__code-wrapper">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@mixin opacity($opacity) { 
+	opacity: $opacity;
+	// IE8 filter
+	$opacity-ie: ($opacity * 100);
+	filter: alpha(opacity=$opacity-ie);
+ }"
+    data-collapsed="@mixin opacity($opacity) { ... }"><code>@mixin opacity($opacity) { ... }</code></pre>
+
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+  <div class="item__description"><p>不透明度</p>
+</div>
+
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <table class="item__parameters">
+    <thead>
+      <tr>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Name</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Description</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Type</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$opacity</code></th>
+          <td data-label="desc"><p>0 ~ 1</p>
+</td>
+          <td data-label="type">
+          
+            Number
+          
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+    
+    
+
+  
+    
+    
+  <h3 class="item__sub-heading">Example</h3>
+
+  
+  <div class="item__example  example">
+    
+    <div class="example__description"><p>用法：</p>
+</div>
+    
+    <pre class="example__code  language-scss"><code>.btn-opacity {
+   @include opacity(0.4);
+}</code></pre>
+  </div>
+  
+  <div class="item__example  example">
+    
+    <div class="example__description"><p>输出：</p>
+</div>
+    
+    <pre class="example__code  language-css"><code>.btn-opacity {
+   opacity: 0.4;
+   filter: alpha(opacity=40);
+}</code></pre>
+  </div>
+  
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+  
+    
+      
+      <h3 class="item__sub-heading">Requires</h3>
+      <ul class="list-unstyled">
+    
+
+    
+      <li><span class="item__cross-type">[mixin]</span>
+        <a href="#mixin-opacity"><code>opacity</code></a>
+        
+      </li>
+    
+  
+
+
+
+
+</ul>
+
+
+  
+    
+    
+
+
+
+  
+
+    
+      
+      <h3 class="item__sub-heading">Used by</h3>
+      <ul class="list-unstyled">
+    
+
+    <li><span class="item__cross-type">[mixin]</span> <a href="#mixin-opacity"><code>opacity</code></a></li>
+  
+
+
+
+
+</ul>
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>senola</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+
+              
+                <section class="main__item  container  item" id="mixin-pagination">
+
+<h3 class="item__heading">
+  
+
+  <a class="item__name" href="#mixin-pagination">pagination</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+<div class="item__code-wrapper">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@mixin pagination($padding-vertical, $padding-horizontal, $font-size, $border-radius) { 
+  &gt; li {
+    &gt; a,
+    &gt; span {
+      padding: $padding-vertical $padding-horizontal;
+      font-size: $font-size;
+    }
+    &amp;:first-child {
+      &gt; a,
+      &gt; span {
+        @include border-left-radius($border-radius);
+      }
+    }
+    &amp;:last-child {
+      &gt; a,
+      &gt; span {
+        @include border-right-radius($border-radius);
+      }
+    }
+  }
+ }"
+    data-collapsed="@mixin pagination($padding-vertical, $padding-horizontal, $font-size, $border-radius) { ... }"><code>@mixin pagination($padding-vertical, $padding-horizontal, $font-size, $border-radius) { ... }</code></pre>
+
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+  <div class="item__description"><p>分页样式</p>
+</div>
+
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <table class="item__parameters">
+    <thead>
+      <tr>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Name</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Description</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Type</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$padding-vertical</code></th>
+          <td data-label="desc">&mdash;<span class="visually-hidden"> none</span></td>
+          <td data-label="type">
+          
+            String
+          
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$padding-horizontal</code></th>
+          <td data-label="desc">&mdash;<span class="visually-hidden"> none</span></td>
+          <td data-label="type">
+          
+            String
+          
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$font-size</code></th>
+          <td data-label="desc"><p>字体大小</p>
+</td>
+          <td data-label="type">
+          
+            Number
+          
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$border-radius</code></th>
+          <td data-label="desc"><p>半径</p>
+</td>
+          <td data-label="type">
+          
+            Number
+          
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+
+  
+    
+      
+      <h3 class="item__sub-heading">Requires</h3>
+      <ul class="list-unstyled">
+    
+
+    
+      <li><span class="item__cross-type">[mixin]</span>
+        <a href="#mixin-border-left-radius"><code>border-left-radius</code></a>
+        
+      </li>
+    
+  
+
+
+
+  
+    
+
+    
+      <li><span class="item__cross-type">[mixin]</span>
+        <a href="#mixin-border-right-radius"><code>border-right-radius</code></a>
+        
+      </li>
+    
+  
+
+
+
+
+</ul>
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>senola</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+
+              
+                <section class="main__item  container  item" id="mixin-progress-bar-variant">
+
+<h3 class="item__heading">
+  
+
+  <a class="item__name" href="#mixin-progress-bar-variant">progress-bar-variant</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+<div class="item__code-wrapper">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@mixin progress-bar-variant($color) { 
+  background-color: $color;
+
+  .progress-striped &amp; {
+    @include gradient-striped;
+  }
+ }"
+    data-collapsed="@mixin progress-bar-variant($color) { ... }"><code>@mixin progress-bar-variant($color) { ... }</code></pre>
+
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+  <div class="item__description"><p>进度条</p>
+</div>
+
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <table class="item__parameters">
+    <thead>
+      <tr>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Name</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Description</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Type</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$color</code></th>
+          <td data-label="desc">&mdash;<span class="visually-hidden"> none</span></td>
+          <td data-label="type">
+          
+            String
+          
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>senola</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+
+              
+                <section class="main__item  container  item" id="mixin-size">
+
+<h3 class="item__heading">
+  
+
+  <a class="item__name" href="#mixin-size">size</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+<div class="item__code-wrapper">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@mixin size($width, $height) { 
+	width: $width;
+	height: $height;
+ }"
+    data-collapsed="@mixin size($width, $height) { ... }"><code>@mixin size($width, $height) { ... }</code></pre>
+
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+  <div class="item__description"><p>快速设置元素的高度和宽度。</p>
+</div>
+
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <table class="item__parameters">
+    <thead>
+      <tr>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Name</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Description</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Type</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$width</code></th>
+          <td data-label="desc"><p>宽度</p>
+</td>
+          <td data-label="type">
+          
+            Length
+          
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$height</code></th>
+          <td data-label="desc"><p>高度</p>
+</td>
+          <td data-label="type">
+          
+            Length
+          
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+    
+    
+
+  
+    
+    
+  <h3 class="item__sub-heading">Example</h3>
+
+  
+  <div class="item__example  example">
+    
+    <div class="example__description"><p>用法一：</p>
+</div>
+    
+    <pre class="example__code  language-scss"><code>.btn-size-1 {
+   @include size(5em, 6em);
+}</code></pre>
+  </div>
+  
+  <div class="item__example  example">
+    
+    <div class="example__description"><p>输出：</p>
+</div>
+    
+    <pre class="example__code  language-css"><code>.btn-size-1 {
+   width: 5em;
+   height: 6em;
+}</code></pre>
+  </div>
+  
+  <div class="item__example  example">
+    
+    <div class="example__description"><p>用法二：</p>
+</div>
+    
+    <pre class="example__code  language-scss"><code>.btn-size-2 {
+   @include size(5em);
+}</code></pre>
+  </div>
+  
+  <div class="item__example  example">
+    
+    <div class="example__description"><p>输出：</p>
+</div>
+    
+    <pre class="example__code  language-css"><code>.btn-size-2 {
+   width: 5em;
+   height: 5em;
+}</code></pre>
+  </div>
+  
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>senola</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+
+              
+                <section class="main__item  container  item" id="mixin-text-overflow">
+
+<h3 class="item__heading">
+  
+
+  <a class="item__name" href="#mixin-text-overflow">text-overflow</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="item__code-wrapper">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@mixin text-overflow() { 
+ 	overflow: hidden;   // 隐藏超出部分
+ 	text-overflow: ellipsis;  // 多余的用省略号代替
+ 	white-space: nowrap;  // 控制文字不换行
+  }"
+    data-collapsed="@mixin text-overflow() { ... }"><code>@mixin text-overflow() { ... }</code></pre>
+
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+  <div class="item__description"><p>控制文字显示长度</p>
+</div>
+
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <p>None.</p>
+
+
+
+  
+    
+    
+
+  
+    
+    
+  <h3 class="item__sub-heading">Example</h3>
+
+  
+  <div class="item__example  example">
+    
+    <div class="example__description"><p>用法：</p>
+</div>
+    
+    <pre class="example__code  language-scss"><code>.p-text-overflow {
+   max-width: 100px;
+   @include text-overflow();
+}</code></pre>
+  </div>
+  
+  <div class="item__example  example">
+    
+    <div class="example__description"><p>输出：</p>
+</div>
+    
+    <pre class="example__code  language-css"><code>.p-text-overflow {
+   max-width: 100px;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+}</code></pre>
+  </div>
+  
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>senola</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+
+              
+                <section class="main__item  container  item" id="mixin-animation">
+
+<h3 class="item__heading">
+  
+
+  <a class="item__name" href="#mixin-animation">animation</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+<div class="item__code-wrapper">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@mixin animation($animation) { 
+  -webkit-animation: $animation;
+       -o-animation: $animation;
+          animation: $animation;
+ }"
+    data-collapsed="@mixin animation($animation) { ... }"><code>@mixin animation($animation) { ... }</code></pre>
+
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+  <div class="item__description"><p>Animations （动画） </p>
+</div>
+
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <table class="item__parameters">
+    <thead>
+      <tr>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Name</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Description</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Type</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$animation</code></th>
+          <td data-label="desc">&mdash;<span class="visually-hidden"> none</span></td>
+          <td data-label="type">
+          
+            String
+          
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+    
+    
+
+  
+    
+    
+  <h3 class="item__sub-heading">Example</h3>
+
+  
+  <div class="item__example  example">
+    
+    <div class="example__description"><p>用法：   </p>
+</div>
+    
+    <pre class="example__code  language-scss"><code>$animation: scaleBig 1s ease-out;
+.animation {
+   @include animation($animation);
+}</code></pre>
+  </div>
+  
+  <div class="item__example  example">
+    
+    <div class="example__description"><p>输出：</p>
+</div>
+    
+    <pre class="example__code  language-css"><code>.animation {
+   -webkit-animation: scaleBig 1s ease-out;
+   -o-animation: scaleBig 1s ease-out;
+   animation: scaleBig 1s ease-out;
+}</code></pre>
+  </div>
+  
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+  
+    
+      
+      <h3 class="item__sub-heading">Requires</h3>
+      <ul class="list-unstyled">
+    
+
+    
+      <li><span class="item__cross-type">[mixin]</span>
+        <a href="#mixin-animation"><code>animation</code></a>
+        
+      </li>
+    
+  
+
+
+
+
+</ul>
+
+
+  
+    
+    
+
+
+
+  
+
+    
+      
+      <h3 class="item__sub-heading">Used by</h3>
+      <ul class="list-unstyled">
+    
+
+    <li><span class="item__cross-type">[mixin]</span> <a href="#mixin-animation"><code>animation</code></a></li>
+  
+
+
+
+
+</ul>
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>senola</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+
+              
+                <section class="main__item  container  item" id="mixin-animation-name">
+
+<h3 class="item__heading">
+  
+
+  <a class="item__name" href="#mixin-animation-name">animation-name</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+<div class="item__code-wrapper">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@mixin animation-name($name) { 
+  -webkit-animation-name: $name;
+          animation-name: $name;
+ }"
+    data-collapsed="@mixin animation-name($name) { ... }"><code>@mixin animation-name($name) { ... }</code></pre>
+
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+  <div class="item__description"><p>animation-name （检索或设置对象所应用的动画名称） </p>
+</div>
+
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <table class="item__parameters">
+    <thead>
+      <tr>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Name</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Description</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Type</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$name</code></th>
+          <td data-label="desc">&mdash;<span class="visually-hidden"> none</span></td>
+          <td data-label="type">
+          
+            String
+          
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+    
+    
+
+  
+    
+    
+  <h3 class="item__sub-heading">Example</h3>
+
+  
+  <div class="item__example  example">
+    
+    <div class="example__description"><p>用法：   </p>
+</div>
+    
+    <pre class="example__code  language-scss"><code>$name: animationDemo;
+.animation-name {
+   @include animation($name);
+}</code></pre>
+  </div>
+  
+  <div class="item__example  example">
+    
+    <div class="example__description"><p>输出：</p>
+</div>
+    
+    <pre class="example__code  language-css"><code>.animation-name {
+   -webkit-animation-name: animationDemo;
+           animation-name: animationDemo;
+}</code></pre>
+  </div>
+  
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>senola</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+
+              
+                <section class="main__item  container  item" id="mixin-animation-duration">
+
+<h3 class="item__heading">
+  
+
+  <a class="item__name" href="#mixin-animation-duration">animation-duration</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+<div class="item__code-wrapper">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@mixin animation-duration($duration) { 
+  -webkit-animation-duration: $duration;
+          animation-duration: $duration;
+ }"
+    data-collapsed="@mixin animation-duration($duration) { ... }"><code>@mixin animation-duration($duration) { ... }</code></pre>
+
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+  <div class="item__description"><p>animation-duration （检索或设置对象动画的持续时间 ） </p>
+</div>
+
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <table class="item__parameters">
+    <thead>
+      <tr>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Name</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Description</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Type</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$duration</code></th>
+          <td data-label="desc"><p>时间</p>
+</td>
+          <td data-label="type">
+          
+            Number
+          
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+    
+    
+
+  
+    
+    
+  <h3 class="item__sub-heading">Example</h3>
+
+  
+  <div class="item__example  example">
+    
+    <div class="example__description"><p>用法：   </p>
+</div>
+    
+    <pre class="example__code  language-scss"><code>$duration: 1s;
+.animation-duration {
+   @include animation-duration($duration);
+}</code></pre>
+  </div>
+  
+  <div class="item__example  example">
+    
+    <div class="example__description"><p>输出：</p>
+</div>
+    
+    <pre class="example__code  language-css"><code>.animation-duration {
+   -webkit-animation-name: 1s;
+           animation-name: 1s;
+}</code></pre>
+  </div>
+  
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>senola</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+
+              
+                <section class="main__item  container  item" id="mixin-animation-timing-function">
+
+<h3 class="item__heading">
+  
+
+  <a class="item__name" href="#mixin-animation-timing-function">animation-timing-function</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+<div class="item__code-wrapper">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@mixin animation-timing-function($timing-function)) { 
+  -webkit-animation-timing-function: $timing-function;
+          animation-timing-function: $timing-function;
+ }"
+    data-collapsed="@mixin animation-timing-function($timing-function)) { ... }"><code>@mixin animation-timing-function($timing-function)) { ... }</code></pre>
+
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+  <div class="item__description"><p>animation-timing-function （检索或设置对象动画的过渡类型）</p>
+<p>可取值有：<br>   linear： 线性过渡。等同于贝塞尔曲线(0.0, 0.0, 1.0, 1.0)<br>   ease： 平滑过渡。等同于贝塞尔曲线(0.25, 0.1, 0.25, 1.0)<br>   ease-in： 由慢到快。等同于贝塞尔曲线(0.42, 0, 1.0, 1.0)<br>   ease-out： 由快到慢。等同于贝塞尔曲线(0, 0, 0.58, 1.0)<br>   ease-in-out： 由慢到快再到慢。等同于贝塞尔曲线(0.42, 0, 0.58, 1.0)<br>   cubic-bezier([number], [number], [number], [number])： 特定的贝塞尔曲线类型，4个数值需在[0, 1]区间内    </p>
+</div>
+
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <table class="item__parameters">
+    <thead>
+      <tr>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Name</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Description</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Type</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$timing-function)</code></th>
+          <td data-label="desc"><p>时间值</p>
+</td>
+          <td data-label="type">
+          
+            Number
+          
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+    
+    
+
+  
+    
+    
+  <h3 class="item__sub-heading">Example</h3>
+
+  
+  <div class="item__example  example">
+    
+    <div class="example__description"><p>用法：   </p>
+</div>
+    
+    <pre class="example__code  language-scss"><code>$timing-function: ease-in-out;
+.animation-duration {
+   @include animation-timing-function($timing-function);
+}</code></pre>
+  </div>
+  
+  <div class="item__example  example">
+    
+    <div class="example__description"><p>输出：</p>
+</div>
+    
+    <pre class="example__code  language-css"><code>.animation-duration {
+   -webkit-animation-timing-function: ease-in-out;
+           animation-timing-function: ease-in-out;
+}</code></pre>
+  </div>
+  
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>senola</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+
+              
+                <section class="main__item  container  item" id="mixin-animation-delay">
+
+<h3 class="item__heading">
+  
+
+  <a class="item__name" href="#mixin-animation-delay">animation-delay</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+<div class="item__code-wrapper">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@mixin animation-delay($delay) { 
+  -webkit-animation-delay: $delay;
+          animation-delay: $delay;
+ }"
+    data-collapsed="@mixin animation-delay($delay) { ... }"><code>@mixin animation-delay($delay) { ... }</code></pre>
+
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+  <div class="item__description"><p>animation-delay（检索或设置对象动画延迟的时间）</p>
+</div>
+
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <table class="item__parameters">
+    <thead>
+      <tr>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Name</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Description</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Type</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$delay</code></th>
+          <td data-label="desc"><p>时间值</p>
+</td>
+          <td data-label="type">
+          
+            Number
+          
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+    
+    
+
+  
+    
+    
+  <h3 class="item__sub-heading">Example</h3>
+
+  
+  <div class="item__example  example">
+    
+    <div class="example__description"><p>用法：   </p>
+</div>
+    
+    <pre class="example__code  language-scss"><code>$delay: 1s;
+.animation-duration {
+   @include animation-delay($delay);
+}</code></pre>
+  </div>
+  
+  <div class="item__example  example">
+    
+    <div class="example__description"><p>输出：</p>
+</div>
+    
+    <pre class="example__code  language-css"><code>.animation-duration {
+ -webkit-animation-delay: 1s;
+         animation-delay: 1s;
+}</code></pre>
+  </div>
+  
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>senola</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+
+              
+                <section class="main__item  container  item" id="mixin-animation-iteration-count">
+
+<h3 class="item__heading">
+  
+
+  <a class="item__name" href="#mixin-animation-iteration-count">animation-iteration-count</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+<div class="item__code-wrapper">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@mixin animation-iteration-count($iteration-count) { 
+  -webkit-animation-iteration-count: $iteration-count;
+          animation-iteration-count: $iteration-count;
+ }"
+    data-collapsed="@mixin animation-iteration-count($iteration-count) { ... }"><code>@mixin animation-iteration-count($iteration-count) { ... }</code></pre>
+
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+  <div class="item__description"><p>animation-iteration-count（ 检索或设置对象动画的循环次数）</p>
+</div>
+
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <table class="item__parameters">
+    <thead>
+      <tr>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Name</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Description</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Type</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$iteration-count</code></th>
+          <td data-label="desc"><p>循环次数</p>
+</td>
+          <td data-label="type">
+          
+            Number
+          
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+    
+    
+
+  
+    
+    
+  <h3 class="item__sub-heading">Example</h3>
+
+  
+  <div class="item__example  example">
+    
+    <div class="example__description"><p>用法：   </p>
+</div>
+    
+    <pre class="example__code  language-scss"><code>$iteration-count: 2;
+.animation-iteration-count {
+   @include animation-iteration-count($iteration-count);
+}</code></pre>
+  </div>
+  
+  <div class="item__example  example">
+    
+    <div class="example__description"><p>输出：</p>
+</div>
+    
+    <pre class="example__code  language-css"><code>.animation-iteration-count {
+ -webkit-animation-iteration-count: 2;
+         animation-iteration-count: 2;
+}</code></pre>
+  </div>
+  
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>senola</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+
+              
+                <section class="main__item  container  item" id="mixin-animation-direction">
+
+<h3 class="item__heading">
+  
+
+  <a class="item__name" href="#mixin-animation-direction">animation-direction</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+<div class="item__code-wrapper">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@mixin animation-direction($direction) { 
+  -webkit-animation-direction: $direction;
+          animation-direction: $direction;
+ }"
+    data-collapsed="@mixin animation-direction($direction) { ... }"><code>@mixin animation-direction($direction) { ... }</code></pre>
+
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+  <div class="item__description"><p>animation-direction（检索或设置对象动画在循环中是否反向运动）</p>
+<p>取值：<br>  normal： 正常方向<br>  alternate： 正常与反向交替     </p>
+</div>
+
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <table class="item__parameters">
+    <thead>
+      <tr>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Name</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Description</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Type</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$direction</code></th>
+          <td data-label="desc">&mdash;<span class="visually-hidden"> none</span></td>
+          <td data-label="type">
+          
+            String
+          
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+    
+    
+
+  
+    
+    
+  <h3 class="item__sub-heading">Example</h3>
+
+  
+  <div class="item__example  example">
+    
+    <div class="example__description"><p>用法：   </p>
+</div>
+    
+    <pre class="example__code  language-scss"><code>$direction: normal;
+.animation-direction {
+   @include animation-direction($direction);
+}</code></pre>
+  </div>
+  
+  <div class="item__example  example">
+    
+    <div class="example__description"><p>输出：</p>
+</div>
+    
+    <pre class="example__code  language-css"><code>.animation-direction {
+ -webkit-animation-direction: normal;
+          animation-direction: normal;
+}</code></pre>
+  </div>
+  
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>senola</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+
+              
+                <section class="main__item  container  item" id="mixin-animation-fill-mode">
+
+<h3 class="item__heading">
+  
+
+  <a class="item__name" href="#mixin-animation-fill-mode">animation-fill-mode</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+<div class="item__code-wrapper">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@mixin animation-fill-mode($fill-mode) { 
+  -webkit-animation-fill-mode: $fill-mode;
+          animation-fill-mode: $fill-mode;
+ }"
+    data-collapsed="@mixin animation-fill-mode($fill-mode) { ... }"><code>@mixin animation-fill-mode($fill-mode) { ... }</code></pre>
+
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+  <div class="item__description"><p>animation-fill-mode（检索或设置对象动画时间之外的状态 ）</p>
+<p>取值：<br>  none： 默认值。不设置对象动画之外的状态<br>  forwards： 设置对象状态为动画结束时的状态<br>  backwards： 设置对象状态为动画开始时的状态<br>  both： 设置对象状态为动画结束或开始的状态     </p>
+</div>
+
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <table class="item__parameters">
+    <thead>
+      <tr>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Name</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Description</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Type</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$fill-mode</code></th>
+          <td data-label="desc"><p>状态</p>
+</td>
+          <td data-label="type">
+          
+            String
+          
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+    
+    
+
+  
+    
+    
+  <h3 class="item__sub-heading">Example</h3>
+
+  
+  <div class="item__example  example">
+    
+    <div class="example__description"><p>用法：   </p>
+</div>
+    
+    <pre class="example__code  language-scss"><code>$fill-mode: forwards;
+.animation-fill-mode {
+   @include animation-fill-mode($fill-mode);
+}</code></pre>
+  </div>
+  
+  <div class="item__example  example">
+    
+    <div class="example__description"><p>输出：</p>
+</div>
+    
+    <pre class="example__code  language-css"><code>.animation-fill-mode {
+  -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+}</code></pre>
+  </div>
+  
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>senola</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+
+              
+                <section class="main__item  container  item" id="mixin-box-shadow">
+
+<h3 class="item__heading">
+  
+
+  <a class="item__name" href="#mixin-box-shadow">box-shadow</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+<div class="item__code-wrapper">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@mixin box-shadow($shadow) { 
+  -webkit-box-shadow: $shadow; // iOS &lt; 4.3 &amp; Android &lt; 4.1
+          box-shadow: $shadow;
+ }"
+    data-collapsed="@mixin box-shadow($shadow) { ... }"><code>@mixin box-shadow($shadow) { ... }</code></pre>
+
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+  <div class="item__description"><p>设置或检索对象阴影</p>
+<p>取值：<br> none： 无阴影<br> [length]①： 第1个长度值用来设置对象的阴影水平偏移值。可以为负值<br> [length]②： 第2个长度值用来设置对象的阴影垂直偏移值。可以为负值<br> [length]③： 如果提供了第3个长度值则用来设置对象的阴影模糊值。不允许负值<br> [length]④： 如果提供了第4个长度值则用来设置对象的阴影外延值。可以为负值<br> [color]：   设置对象的阴影的颜色。<br> inset：     设置对象的阴影类型为内阴影。该值为空时，则对象的阴影类型为外阴影       </p>
+</div>
+
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <table class="item__parameters">
+    <thead>
+      <tr>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Name</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Description</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Type</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$shadow</code></th>
+          <td data-label="desc"><p>状态</p>
+</td>
+          <td data-label="type">
+          
+            String
+          
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>senola</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+
+              
+                <section class="main__item  container  item" id="mixin-box-sizing">
+
+<h3 class="item__heading">
+  
+
+  <a class="item__name" href="#mixin-box-sizing">box-sizing</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+<div class="item__code-wrapper">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@mixin box-sizing($boxmodel) { 
+  -webkit-box-sizing: $boxmodel;
+     -moz-box-sizing: $boxmodel;
+          box-sizing: $boxmodel;
+ }"
+    data-collapsed="@mixin box-sizing($boxmodel) { ... }"><code>@mixin box-sizing($boxmodel) { ... }</code></pre>
+
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+  <div class="item__description"><p>animation-fill-mode（检索或设置对象动画时间之外的状态 ）</p>
+<p>取值：<br>  content-box： padding和border不被包含在定义的width和height之内。对象的实际宽度等于设置的width值和border、padding之和，即 ( Element width = width + border + padding ) 
+此属性表现为标准模式下的盒模型。  </p>
+<p>  border-box： padding和border被包含在定义的width和height之内。对象的实际宽度就等于设置的width值，即使定义有border和padding也不会改变对象的实际宽度，即 ( Element width = width ) 
+此属性表现为怪异模式下的盒模型。      </p>
+</div>
+
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <table class="item__parameters">
+    <thead>
+      <tr>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Name</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Description</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Type</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$boxmodel</code></th>
+          <td data-label="desc">&mdash;<span class="visually-hidden"> none</span></td>
+          <td data-label="type">
+          
+            String
+          
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+    
+    
+
+  
+    
+    
+  <h3 class="item__sub-heading">Example</h3>
+
+  
+  <div class="item__example  example">
+    
+    <div class="example__description"><p>用法：   </p>
+</div>
+    
+    <pre class="example__code  language-scss"><code>$boxmodel: border-box;
+.box-sizing {
+   @include box-sizing($boxmodel);
+}</code></pre>
+  </div>
+  
+  <div class="item__example  example">
+    
+    <div class="example__description"><p>输出：</p>
+</div>
+    
+    <pre class="example__code  language-css"><code>.box-sizing {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}</code></pre>
+  </div>
+  
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>senola</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+
+              
+                <section class="main__item  container  item" id="mixin-content-columns">
+
+<h3 class="item__heading">
+  
+
+  <a class="item__name" href="#mixin-content-columns">content-columns</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+<div class="item__code-wrapper">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@mixin content-columns($column-count, $column-gap, $grid-gutter-width) { 
+  -webkit-column-count: $column-count;
+     -moz-column-count: $column-count;
+          column-count: $column-count;
+  -webkit-column-gap: $column-gap;
+     -moz-column-gap: $column-gap;
+          column-gap: $column-gap;
+ }"
+    data-collapsed="@mixin content-columns($column-count, $column-gap, $grid-gutter-width) { ... }"><code>@mixin content-columns($column-count, $column-gap, $grid-gutter-width) { ... }</code></pre>
+
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+  <div class="item__description"><p>content-columns </p>
+</div>
+
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <table class="item__parameters">
+    <thead>
+      <tr>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Name</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Description</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Type</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$column-count</code></th>
+          <td data-label="desc">&mdash;<span class="visually-hidden"> none</span></td>
+          <td data-label="type">
+          
+            Number
+          
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$column-gap</code></th>
+          <td data-label="desc">&mdash;<span class="visually-hidden"> none</span></td>
+          <td data-label="type">
+          
+            Number
+          
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$grid-gutter-width</code></th>
+          <td data-label="desc">&mdash;<span class="visually-hidden"> none</span></td>
+          <td data-label="type">
+          
+            Number
+          
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>senola</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+
+              
+                <section class="main__item  container  item" id="mixin-placeholder">
+
+<h3 class="item__heading">
+  
+
+  <a class="item__name" href="#mixin-placeholder">placeholder</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+<div class="item__code-wrapper">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@mixin placeholder($color：$input-color-placeholder) { 
+  // Firefox
+  &amp;::-moz-placeholder {
+    color: $color;
+    opacity: 1; // Override Firefox&#39;s unusual default opacity; see https://github.com/twbs/bootstrap/pull/11526
+  }
+  &amp;:-ms-input-placeholder { color: $color; } // Internet Explorer 10+
+  &amp;::-webkit-input-placeholder  { color: $color; } // Safari and Chrome
+ }"
+    data-collapsed="@mixin placeholder($color：$input-color-placeholder) { ... }"><code>@mixin placeholder($color：$input-color-placeholder) { ... }</code></pre>
+
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+  <div class="item__description"><p>占位符</p>
+</div>
+
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <table class="item__parameters">
+    <thead>
+      <tr>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Name</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Description</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Type</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$color：$input-color-placeholder</code></th>
+          <td data-label="desc"><p>$input-color-placeholder(变量控制)</p>
+</td>
+          <td data-label="type">
+          
+            String
+          
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>senola</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+
+              
+            </section>
+          
+        
+
+      </section>
+    
+
+  
+
+
+
+    
+    
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      
+        <div class="footer__project-info  project-info">
+          <!-- Name and URL -->
+          
+            <span class="project-info__name">SassDoc</span>
+          
+
+          <!-- Version -->
+          
+
+          <!-- License -->
+          
+        </div>
+      
+
+      
+        <span class="footer__watermark">Built with <a href="https://github.com/SassDoc/sassdoc">SassDoc</a>.</span>
+      
+    </div>
+  </footer>
+
+
+  </article>
+
+
+  
+  <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script>
+
+
+<script src="./assets/js/main.min.js"></script>
+
+</body>
+</html>

@@ -38,3 +38,30 @@ $name: animationDemo;
 .animation-name {
      @include animation-name($name);
 }
+.btn {
+    @include  button-variant(#eee, #fff, #aaa);
+}
+.btn-size {
+   @include button-size(2em, 2em, 4em, 4em, 2em);
+}
+.gradient-horizontal {
+	 @include gradient-horizontal();
+}
+.gradient-vertical {
+	@include  gradient-vertical();
+}
+.gradient-directional {
+	@include gradient-directional();
+}
+.gradient-horizontal-three-colors {
+	@include gradient-horizontal-three-colors()
+}
+.gradient-radial {
+	@include gradient-radial();
+}
+.gradient-striped {
+	@include gradient-striped(#F44336, 10deg);
+}
+.pagination {
+	@include pagination(2em, 2em, 2em, 2em);
+}

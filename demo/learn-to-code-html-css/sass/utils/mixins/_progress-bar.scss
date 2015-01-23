@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+/**
+ * @access public
+ * @group Utils
+ * @author senola
+ **/
+
+/**
+ *  进度条
+ *
+ *  @param {String} $color -  
+ *
+ *
+ */
+@mixin progress-bar-variant($color) {
+  background-color: $color;
+
+  .progress-striped & {
+    @include gradient-striped;
+  }
+}

@@ -1,5 +1,74 @@
 @charset "UTF-8";
 /**
+ * @access public
+ * @group Utils
+ * @author senola
+ **/
+/**
+ *  设置元素顶部边界半径值。
+ *
+ *  @param {length} $radius - 边界半径值
+ * 
+ *  @example scss - 用法：
+ *  .btn-border-top {
+ *     @include border-top-radius(5em);
+ *  }
+ *
+ *  @example css - 输出：
+ *  .btn-border-top {
+ *     border-top-right-radius: 5em;
+ *     border-top-left-radius: 5em;
+ *  }
+ */
+/**
+ *  设置元素右侧边界半径值。
+ *
+ *  @param {length} $radius - 边界半径值
+ * 
+ *  @example scss - 用法：
+ *  .btn-border-right {
+ *     @include border-right-radius(5em);
+ *  }
+ *
+ *  @example css - 输出：
+ *  .btn-border-right {
+ *     border-bottom-right-radius: 5em;
+ *     border-top-right-radius: 5em;
+ *  }
+ */
+/**
+ *  设置元素底部边界半径值。
+ *
+ *  @param {length} $radius - 边界半径值
+ * 
+ *  @example scss - 用法：
+ *  .btn-border-bottom {
+ *     @include border-bottom-radius(5em);
+ *  }
+ *
+ *  @example css - 输出：
+ *  .btn-border-bottom {
+ *     border-bottom-right-radius: 5em;
+ *     border-bottom-left-radius: 5em;
+ *  }
+ */
+/**
+ *  设置元素左侧边界半径值。
+ *
+ *  @param {length} $radius - 边界半径值
+ * 
+ *  @example scss - 用法：
+ *  .btn-border-left {
+ *     @include border-left-radius(5em);
+ *  }
+ *
+ *  @example css - 输出：
+ *  .btn-border-left {
+ *     border-bottom-left-radius: 5em;
+ *     border-top-left-radius: 5em;
+ *  }
+ */
+/**
  *  @access public
  *  @group Utils
  *  @author senola
@@ -237,83 +306,6 @@
  * @author senola
  **/
 /**
- *  设置元素顶部边界半径值。
- *
- *  @param {length} $radius - 边界半径值
- * 
- *  @example scss - 用法：
- *  .btn-border-top {
- *     @include border-top-radius(5em);
- *  }
- *
- *  @example css - 输出：
- *  .btn-border-top {
- *     border-top-right-radius: 5em;
- *     border-top-left-radius: 5em;
- *  }
- */
-/**
- *  设置元素右侧边界半径值。
- *
- *  @param {length} $radius - 边界半径值
- * 
- *  @example scss - 用法：
- *  .btn-border-right {
- *     @include border-right-radius(5em);
- *  }
- *
- *  @example css - 输出：
- *  .btn-border-right {
- *     border-bottom-right-radius: 5em;
- *     border-top-right-radius: 5em;
- *  }
- */
-/**
- *  设置元素底部边界半径值。
- *
- *  @param {length} $radius - 边界半径值
- * 
- *  @example scss - 用法：
- *  .btn-border-bottom {
- *     @include border-bottom-radius(5em);
- *  }
- *
- *  @example css - 输出：
- *  .btn-border-bottom {
- *     border-bottom-right-radius: 5em;
- *     border-bottom-left-radius: 5em;
- *  }
- */
-/**
- *  设置元素左侧边界半径值。
- *
- *  @param {length} $radius - 边界半径值
- * 
- *  @example scss - 用法：
- *  .btn-border-left {
- *     @include border-left-radius(5em);
- *  }
- *
- *  @example css - 输出：
- *  .btn-border-left {
- *     border-bottom-left-radius: 5em;
- *     border-top-left-radius: 5em;
- *  }
- */
-/**
- * 1. The space content is one way to avoid an Opera bug when the
- *    contenteditable attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that are clearfixed.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- * 3. For IE 6/7 only. Include this rule to trigger hasLayout and contain floats.  
- *
- * @access public
- * @group Utils
- * @author senola
- **/
-/**
  *   1. The space content is one way to avoid an Opera bug when the contenteditable attribute is included anywhere else in the document.     
  *      Otherwise it causes space to appear at the top and bottom of elements     
  *   2. The use of `table` rather than `block` is only necessary if using `:before` to contain the top-margins of child elements. that are clearfixed.     
@@ -413,6 +405,175 @@
  *     text-overflow: ellipsis;
  *     white-space: nowrap;
  *  }
+ *
+ */
+/**
+ * @access public
+ * @group Utils
+ * @author senola
+ **/
+/**
+*  Button 样式控制
+*
+*  @param {String} $color -  按钮内容颜色
+*  @param {String} $background - 按钮背景颜色
+*  @param {Number} $border -  按钮边框颜色
+* 
+*  @example scss - 用法：
+*  .btn {
+*     @include button-variant(#eee, #fff, #aaa);
+*  }
+*
+*  @example css - 输出：
+*  .btn {
+*    color: #eee;
+*	  background-color: #fff;
+*    border-color: #aaa;
+*  }
+*  .btn:hover, .btn:focus, .btn.focus, .btn:active, .btn.active, .open > .btn.dropdown-toggle {
+*    color: #eee;
+*    background-color: #e6e6e6;
+*    border-color: #8b8b8b;
+*  }
+*  .btn:active, .btn.active, .open > .btn.dropdown-toggle {
+*    background-image: none;
+*  }
+*  .btn.disabled, .btn.disabled:hover, .btn.disabled:focus, .btn.disabled.focus, .btn.disabled:active, .btn.disabled.active, .btn[disabled], .btn[disabled]:hover, .btn[disabled]:focus, .btn[disabled].focus, .btn[disabled]:active, .btn[disabled].active, fieldset[disabled] .btn, fieldset[disabled] .btn:hover, fieldset[disabled] .btn:focus, fieldset[disabled] .btn.focus, fieldset[disabled] .btn:active, fieldset[disabled] .btn.active {
+*    background-color: #fff;
+*    border-color: #aaa;
+*  }
+*  .btn .badge {
+*    color: #fff;
+*    background-color: #eee;
+*  }
+*
+*/
+/**
+ *  Button 样式控制
+ *
+ *  @param {String} $padding-vertical -  内边距垂直高度
+ *  @param {String} $padding-horizontal - 内边距水平高度
+ *  @param {Number} $font-size -  字体大小
+ *  @param {Number} $line-height  - 行高
+ *  @param {Number} $border-radius - 边角半径
+ *  
+ *  @example scss - 用法：
+ *  .btn-size {
+ *     @include button-size(2em, 2em, 4em, 4em, 2em);
+ *  }
+ * 
+ *  @example css - 输出
+ *  .btn-size {
+ *    padding: 2em 2em;
+ *    font-size: 4em;
+ *    line-height: 4em;
+ *    border-radius: 2em;
+ *  }
+ */
+/**
+ * @access public
+ * @group Utils
+ * @author senola
+ **/
+/**
+ *  img-responsive
+ *
+ *  @param {String} $display (block) - 
+ */
+/**
+ * @access public
+ * @group Utils
+ * @author senola
+ **/
+/** 
+ *  居中块级元素
+ *  
+ */
+/**
+ * @access public
+ * @group Utils
+ * @author senola
+ **/
+/** 
+ *  gradient-horizontal 水平渐变，从左到右
+ *  通过设置开始和结束的不同颜色值，来创建两种颜色梯度。   
+ *  支持 IE9 + 
+ *
+ *  @param {String} $start-color (#555)  - 初始颜色值
+ *  @param {String} $end-color (#333) - 结束颜色值
+ *  @param {String} $start-percent (0%) -  初始百分比
+ *  @param {String} $end-percent (100%) -  结束百分比
+ */
+/** 
+ *  gradient-vertical 垂直渐变，从顶部到底部
+ *  通过设置开始和结束的不同颜色值，来创建两种颜色梯度。   
+ *  支持 IE9 + 
+ *
+ *  @param {String} $start-color (#555)  - 初始颜色值
+ *  @param {String} $end-color (#333) - 结束颜色值
+ *  @param {String} $start-percent (0%) -  初始百分比
+ *  @param {String} $end-percent (100%) -  结束百分比
+ */
+/** 
+ *  gradient-directional 
+ *
+ *  @param {String} $start-color (#555)  - 初始颜色值
+ *  @param {String} $end-color (#333) - 结束颜色值
+ *  @param {String} $deg (45deg) -  角度
+ */
+/** 
+ *  gradient-horizontal-three-colors  水平渐变，从左到右 (三种颜色)
+ *
+ *  @param {String} $start-color (#00b3ee)  - 初始颜色值
+ *  @param {String} $mid-color (#7a43b6) - 结束颜色值
+ *  @param {String} $color-stop (50%) - 结束颜色值
+ *  @param {String} $end-color (#c3325f) -  角度
+ */
+/** 
+ *  gradient-vertical-three-colors  垂直渐变，从左到右 (三种颜色)
+ *
+ *  @param {String} $start-color (#00b3ee)  - 初始颜色值
+ *  @param {String} $mid-color (#7a43b6) - 结束颜色值
+ *  @param {String} $color-stop (50%) - 结束颜色值
+ *  @param {String} $end-color (#c3325f) -  角度
+ */
+/** 
+ *  gradient-radial  梯度径向
+ *
+ *  @param {String} $inner-color (#555)  - 内部颜色值
+ *  @param {String} $outer-color(#333) - 外部颜色值
+ */
+/** 
+ *  gradient-radial  条纹渐变
+ *
+ *  @param {String} $color (#555)  - 颜色
+ *  @param {String} $angle(45deg) - 角度
+ */
+/**
+ * @access public
+ * @group Utils
+ * @author senola
+ **/
+/**
+ *  分页样式
+ *
+ *  @param {String} $padding-vertical -  
+ *  @param {String} $padding-horizontal - 
+ *  @param {Number} $font-size -   字体大小
+ *  @param {Number} $border-radius -  半径
+ *
+ *
+ */
+/**
+ * @access public
+ * @group Utils
+ * @author senola
+ **/
+/**
+ *  进度条
+ *
+ *  @param {String} $color -  
+ *
  *
  */
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
@@ -876,6 +1037,94 @@ th {
 .animation-name {
   -webkit-animation-name: animationDemo;
   animation-name: animationDemo;
+}
+
+.btn {
+  color: #eee;
+  background-color: #fff;
+  border-color: #aaa;
+}
+.btn:hover, .btn:focus, .btn.focus, .btn:active, .btn.active, .open > .btn.dropdown-toggle {
+  color: #eee;
+  background-color: #e6e6e6;
+  border-color: #8b8b8b;
+}
+.btn:active, .btn.active, .open > .btn.dropdown-toggle {
+  background-image: none;
+}
+.btn.disabled, .btn.disabled:hover, .btn.disabled:focus, .btn.disabled.focus, .btn.disabled:active, .btn.disabled.active, .btn[disabled], .btn[disabled]:hover, .btn[disabled]:focus, .btn[disabled].focus, .btn[disabled]:active, .btn[disabled].active, fieldset[disabled] .btn, fieldset[disabled] .btn:hover, fieldset[disabled] .btn:focus, fieldset[disabled] .btn.focus, fieldset[disabled] .btn:active, fieldset[disabled] .btn.active {
+  background-color: #fff;
+  border-color: #aaa;
+}
+.btn .badge {
+  color: #fff;
+  background-color: #eee;
+}
+
+.btn-size {
+  padding: 2em 2em;
+  font-size: 4em;
+  line-height: 4em;
+  border-radius: 2em;
+}
+
+.gradient-horizontal {
+  background-image: -webkit-linear-gradient(left, #555 0%, #333 100%);
+  background-image: -o-linear-gradient(left, #555 0%, #333 100%);
+  background-image: linear-gradient(to right, #555 0%, #333 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF555555', endColorstr='#FF333333', GradientType=1);
+}
+
+.gradient-vertical {
+  background-image: -webkit-linear-gradient(top, #555 0%, #333 100%);
+  background-image: -o-linear-gradient(top, #555 0%, #333 100%);
+  background-image: linear-gradient(to bottom, #555 0%, #333 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF555555', endColorstr='#FF333333', GradientType=0);
+}
+
+.gradient-directional {
+  background-repeat: repeat-x;
+  background-image: -webkit-linear-gradient(45deg, #555, #333);
+  background-image: -o-linear-gradient(45deg, #555, #333);
+  background-image: linear-gradient(45deg, #555, #333);
+}
+
+.gradient-horizontal-three-colors {
+  background-image: -webkit-linear-gradient(left, #00b3ee, #7a43b6 50%, #c3325f);
+  background-image: -o-linear-gradient(left, #00b3ee, #7a43b6 50%, #c3325f);
+  background-image: linear-gradient(to right, #00b3ee, #7a43b6 50%, #c3325f);
+  background-repeat: no-repeat;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF00B3EE', endColorstr='#FFC3325F', GradientType=1);
+}
+
+.gradient-radial {
+  background-image: -webkit-radial-gradient(circle, #555, #333);
+  background-image: radial-gradient(circle, #555, #333);
+  background-repeat: no-repeat;
+}
+
+.gradient-striped {
+  background-image: -webkit-linear-gradient(10deg, #F44336 25%, transparent 25%, transparent 50%, #F44336 50%, #F44336 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(10deg, #F44336 25%, transparent 25%, transparent 50%, #F44336 50%, #F44336 75%, transparent 75%, transparent);
+  background-image: linear-gradient(10deg, #F44336 25%, transparent 25%, transparent 50%, #F44336 50%, #F44336 75%, transparent 75%, transparent);
+}
+
+.pagination > li > a,
+.pagination > li > span {
+  padding: 2em 2em;
+  font-size: 2em;
+}
+.pagination > li:first-child > a,
+.pagination > li:first-child > span {
+  border-bottom-left-radius: 2em;
+  border-top-left-radius: 2em;
+}
+.pagination > li:last-child > a,
+.pagination > li:last-child > span {
+  border-bottom-right-radius: 2em;
+  border-top-right-radius: 2em;
 }
 
 /*# sourceMappingURL=test.css.map */

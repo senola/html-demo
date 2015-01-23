@@ -3,11 +3,16 @@
 
 
 // 外观
-@import 'mixins/vendor-prefixes'; 
 @import 'mixins/border-radius'; 
-
+@import 'mixins/vendor-prefixes'; 
 @import 'mixins/clearfix';
-
 @import 'mixins/size';
 @import 'mixins/opacity';
 @import 'mixins/text-overflow'; 
+@import 'mixins/buttons';
+@import 'mixins/images';
+@import 'mixins/center-block';
+@import 'mixins/gradients';
+@import 'mixins/pagination';
+@import 'mixins/progress-bar';
+@import 'mixins/tab-focus';
