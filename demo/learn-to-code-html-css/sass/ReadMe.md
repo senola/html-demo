@@ -40,7 +40,7 @@
 列如：  
 
 ```
-    sass --watch --style expanded expanded main.scss:test/test.css；
+    sass --watch --style expanded main.scss:test/test.css；
 ```
 
 #### (5) Encodings（编码）
@@ -240,7 +240,32 @@ SassScript 支持7种数据类型：
 
 SassScript同时也支持所有其他CSS属性值，如Unicode, ！important声明。
 
+### （1） Strings  
 
+CSS支持两种类型的字符串，一种是带有双引号喝着单引号的（如："senola", "senola.github.com/"），另一种是不带引号的（如： sans-serif、bold）。 而SassScript都能识别它们，
+
+有一点需要注意的是当使用“#{}” 插值时，将不使用引号。这是为了方便某些操作使用，如mixins中的选择器：  
+
+```
+   @mixins firefox-message($selector) {
+      body.firefox #{$selector}:before{
+         content: 'HI, Firefox users!';
+      }
+   }
+
+   @include firefox-message(".header");
+```
+
+编译生成：  
+
+```
+   body.firefox .header:before {
+      content: "Hi, Firefox users!"; }
+```
+
+### (2) Lists 
+
+Lists是SASS用来呈现CSS的声明如“margin: 10px 15px 0 0” 或 “font-face: Helvetica, Arial, sans-serif”。Lists仅仅是一系列其他值的组合。
 
 
 
