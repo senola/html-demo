@@ -1,27 +1,22 @@
 @charset "utf-8";
 
-/**
- * @access public
- * @group Utils
- * @author senola
- **/
 
-/**
- *  设置元素顶部边界半径值。
- *
- *  @param {length} $radius - 边界半径值
- * 
- *  @example scss - 用法：
- *  .btn-border-top {
- *     @include border-top-radius(5em);
- *  }
- *
- *  @example css - 输出：
- *  .btn-border-top {
- *     border-top-right-radius: 5em;
- *     border-top-left-radius: 5em;
- *  }
- */
+///  @access public
+///  @group Utils
+///  @author senola
+
+///  @param {Number} $radius  - 测试  
+///  @example scss - 用法：   
+///  .btn-border-top {    
+///     @include border-top-radius(5em);   
+///  }
+///
+///  @example css - 输出：  
+///  .btn-border-top {   
+///     border-top-right-radius: 5em;   
+///     border-top-left-radius: 5em;    
+///  }
+///
 @mixin border-top-radius($radius) {
   border-top-right-radius: $radius;
   border-top-left-radius: $radius;
